@@ -1,0 +1,32 @@
+ /*Medium devices (tablets, 768px and up)
+  min width 48em = 768px */
+  
+/*
+	Content 
+	00. General for small device
+	01. Header
+		01.00 First row
+		01.01 Banner
+	02. BannerAppendix
+	xx. Miscellaneous
+*/
+
+
+
+@media only screen and (min-width: 48em) {
+
+
+	/*###############################################
+	##############     01.00 First row    ##############
+	################################################*/	
+	.component-welcome .rightSection .wrapperContactNumber {display: none;}
+
+
+ 	
+
+	
+
+
+
+ 	
+ } 

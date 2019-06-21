@@ -1,0 +1,911 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-----------------------------------------------------
+---------    Priority: Ultra    -----------
+-----------------------------------------------------*/
+html {
+  font-size: 10px;
+  height: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  height: 100%; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; }
+
+/* Prevents adjustments of font size after orientation changes in IE on Windows Phone and in iOS */
+html {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/***********************************************  
+***************   TYPOGRAPHY    ****************
+************************************************/
+/*****************************************************  
+************       MEDIA QUERRIES      ***************
+******************************************************/
+/********* BREAKPOINT ***********/
+/* Small devices (landscape phones, 576px and up)
+Medium devices (tablets, 768px and up)
+Large devices (desktops, 992px and up)
+Extra large devices (large desktops, 1200px and up) */
+/*###############################################
+#############    02 Media Querry    ###########
+################################################*/
+/************************************************  
+*******      BODY AND ITS COMPONENT      ********
+*************************************************/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 1px; }
+
+.col {
+  margin-right: auto;
+  margin-left: auto; }
+
+/************************************************  
+*************       Z-INDEX         *************
+*************************************************/
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box; }
+  .glide * {
+    box-sizing: inherit; }
+  .glide__track {
+    overflow: hidden; }
+  .glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform; }
+    .glide__slides--dragging {
+      user-select: none; }
+  .glide__slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    white-space: normal;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent; }
+    .glide__slide a {
+      user-select: none;
+      -webkit-user-drag: none;
+      -moz-user-select: none;
+      -ms-user-select: none; }
+  .glide__arrows {
+    -webkit-touch-callout: none;
+    user-select: none; }
+  .glide__bullets {
+    -webkit-touch-callout: none;
+    user-select: none; }
+  .glide--rtl {
+    direction: rtl; }
+
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  transform: translateY(-50%);
+  line-height: 1; }
+  .glide__arrow:focus {
+    outline: none; }
+  .glide__arrow:hover {
+    border-color: white; }
+  .glide__arrow--left {
+    left: 2em; }
+  .glide__arrow--right {
+    right: 2em; }
+  .glide__arrow--disabled {
+    opacity: 0.33; }
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%); }
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em; }
+  .glide__bullet:focus {
+    outline: none; }
+  .glide__bullet:hover, .glide__bullet:focus {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .glide__bullet--active {
+    background-color: white; }
+.glide--swipeable {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab; }
+.glide--dragging {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing; }
+
+/* Extra small device 
+$xsBp-max= max-width = 36.9375em;  //575px */
+/*
+	Content
+	00. General for small device
+	01. Landing Page
+		01.00 Header
+		01.01 mainBanner
+		01.02 ads
+			01.02.00 appendixAd
+	xx. Miscellaneous
+*/
+/*###############################################
+#######   00. General for small device   ########
+################################################*/
+.row {
+  padding-right: 5%;
+  padding-left: 5%; }
+
+.col {
+  width: 100%; }
+
+/*##################################################
+##############   01 Landing page    ################
+###################################################*/
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+/*##################################################
+##############   01.00 Header    ###################
+###################################################*/
+.container-header {
+  font-size: 1.6rem; }
+
+/******************************************
+***             First row               ***
+*******************************************/
+.container-header .row-welcome {
+  background-color: #F7931D; }
+
+.component-welcome {
+  font-size: 1.2rem;
+  padding: 0.4166666667em 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; }
+  .component-welcome .leftSection, .component-welcome .rightSection {
+    display: flex;
+    justify-content: space-between; }
+    .component-welcome .leftSection > *, .component-welcome .rightSection > * {
+      margin-left: 0.8333333333em;
+      padding-left: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.6); }
+      .component-welcome .leftSection > *:first-child, .component-welcome .rightSection > *:first-child {
+        margin: 0;
+        padding: 0;
+        border: 0; }
+  .component-welcome i {
+    vertical-align: middle; }
+  .component-welcome .wrapperSocialNetwork {
+    display: flex; }
+    .component-welcome .wrapperSocialNetwork .socialNetwork {
+      padding-right: 0.8333333333em; }
+    .component-welcome .wrapperSocialNetwork .socialNetwork:last-child {
+      padding-right: 0; }
+    .component-welcome .wrapperSocialNetwork i {
+      font-size: 1.0833333333em;
+      color: #fff; }
+  .component-welcome .wrapperContactNumber i {
+    font-size: 0.8333333333em;
+    position: relative;
+    bottom: 2px; }
+
+/*XXXXXXXXXXXXXXXX  Only mobile specific XXXXXXXXXXXXXXX*/
+@media only screen and (max-width: 47.9375em) {
+  .component-welcome {
+    justify-content: center; }
+    .component-welcome .leftSection {
+      display: none; } }
+@media only screen and (max-width: 21.5625em) {
+  .component-welcome .wrapperLogin {
+    display: none; } }
+/******************************************
+***           2nd row                   ***
+*******************************************/
+@media only screen and (max-width: 61.9375em) {
+  .component-navigation .wrapper-nav {
+    /* General edited styles for all menus 
+    	IMPORTANT --> some lines are commented as part of edit 
+    */
+    /* Orientation-dependent styles for the content of the menu */
+    /* Vertical menu that slides from the left or right */
+    /* Push classes applied to the body */
+    /* Transitions */ }
+    .component-navigation .wrapper-nav .component-navigation .wrapper-nav ul {
+      flex-direction: column; }
+      .component-navigation .wrapper-nav .component-navigation .wrapper-nav ul li {
+        display: flex;
+        flex-direction: column; }
+      .component-navigation .wrapper-nav .component-navigation .wrapper-nav ul .cbp-spmenu-vertical {
+        top: null !important;
+        transition: top 0s !important; }
+    .component-navigation .wrapper-nav .cbp-spmenu {
+      background-color: rgba(0, 0, 0, 0.82) !important;
+      position: fixed; }
+    .component-navigation .wrapper-nav .cbp-spmenu .nav-label {
+      color: #afdefa;
+      font-size: 1.9em;
+      padding: 20px;
+      margin: 0;
+      font-weight: 300;
+      background: #0d77b6; }
+    .component-navigation .wrapper-nav .cbp-spmenu a {
+      display: block;
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: 300; }
+    .component-navigation .wrapper-nav .cbp-spmenu a:hover {
+      background: #258ecd !important; }
+    .component-navigation .wrapper-nav .cbp-spmenu a:active {
+      background: #afdefa !important;
+      color: #47a3da !important; }
+    .component-navigation .wrapper-nav .cbp-spmenu-vertical {
+      width: 240px;
+      height: 100%; }
+    .component-navigation .wrapper-nav .cbp-spmenu-vertical a {
+      border-bottom: 1px solid #258ecd;
+      border-bottom: 1px solid #333;
+      padding: 1em; }
+    .component-navigation .wrapper-nav .cbp-spmenu-right {
+      right: -240px; }
+    .component-navigation .wrapper-nav .cbp-spmenu-right.cbp-spmenu-open {
+      right: 0px; }
+    .component-navigation .wrapper-nav .cbp-spmenu-push {
+      overflow-x: hidden;
+      position: relative;
+      left: 0; }
+    .component-navigation .wrapper-nav .cbp-spmenu-push-toright {
+      left: 240px; }
+    .component-navigation .wrapper-nav .cbp-spmenu-push-toleft {
+      left: -240px; }
+    .component-navigation .wrapper-nav .cbp-spmenu,
+    .component-navigation .wrapper-nav .cbp-spmenu-push {
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; } }
+.component-navigation .wrapper-nav ul {
+  overflow: auto; }
+
+@media only screen and (max-width: 61.9375em) {
+  .disableScroll {
+    overflow: hidden; }
+
+  .bgOverlayForMenu {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    top: 0;
+    right: 0; }
+
+  .bgColor {
+    background-color: rgba(0, 0, 0, 0.6); }
+
+  .wrapper-nav {
+    transition: background-color 500ms !important; } }
+.component-navigation .wrapperAtomAnimation {
+  /* 129 = ellipse.getTotalLength() */
+  /* 129 = ellipse.getTotalLength() */ }
+  .component-navigation .wrapperAtomAnimation .container-atom {
+    width: 100%;
+    height: 100%; }
+  .component-navigation .wrapperAtomAnimation svg.atom {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: visible; }
+  .component-navigation .wrapperAtomAnimation svg circle.kern {
+    fill: #FFEA00;
+    stroke: none;
+    filter: drop-shadow(0px 0px 4px #aeea00); }
+  .component-navigation .wrapperAtomAnimation .atom path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: .06;
+    stroke-width: .12; }
+  .component-navigation .wrapperAtomAnimation path.tail {
+    stroke: #bda800;
+    fill: none;
+    animation: atom 1.5s infinite linear;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 20,44.5;
+    stroke-width: .6; }
+  .component-navigation .wrapperAtomAnimation path.electron {
+    stroke: #FFEA00;
+    fill: none;
+    animation: atom 1.5s infinite linear;
+    stroke-dashoffset: 0;
+    stroke-dasharray: .1,64.4;
+    stroke-width: 2;
+    stroke-linecap: round; }
+  .component-navigation .wrapperAtomAnimation path.tail1,
+  .component-navigation .wrapperAtomAnimation path.electron1 {
+    animation-delay: -1s; }
+  .component-navigation .wrapperAtomAnimation path.tail2,
+  .component-navigation .wrapperAtomAnimation path.electron2 {
+    animation-delay: -1.4s; }
+@keyframes atom {
+  to {
+    stroke-dashoffset: 129; } }
+.component-navigation .wrapperHamburger {
+  /*###############################################
+  ##########      self edit     ###################
+  ################################################*/
+  /* //phase 1 of edit 
+  .hamburger {
+    margin: 0 !important;
+    height: 0 !important;
+    width: 63px;
+    height: 63px;
+  }
+  .burger-main {
+    width: 54px !important;
+    height: 60px !important;
+  }
+  .burger-main span {
+    width: 21px !important;
+  }
+  svg.svg-circle {
+    padding-left: 2px;
+    padding-top: 7px;
+  }
+  .top {
+    transform-origin: 21px 2px !important ;
+  }
+  .bot {
+    transform-origin: 22px 2px !important ;
+  }
+  .mid {
+    top: 8px !important;
+  }
+  .burger-inner {
+    height: 20px !important;
+  }
+  */
+  /*###############################################
+  ##########      End of self edit     ###################
+  ################################################*/ }
+  .component-navigation .wrapperHamburger .hamburger {
+    width: 58px !important;
+    height: 59px !important;
+    background: none !important;
+    margin: 0 !important; }
+  .component-navigation .wrapperHamburger .burger-main {
+    margin-top: 2px !important;
+    padding: 15px 11px !important;
+    width: 56px !important;
+    height: 54px !important; }
+  .component-navigation .wrapperHamburger .hamburger.open .burger-main {
+    margin-top: 0 !important; }
+  .component-navigation .wrapperHamburger .burger-main span {
+    width: 32px !important; }
+  .component-navigation .wrapperHamburger .burger-inner {
+    width: 32px !important;
+    height: 24px !important; }
+  .component-navigation .wrapperHamburger .svg-main {
+    width: 58px !important;
+    height: 0 !important; }
+  .component-navigation .wrapperHamburger .top {
+    transform-origin: 34px -1px !important; }
+  .component-navigation .wrapperHamburger .mid {
+    top: 10px !important; }
+  .component-navigation .wrapperHamburger .bot {
+    transform-origin: 29px 7px !important; }
+  .component-navigation .wrapperHamburger *,
+  .component-navigation .wrapperHamburger *:before,
+  .component-navigation .wrapperHamburger *:after {
+    box-sizing: border-box; }
+  .component-navigation .wrapperHamburger .hamburger {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    margin: 40px auto;
+    position: relative;
+    display: block;
+    width: 68px;
+    height: 68px;
+    background: #973BE8;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .component-navigation .wrapperHamburger .burger-main {
+    position: absolute;
+    padding: 20px 16px;
+    height: 68px;
+    width: 68px; }
+  .component-navigation .wrapperHamburger .burger-inner {
+    position: relative;
+    height: 28px;
+    width: 36px; }
+  .component-navigation .wrapperHamburger .burger-main span {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 36px;
+    border-radius: 2px;
+    background: #fff; }
+  .component-navigation .wrapperHamburger .top {
+    top: 0;
+    transform-origin: 34px 2px; }
+  .component-navigation .wrapperHamburger .bot {
+    bottom: 0;
+    transform-origin: 34px 2px; }
+  .component-navigation .wrapperHamburger .mid {
+    top: 12px; }
+  .component-navigation .wrapperHamburger .svg-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 68px; }
+  .component-navigation .wrapperHamburger .circle {
+    width: 68px;
+    height: 68px;
+    width: 20px;
+    height: 20px; }
+  .component-navigation .wrapperHamburger .path {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    stroke-linejoin: round; }
+  .component-navigation .wrapperHamburger .hamburger.open .path {
+    animation: dash-in 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.closed .path {
+    animation: dash-out 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.open .top {
+    animation: close-top-out 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.open .bot {
+    animation: close-bot-out 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.closed .top {
+    animation: close-top-in 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.closed .bot {
+    animation: close-bot-in 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.open .mid {
+    animation: burger-fill-out 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.closed .mid {
+    animation: burger-fill-in 0.6s linear normal; }
+  .component-navigation .wrapperHamburger .path-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 68px;
+    width: 68px;
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+    -webkit-mask-box-image: url(http://dev.awsm.in/codepen/mask.svg); }
+  .component-navigation .wrapperHamburger .animate-path {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 68px; }
+  .component-navigation .wrapperHamburger .path-rotation {
+    height: 34px;
+    width: 34px;
+    margin: 34px 34px 0 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; }
+  .component-navigation .wrapperHamburger .path-rotation:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 34px;
+    margin: 0 4px 0 0;
+    background: #fff; }
+  .component-navigation .wrapperHamburger .hamburger.open .animate-path {
+    animation: circle-in 0.6s linear normal;
+    animation-fill-mode: forwards; }
+  .component-navigation .wrapperHamburger .hamburger.closed .animate-path {
+    animation: circle-out 0.6s linear normal;
+    animation-fill-mode: forwards; }
+@-webkit-keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 0; } }
+@keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 240; } }
+@keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 240; } }
+@keyframes close-top-out {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg); }
+  20% {
+    left: 0;
+    top: 0;
+    transform: rotate(15deg); }
+  80% {
+    left: -5px;
+    top: 0;
+    transform: rotate(-60deg); }
+  100% {
+    left: -5px;
+    top: 1px;
+    transform: rotate(-45deg); } }
+@keyframes close-bot-out {
+  0% {
+    left: 0;
+    transform: rotate(0deg); }
+  20% {
+    left: 0;
+    transform: rotate(-15deg); }
+  80% {
+    left: -5px;
+    transform: rotate(60deg); }
+  100% {
+    left: -5px;
+    transform: rotate(45deg); } }
+@keyframes close-top-in {
+  0% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-45deg); }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-60deg); }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(15deg); }
+  100% {
+    left: 0;
+    bot: 1px;
+    transform: rotate(0deg); } }
+@keyframes close-bot-in {
+  0% {
+    left: -5px;
+    transform: rotate(45deg); }
+  20% {
+    left: -5px;
+    transform: rotate(60deg); }
+  80% {
+    left: 0;
+    transform: rotate(-15deg); }
+  100% {
+    left: 0;
+    transform: rotate(0deg); } }
+@keyframes burger-fill-in {
+  0% {
+    width: 0;
+    left: 36px; }
+  40% {
+    width: 0;
+    left: 40px; }
+  80% {
+    width: 36px;
+    left: -6px; }
+  100% {
+    width: 36px;
+    left: 0px; } }
+@keyframes burger-fill-out {
+  0% {
+    width: 36px;
+    left: 0px; }
+  20% {
+    width: 42px;
+    left: -6px; }
+  40% {
+    width: 0;
+    left: 40px; }
+  100% {
+    width: 0;
+    left: 36px; } }
+@keyframes circle-out {
+  0% {
+    transform: rotate(0deg); }
+  40% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes circle-in {
+  0% {
+    transform: rotate(360deg); }
+  40% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+.container-header .row-navigation {
+  background-color: #222; }
+
+.container-header .row-navigation.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.component-navigation {
+  font-size: 1.6rem;
+  height: 4.125em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .component-navigation .wrapperAtomAnimation {
+    width: 4.125em;
+    height: 4.125em;
+    overflow: visible;
+    position: relative;
+    left: -0.9375em; }
+  .component-navigation .wrapperLogo {
+    display: flex;
+    align-items: center; }
+  .component-navigation .wrapperHamburger {
+    position: relative;
+    z-index: 98;
+    margin-right: -0.75em;
+    display: flex;
+    align-items: center; }
+  .component-navigation .wrapperNavigation {
+    position: relative;
+    z-index: 99; }
+  .component-navigation .wrapper-nav {
+    position: fixed;
+    right: 0; }
+    .component-navigation .wrapper-nav li a {
+      text-transform: uppercase;
+      color: #f3f3f3; }
+
+/*##################################################
+##############   01.01 mainBanner    ###############
+###################################################*/
+.row-mainBanner {
+  background-size: cover;
+  background-image: url("../images/banner/mobile/heroImage-1x.jpg");
+  background-image: -webkit-image-set(url("../images/banner/mobile/heroImage-1x.jpg") 1x, url("../images/banner/mobile/heroImage-2x.jpg") 2x);
+  background-image: image-set(url("../images/banner/mobile/heroImage-1x.jpg") 1x, url("../images/banner/mobile/heroImage-2x.jpg") 2x); }
+  @media only screen and (min-width: 48em) {
+    .row-mainBanner {
+      background-image: url("../images/banner/tablet/heroImage-1x.jpg");
+      background-image: -webkit-image-set(url("../images/banner/tablet/heroImage-1x.jpg") 1x, url("../images/banner/tablet/heroImage-2x.jpg") 2x); } }
+  @media only screen and (min-width: 62em) {
+    .row-mainBanner {
+      background-image: url("../images/banner/desktop/123.jpg"); } }
+
+.container-mainBanner {
+  flex: 1; }
+  .container-mainBanner .row-mainBanner, .container-mainBanner .col-mainBanner {
+    height: 100%; }
+
+/*##################################################
+#################   01.01 info    ###################
+###################################################*/
+.component-mainInfo .glide__slide {
+  background-color: #fff; }
+
+.container-info {
+  background-image: url("../images/info/info_bg.png");
+  background-size: auto; }
+
+/*##########################
+		  row-mainInfo
+############################*/
+.row-mainInfo {
+  padding-left: 0;
+  padding-right: 0; }
+
+.component-mainInfo {
+  padding-top: 1.875em;
+  padding-bottom: 1.125em; }
+  .component-mainInfo .glide__slide {
+    padding: 1.1875em 1em;
+    background-color: #654928;
+    border: 2px solid #8A5E29; }
+    .component-mainInfo .glide__slide .text {
+      font-size: 0.875em;
+      color: #ffffff;
+      font-family: "Raleway", sans-serif;
+      font-weight: 200;
+      text-align: center; }
+  .component-mainInfo .glide__bullets {
+    position: static;
+    transform: none; }
+  .component-mainInfo .pBullets {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.3125em; }
+  .component-mainInfo .pBullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 10px; }
+    .component-mainInfo .pBullet:last-child {
+      margin-right: 0; }
+
+/*##########################
+		row-appendixInfo
+############################*/
+.row-appendixInfo {
+  background-color: rgba(17, 17, 17, 0.48); }
+
+.component-appendixInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375em 0; }
+  .component-appendixInfo .text {
+    color: #959595;
+    font-size: 0.8125em; }
+  .component-appendixInfo a {
+    color: #ffffff;
+    font-size: 0.75em;
+    padding: 4px 24px;
+    border: 1px solid #F7931D;
+    border-radius: 4px; }
+
+/*Medium devices (tablets, 768px and up)
+ min width 48em = 768px */
+/*
+	Content 
+	00. General for small device
+	01. Header
+		01.00 First row
+		01.01 Banner
+	02. BannerAppendix
+	xx. Miscellaneous
+*/
+@media only screen and (min-width: 48em) {
+  /*###############################################
+  ##############     01.00 First row    ##############
+  ################################################*/
+  .component-welcome .rightSection .wrapperContactNumber {
+    display: none; } }
+/* Large devices (desktops, 992px and up)
+   min-width 992px = 62em 
+   max-width 1199px =74.9375em */
+ /*
+	Content 
+	00. General for small device
+	01. Header
+		01.00 First row
+		01.01 2nd row
+	02. BannerAppendix
+	xx. Miscellaneous
+    
+*/
+@media only screen and (min-width: 62em) {
+  	/*###############################################
+  	##############     01.01 2nd row    ##############
+      ################################################*/
+  .component-navigation .wrapperAtomAnimation, .component-navigation .wrapperHamburger {
+    display: none; }
+  .component-navigation .wrapper-nav {
+    position: relative; }
+    .component-navigation .wrapper-nav .nav-label {
+      display: none; }
+    .component-navigation .wrapper-nav ul {
+      display: flex; }
+    .component-navigation .wrapper-nav li a {
+      font-size: 0.875em;
+      padding-left: 1.25em;
+      padding-right: 1.25em; }
+    .component-navigation .wrapper-nav li:last-child a {
+      padding-right: 0; } }
+/* Extra large devices (large desktops, 1200px and up) 
+   min-width 1200px = 75em*/
+@media only screen and (min-width: 75em) {
+  .col {
+    max-width: 120rem; } }
