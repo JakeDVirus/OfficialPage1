@@ -37,12 +37,12 @@ $('document').ready(function () {
     type: 'carousel',
     startAt: 0,
     perView: 1,
-    focusAt: 'center',
-    peek: 55,
+    //focusAt: 'center',
+    peek: 65,
     autoplay: 2000,
-    slideWidth : 50,
     breakpoints: {
-      768: {perView: 2},
+      768: {perView: 3, peek: 10},
+      680: {perView: 2, peek: 65},
       576: {perView: 1}
     }
   })
