@@ -124,6 +124,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 }
 .container-header .row-navigation.sticky {
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	width: 100%;
 }
@@ -154,6 +155,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	}
 	.wrapper-nav {
 		position: fixed;
+		z-index: 1;
 		right: 0;
 		li a {
 			text-transform: uppercase;
@@ -209,10 +211,26 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	padding-bottom: (18em/16);
 	//overflow: hidden;
 
+	.glide__slides {
+		align-items: stretch;
+		padding-bottom: (19em/16);
+	}
 	.glide__slide {
+		position: relative;
 		padding: (19em/16) 1em;
 		background-color: #654928;
 		border: 2px solid #8A5E29;
+		display: flex;
+		align-items: center;
+		padding: (19em/16);
+		height: (111em/16);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0; left: 20px; bottom: 0; right: 20px;
+			box-shadow: 0 8px 20px rgba(0,0,0,0.74);
+			z-index: -1;
+		}
 
 		.text {
 			font-size: (14em/16);
@@ -220,8 +238,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 			font-family: $raleway;
 			font-weight: $thin-raleway;
 			text-align: center;
-			height: (72em/16);
 			transition: height 300ms ease;
+			line-height: 23px;
 		}
 	}
 	.glide__bullets {
@@ -229,7 +247,13 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		transform: none;
 		display: flex;
 		justify-content: center;
-		padding-top: (10em/16);
+	}
+	.glide__bullet {
+		height: 11px;
+		width: 11px;
+	}
+	.glide__bullet--active {
+		background-color: #F7931D;
 	}
 
 }
@@ -245,7 +269,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: (15em/16) 0;
+	padding: (8em/16) 0;
 
 	.text {
 		color: #959595;

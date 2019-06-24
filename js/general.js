@@ -38,7 +38,7 @@ $('document').ready(function () {
     startAt: 0,
     perView: 1,
     focusAt: 'center',
-    peek: 60,
+    peek: 55,
     autoplay: 2000,
     slideWidth : 50,
     breakpoints: {
