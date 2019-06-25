@@ -43,7 +43,7 @@ $('document').ready(function () {
     breakpoints: {
       768: {perView: 3, peek: 10},
       680: {perView: 2, peek: 65},
-      576: {perView: 1}
+      576: {perView: 1, peek: 65}
     }
   })
   glide1.mount();
