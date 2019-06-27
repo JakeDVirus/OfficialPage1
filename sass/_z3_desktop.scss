@@ -63,6 +63,11 @@
 	################################################*/
 
 	.component-mainInfo {
+		.glide__slides {justify-content: space-between;}
+		.glide__slide {
+			width: 23%;
+			flex-shrink: 0;
+		}
 		.glide__bullets {display: none;}
 	}
 

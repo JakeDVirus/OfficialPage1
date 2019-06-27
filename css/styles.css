@@ -1012,6 +1012,11 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   /*###############################################
   ############     03 info    #####################
   ################################################*/
+  .component-mainInfo .glide__slides {
+    justify-content: space-between; }
+  .component-mainInfo .glide__slide {
+    width: 23%;
+    flex-shrink: 0; }
   .component-mainInfo .glide__bullets {
     display: none; } }
 /* Extra large devices (large desktops, 1200px and up) 
