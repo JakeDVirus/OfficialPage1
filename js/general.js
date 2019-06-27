@@ -24,29 +24,7 @@ $('document').ready(function () {
   }
 
 
-    
-
-  /*######################################################
-	###                 info                           #####
-  #######################################################*/
-
-  /*===(1)=======================================================
-    Applying glide.js on component-info carousel
-  ===============================================================*/
-  var glide1 = new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 1,
-    //focusAt: 'center',
-    peek: 65,
-    autoplay: 2000,
-    breakpoints: {
-      768: {perView: 3, peek: 10},
-      680: {perView: 2, peek: 65},
-      576: {perView: 1, peek: 65}
-    }
-  })
-  glide1.mount();
+   
 
 
 
@@ -131,6 +109,33 @@ $('document').ready(function () {
         }; //end of onclick event listener
 
       } //end of mobileMenuAnimation
+
+
+
+
+
+
+      /*=============================================================================
+			===================     Banner     ============================================
+      ==============================================================================*/
+
+      /*===(1)=======================================================
+        Applying glide.js on component-info carousel
+      ===============================================================*/
+      var glide1 = new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        //focusAt: 'center',
+        peek: 65,
+        autoplay: 2000,
+        breakpoints: {
+          768: {perView: 3, peek: 10},
+          680: {perView: 2, peek: 65},
+          576: {perView: 1, peek: 65}
+        }
+      })
+      glide1.mount();
 
 
 

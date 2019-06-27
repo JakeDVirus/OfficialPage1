@@ -6,7 +6,7 @@
 	00. General for small device
 	01. Header
 		01.00 First row
-		01.01 Banner
+		01.01 mainBanner
 	02. BannerAppendix
 	xx. Miscellaneous
 */
@@ -15,13 +15,43 @@
 
 @media only screen and (min-width: 48em) {
 
-
 	/*###############################################
 	##############     01.00 First row    ##############
 	################################################*/	
 	.component-welcome .rightSection .wrapperContactNumber {display: none;}
 
 
+
+	/*###############################################
+	############     01.00 mainBanner    ############
+	################################################*/
+
+	.component-mainBanner {
+		.heading p {
+			font-size: (33em/16);
+		}
+		.subHeading p {
+			font-weight: $regular-openSans;
+			font-size: (18em/16);
+			text-transform: uppercase;
+			padding-top: (15em/16);
+		}
+		.buttons {
+			display: flex;
+			padding-top: (19em/16);
+			.button a {
+				background-color: rgba(247, 147, 29, 1);
+			}
+			.button1 {
+				display: block;
+				a {background-color: rgb(41, 41, 41);}
+			}
+			.button2 {
+				padding-left: (35em/16);
+			}
+
+		}
+	}
  	
 
 	
@@ -29,4 +59,19 @@
 
 
  	
- } 
+} 
+
+@media only screen and (min-width: 48em) and (orientation: portrait) {
+
+	/*###############################################
+	############     01.00 mainBanner    ############
+	################################################*/
+	.container-mainBanner {
+		flex: 0;
+		.row-mainBanner {
+			height: (360em/16);
+		}
+	}
+
+
+}

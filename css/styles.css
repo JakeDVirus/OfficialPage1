@@ -814,15 +814,34 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       color: #ffffff; }
   .component-mainBanner .buttons {
     padding-top: 0.75em; }
-    .component-mainBanner .buttons .button2 {
-      display: none; }
-    .component-mainBanner .buttons .button1 a {
+    .component-mainBanner .buttons .button a {
       font-size: 0.875em;
       font-weight: 400;
+      display: flex;
+      align-items: stretch;
       color: #fff;
-      padding: 4px 25px;
+      height: 2.5em;
       background-color: rgba(247, 147, 29, 0.81);
       border-radius: 4px; }
+      .component-mainBanner .buttons .button a .lft, .component-mainBanner .buttons .button a .rft {
+        display: flex;
+        align-items: center; }
+      .component-mainBanner .buttons .button a .lft {
+        padding: 0 15px 0 25px; }
+      .component-mainBanner .buttons .button a .rft {
+        display: inline-block;
+        width: 2.5em;
+        text-align: center;
+        background-color: rgba(36, 36, 36, 0.12); }
+        .component-mainBanner .buttons .button a .rft .iconWrapper {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .component-mainBanner .buttons .button a .rft i {
+          font-size: 11px; }
+    .component-mainBanner .buttons .button1 {
+      display: none; }
 
 /*##################################################
 #################   01.01 info    ###################
@@ -845,7 +864,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   padding-top: 1.875em;
   padding-bottom: 1.125em; }
   .component-mainInfo .glide__slides {
-    align-items: stretch;
     padding-bottom: 1.1875em; }
   .component-mainInfo .glide__slide {
     position: relative;
@@ -911,7 +929,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	00. General for small device
 	01. Header
 		01.00 First row
-		01.01 Banner
+		01.01 mainBanner
 	02. BannerAppendix
 	xx. Miscellaneous
 */
@@ -920,7 +938,37 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   ##############     01.00 First row    ##############
   ################################################*/
   .component-welcome .rightSection .wrapperContactNumber {
-    display: none; } }
+    display: none; }
+
+  /*###############################################
+  ############     01.00 mainBanner    ############
+  ################################################*/
+  .component-mainBanner .heading p {
+    font-size: 2.0625em; }
+  .component-mainBanner .subHeading p {
+    font-weight: 400;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    padding-top: 0.9375em; }
+  .component-mainBanner .buttons {
+    display: flex;
+    padding-top: 1.1875em; }
+    .component-mainBanner .buttons .button a {
+      background-color: #f7931d; }
+    .component-mainBanner .buttons .button1 {
+      display: block; }
+      .component-mainBanner .buttons .button1 a {
+        background-color: #292929; }
+    .component-mainBanner .buttons .button2 {
+      padding-left: 2.1875em; } }
+@media only screen and (min-width: 48em) and (orientation: portrait) {
+  /*###############################################
+  ############     01.00 mainBanner    ############
+  ################################################*/
+  .container-mainBanner {
+    flex: 0; }
+    .container-mainBanner .row-mainBanner {
+      height: 22.5em; } }
 /* Large devices (desktops, 992px and up)
    min-width 992px = 62em 
    max-width 1199px =74.9375em */
@@ -951,7 +999,21 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       padding-left: 1.25em;
       padding-right: 1.25em; }
     .component-navigation .wrapper-nav li:last-child a {
-      padding-right: 0; } }
+      padding-right: 0; }
+
+  /*###############################################
+  ############     02 mainBanner    ############
+  ################################################*/
+  .component-mainBanner .heading p {
+    font-size: 3.0625em; }
+  .component-mainBanner .subHeading p {
+    font-size: 1.5em; }
+
+  /*###############################################
+  ############     03 info    #####################
+  ################################################*/
+  .component-mainInfo .glide__bullets {
+    display: none; } }
 /* Extra large devices (large desktops, 1200px and up) 
    min-width 1200px = 75em*/
 @media only screen and (min-width: 75em) {
