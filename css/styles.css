@@ -827,7 +827,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
         display: flex;
         align-items: center; }
       .component-mainBanner .buttons .button a .lft {
-        padding: 0 15px 0 25px; }
+        padding: 0 15px 0 25px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center; }
       .component-mainBanner .buttons .button a .rft {
         display: inline-block;
         width: 2.5em;
@@ -932,7 +935,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 */
 @media only screen and (min-width: 48em) {
   /*###############################################
-  ##############     01.01 Header    ##############
+  ##############     01.00 Header    ##############
   ################################################*/
   	/******************************************
   	***             First row               ***
@@ -946,10 +949,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   .component-mainBanner .heading p {
     font-size: 2.0625em; }
   .component-mainBanner .subHeading p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.125em;
     text-transform: uppercase;
-    padding-top: 0.9375em; }
+    padding-top: 0.5625em; }
   .component-mainBanner .buttons {
     display: flex;
     padding-top: 1.1875em; }
@@ -960,7 +963,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       .component-mainBanner .buttons .button1 a {
         background-color: #292929; }
     .component-mainBanner .buttons .button2 {
-      padding-left: 2.1875em; } }
+      margin-left: 2.1875em; } }
 @media only screen and (min-width: 48em) and (orientation: portrait) {
   /*###############################################
   ############     01.01 mainBanner    ############
@@ -1034,5 +1037,36 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 @media only screen and (min-width: 75em) {
   .col {
     max-width: 120rem; } }
+@media only screen and (min-width: 85.375em) {
+  .component-mainBanner .heading p {
+    font-size: 3.0625em; }
+  .component-mainBanner .subHeading p {
+    font-size: 1.5em;
+    padding-top: 0.875em; }
+  .component-mainBanner .buttons {
+    padding-top: 1.6875em; } }
+/*Double extra large devices 
+  min width 100em = 1600px */
+/*
+	Content
+	00. General for small device
+	01. Landing Page
+		01.00 Header
+		01.01 mainBanner
+		01.02 info
+			01.02.00 appendixAd
+	xx. Miscellaneous
+*/
+@media only screen and (min-width: 106.25em) {
+    /*###############################################
+	############    01.01 mainBanner   ##############
+	################################################*/
+  .component-mainBanner .heading p {
+    font-size: 4.0625em; }
+  .component-mainBanner .subHeading p {
+    font-size: 2.125em;
+    padding-top: 1.0625em; }
+  .component-mainBanner .buttons {
+    padding-top: 1.875em; } }
 
 /*# sourceMappingURL=styles.css.map */

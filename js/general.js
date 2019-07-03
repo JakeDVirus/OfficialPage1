@@ -24,7 +24,28 @@ $('document').ready(function () {
   }
 
 
-   
+  /*######################################################
+	###               mainBanner                       #####
+  #######################################################*/
+  
+  /*===(2)=======================================================
+    Making the buttons same size
+  ===============================================================*/
+  
+  buttonEqualizerOne();
+
+  function buttonEqualizerOne() {
+    let buttonOne = document.querySelector('.component-mainBanner .button1');
+    let buttonTwo = document.querySelector('.component-mainBanner .button2');
+    buttonOneWidth = buttonOne.offsetWidth;
+    buttonTwoWidth = buttonTwo.offsetWidth;
+    if(buttonOneWidth > buttonTwoWidth) {
+      buttonTwo.style.width = buttonOneWidth + "px";
+    } else {
+      buttonOne.style.width = buttonTwoWidth + "px";
+    }    
+
+  }
 
 
 

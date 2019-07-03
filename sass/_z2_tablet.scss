@@ -17,7 +17,7 @@
 @media only screen and (min-width: 48em) {
 
 	/*###############################################
-	##############     01.01 Header    ##############
+	##############     01.00 Header    ##############
 	################################################*/	
 
 	/******************************************
@@ -36,10 +36,10 @@
 			font-size: (33em/16);
 		}
 		.subHeading p {
-			font-weight: $regular-openSans;
+			font-weight: $light-openSans;
 			font-size: (18em/16);
 			text-transform: uppercase;
-			padding-top: (15em/16);
+			padding-top: (9em/16);
 		}
 		.buttons {
 			display: flex;
@@ -52,7 +52,7 @@
 				a {background-color: rgb(41, 41, 41);}
 			}
 			.button2 {
-				padding-left: (35em/16);
+				margin-left: (35em/16);
 			}
 
 		}

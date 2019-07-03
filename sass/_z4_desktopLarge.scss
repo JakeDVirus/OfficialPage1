@@ -13,3 +13,21 @@
 
 
 }
+
+
+
+@media only screen and (min-width: 85.375em) {
+	.component-mainBanner {
+		.heading p {
+			font-size: (49em/16);
+		}
+		.subHeading p {
+			font-size: (24em/16);
+			padding-top: (21em/16) * (16/24);
+
+		}
+		.buttons {
+			padding-top: (27em/16);
+		}
+	}
+}
