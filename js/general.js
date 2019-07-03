@@ -130,7 +130,7 @@ $('document').ready(function () {
         peek: 65,
         autoplay: 2000,
         breakpoints: {
-          768: {perView: 3, peek: 10},
+          992: {perView: 3, peek: 10},
           680: {perView: 2, peek: 65},
           576: {perView: 1, peek: 65}
         }

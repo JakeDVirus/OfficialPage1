@@ -2,12 +2,13 @@
   min width 48em = 768px */
   
 /*
-	Content 
+	Content
 	00. General for small device
-	01. Header
-		01.00 First row
+	01. Landing Page
+		01.00 Header
 		01.01 mainBanner
-	02. BannerAppendix
+		01.02 info
+			01.02.00 appendixAd
 	xx. Miscellaneous
 */
 
@@ -16,14 +17,18 @@
 @media only screen and (min-width: 48em) {
 
 	/*###############################################
-	##############     01.00 First row    ##############
+	##############     01.01 Header    ##############
 	################################################*/	
+
+	/******************************************
+	***             First row               ***
+ 	*******************************************/
 	.component-welcome .rightSection .wrapperContactNumber {display: none;}
 
 
 
 	/*###############################################
-	############     01.00 mainBanner    ############
+	############     01.01 mainBanner    ############
 	################################################*/
 
 	.component-mainBanner {
@@ -64,7 +69,7 @@
 @media only screen and (min-width: 48em) and (orientation: portrait) {
 
 	/*###############################################
-	############     01.00 mainBanner    ############
+	############     01.01 mainBanner    ############
 	################################################*/
 	.container-mainBanner {
 		flex: 0;
@@ -73,5 +78,24 @@
 		}
 	}
 
+
+}
+
+
+
+
+@media only screen and (max-width: 61.9375em) {
+
+	/*###############################################
+	############       01.02 info        ############
+	################################################*/
+
+	/*##########################
+		  row-mainInfo
+	############################*/
+	.row-mainInfo {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 }
