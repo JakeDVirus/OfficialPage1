@@ -11,12 +11,27 @@
 		max-width: 120rem; //1200px
 	}
 
+	/*#######################################################
+	#######          02. Online Presense          ###########
+	#########################################################*/
+	.component-onlinePresence {
+		.cards {
+			display: flex;
+			justify-content: space-evenly;			
+		}
+		.card {
+			flex-basis: 350px;
+			margin: 0 15px;
+
+		}
+	}
 
 }
 
 
 
 @media only screen and (min-width: 85.375em) {
+	// 85.375em =1366
 	.component-mainBanner {
 		.heading p {
 			font-size: (49em/16);
