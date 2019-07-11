@@ -1056,7 +1056,9 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   .component-mainInfo {
     padding-bottom: 0; }
     .component-mainInfo .glide__slides {
-      padding: 1.1875em 1em 2.3125em 1em; }
+      padding: 1.1875em 1em 1.1875em 1em; }
+    .component-mainInfo .glide__bullets {
+      padding-bottom: 1.1875em; }
 
   /*##########################
   		row-appendixInfo
@@ -1084,7 +1086,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     margin-bottom: 20px; }
     .component-onlinePresence .content p {
       padding-top: 0; }
-  .component-onlinePresence .heading p, .component-onlinePresence .content p {
+  .component-onlinePresence .content p {
     display: flex;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
@@ -1118,9 +1120,21 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-size: 12px;
       line-height: 25px;
       text-align: center; }
-  .component-onlinePresence .cards .cardContent {
-    font-size: 1em; } }
+  .component-onlinePresence .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .component-onlinePresence .cards .card {
+      width: 80%; }
+    .component-onlinePresence .cards .cardContent {
+      font-size: 1em; } }
 @media only screen and (min-width: 48em) and (orientation: portrait) {
+  /*###############################################
+  ##############     01 Landing page    ###########
+  ################################################*/
+  .landingPage {
+    height: auto; }
+
   /*###############################################
   ############     01.01 mainBanner    ############
   ################################################*/
@@ -1181,13 +1195,16 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   /*###############################################
   ############     03 info    #####################
   ################################################*/
-  .component-mainInfo .glide__slides {
-    justify-content: space-between; }
-  .component-mainInfo .glide__slide {
-    width: 23%;
-    flex-shrink: 0; }
-  .component-mainInfo .glide__bullets {
-    display: none; } }
+  .component-mainInfo {
+    padding-top: 1.125em; }
+    .component-mainInfo .glide__slides {
+      justify-content: space-between;
+      padding: 1.1875em 1em 2em 1em; }
+    .component-mainInfo .glide__slide {
+      width: 23%;
+      flex-shrink: 0; }
+    .component-mainInfo .glide__bullets {
+      display: none; } }
 /* Extra large devices (large desktops, 1200px and up) 
    min-width 1200px = 75em*/
 @media only screen and (min-width: 75em) {
@@ -1198,7 +1215,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   #######          02. Online Presense          ###########
   #########################################################*/
   .component-onlinePresence .cards {
-    display: flex;
+    flex-direction: row;
     justify-content: space-evenly; }
   .component-onlinePresence .card {
     flex-basis: 350px;

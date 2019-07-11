@@ -63,7 +63,12 @@
 	################################################*/
 
 	.component-mainInfo {
-		.glide__slides {justify-content: space-between;}
+		padding-top: (18em/16);
+		.glide__slides {
+			justify-content: space-between;
+			padding: (19em/16) 1em (32em/16) 1em;
+
+		}
 		.glide__slide {
 			width: 23%;
 			flex-shrink: 0;
