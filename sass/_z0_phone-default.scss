@@ -351,6 +351,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*#######################################################
 #######          02. Online Presense          ###########
 #########################################################*/
+.row-onlinePresence {background-color: #f7f7f7;}
 .component-onlinePresence {
 	padding: (80em/16) 0;
 
@@ -381,6 +382,9 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 			align-items: center;
 			margin-bottom: 20px;
 		}
+		.secoundRow {
+			margin-top: 32px;
+		}
 		.headingIcon {
 			font-size: 22px;
 			width: 50px;
@@ -393,29 +397,24 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 			color: #f1f1f1;
 		}
 		.cardHeading {
-			font-size: (20em/16);
+			font-size: 20px;
 			margin-left: (15em/16);
 			color: #636363;
 		}
 		.cardContent {
-			font-size: 15px;
-			font-weight: $regular-openSans;
-			line-height: 24px;
-			color: #636363;
+			font-size: 14px;
+			font-weight: $light-openSans;
+			line-height: 1.8;
+			color: #808080;
 			letter-spacing: 0px;
 		}
 		.thirdRow {
-			text-align: right;
-			margin-top: -5px;
+			padding-top: 32px;
 		}
 		.button {
-			padding: 8px 15px;
-			border: 1px solid #F7931D;
 			color: #F7931D;
-			font-size: 13px;
-			font-size: 11px;
-			font-weight: $bold-openSans;
-			border-radius: 2px;
+			font-size: 14px;
+			font-weight: $regular-openSans;
 			line-height: 11px;
 			letter-spacing: 1px;
 			&:hover {
@@ -427,11 +426,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		}
 	}
 	.card {
+		background-color: #fff;
 		margin-top: (65em/16);
-		padding: (30em/16);
-		padding: 30px 30px 20px 30px;
-		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-		border-radius: 4px;
+		padding: 42px 37px;
+		box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
 		transition: all 0.4s ease;
 		&:first-child {
 			margin-top: 0;

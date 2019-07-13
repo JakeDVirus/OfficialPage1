@@ -927,6 +927,9 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*#######################################################
 #######          02. Online Presense          ###########
 #########################################################*/
+.row-onlinePresence {
+  background-color: #f7f7f7; }
+
 .component-onlinePresence {
   padding: 5em 0; }
   .component-onlinePresence .heading p {
@@ -952,6 +955,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       display: flex;
       align-items: center;
       margin-bottom: 20px; }
+    .component-onlinePresence .cards .secoundRow {
+      margin-top: 32px; }
     .component-onlinePresence .cards .headingIcon {
       font-size: 22px;
       width: 50px;
@@ -963,26 +968,21 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       box-shadow: 0 10px 20px 0 rgba(247, 147, 29, 0.25);
       color: #f1f1f1; }
     .component-onlinePresence .cards .cardHeading {
-      font-size: 1.25em;
+      font-size: 20px;
       margin-left: 0.9375em;
       color: #636363; }
     .component-onlinePresence .cards .cardContent {
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 24px;
-      color: #636363;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #808080;
       letter-spacing: 0px; }
     .component-onlinePresence .cards .thirdRow {
-      text-align: right;
-      margin-top: -5px; }
+      padding-top: 32px; }
     .component-onlinePresence .cards .button {
-      padding: 8px 15px;
-      border: 1px solid #F7931D;
       color: #F7931D;
-      font-size: 13px;
-      font-size: 11px;
-      font-weight: 600;
-      border-radius: 2px;
+      font-size: 14px;
+      font-weight: 400;
       line-height: 11px;
       letter-spacing: 1px; }
       .component-onlinePresence .cards .button:hover {
@@ -991,11 +991,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
         background-color: #dd7a08;
         transition: all 0.3s ease-in-out; }
   .component-onlinePresence .card {
+    background-color: #fff;
     margin-top: 4.0625em;
-    padding: 1.875em;
-    padding: 30px 30px 20px 30px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    padding: 42px 37px;
+    box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
     transition: all 0.4s ease; }
     .component-onlinePresence .card:first-child {
       margin-top: 0; }
@@ -1126,9 +1125,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     flex-direction: column;
     align-items: center; }
     .component-onlinePresence .cards .card {
-      width: 80%; }
-    .component-onlinePresence .cards .cardContent {
-      font-size: 1em; } }
+      width: 80%; } }
 @media only screen and (min-width: 48em) and (orientation: portrait) {
   /*###############################################
   ##############     01 Landing page    ###########
