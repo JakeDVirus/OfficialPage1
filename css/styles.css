@@ -92,8 +92,7 @@ Extra large devices (large desktops, 1200px and up) */
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 1px; }
+  line-height: 1.5em; }
 
 .col {
   margin-right: auto;
@@ -222,6 +221,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		01.02 info
 			01.02.00 appendixAd
 	02. Online Presense
+	03. Why Us?
 	xx. Miscellaneous
 */
 /*###############################################
@@ -803,6 +803,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     text-transform: uppercase; }
     .component-mainBanner .heading p {
       font-size: 1.3125em;
+      font-family: "Montserrat", sans-serif;
       font-weight: 600;
       color: #ffffff; }
     .component-mainBanner .heading span {
@@ -811,6 +812,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     padding-top: 0.25em; }
     .component-mainBanner .subHeading p {
       font-size: 0.875em;
+      font-family: "Montserrat", sans-serif;
       font-weight: 400;
       color: #ffffff; }
   .component-mainBanner .buttons {
@@ -886,8 +888,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     .component-mainInfo .glide__slide .text {
       font-size: 0.875em;
       color: #ffffff;
-      font-family: "Raleway", sans-serif;
-      font-weight: 200;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
       text-align: center;
       transition: height 300ms ease;
       line-height: 23px; }
@@ -968,15 +970,14 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       box-shadow: 0 10px 20px 0 rgba(247, 147, 29, 0.25);
       color: #f1f1f1; }
     .component-onlinePresence .cards .cardHeading {
-      font-size: 20px;
+      font-size: 19px;
       margin-left: 0.9375em;
       color: #636363; }
     .component-onlinePresence .cards .cardContent {
       font-size: 14px;
       font-weight: 300;
       line-height: 1.8;
-      color: #808080;
-      letter-spacing: 0px; }
+      color: #808080; }
     .component-onlinePresence .cards .thirdRow {
       padding-top: 32px; }
     .component-onlinePresence .cards .button {
@@ -1000,7 +1001,48 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       margin-top: 0; }
   .component-onlinePresence .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
+
+/*##################################################
+##############    03. Why Us?    ###################
+###################################################*/
+.component-whyUs {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0 10.625em 0; }
+  .component-whyUs .componentHeading {
+    font-size: 2.0625em;
+    font-weight: 700;
+    color: #636363;
+    text-align: center;
+    padding-bottom: 30px; }
+  .component-whyUs .componentImage img {
+    width: 100%;
+    height: auto; }
+  .component-whyUs .componentContent {
+    padding: 0.625em 0 3.125em 0; }
+    .component-whyUs .componentContent p {
+      font-size: 15px;
+      font-weight: 300;
+      text-align: center; }
+  .component-whyUs .componentAppendix .item {
+    display: flex;
+    height: 68px;
+    background-color: #F4F4F4;
+    padding-left: 34px;
+    align-items: center;
+    margin-bottom: 2px; }
+    .component-whyUs .componentAppendix .item:last-child {
+      margin-bottom: 0; }
+    .component-whyUs .componentAppendix .item .icon i {
+      font-size: 14px;
+      color: #8D8D8D; }
+    .component-whyUs .componentAppendix .item .heading {
+      font-size: 14px;
+      color: #8C8C8C;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      padding-left: 19px; }
 
 /*Medium devices (tablets, 768px and up)
  min width 48em = 768px */
@@ -1080,7 +1122,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     margin-bottom: 15px; }
   .component-onlinePresence .heading p {
     font-size: 1.875em;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 46px; }
   .component-onlinePresence .content {
     margin-bottom: 20px; }
@@ -1124,6 +1166,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .component-onlinePresence .cards .cardHeading {
+      font-size: 20px; }
     .component-onlinePresence .cards .card {
       width: 80%; } }
 @media only screen and (min-width: 48em) and (orientation: portrait) {
