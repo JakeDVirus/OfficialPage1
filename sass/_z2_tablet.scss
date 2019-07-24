@@ -9,6 +9,8 @@
 		01.01 mainBanner
 		01.02 info
 			01.02.00 appendixAd
+	02. Online Presence
+	03. Why us?
 	xx. Miscellaneous
 */
 
@@ -166,8 +168,18 @@
 
 		}
 	}
- 	
+	 
+	
 
+	/*##################################################
+	##############    03. Why Us?    ###################
+	###################################################*/
+	.component-whyUs_medScreen {
+		.componentImage {
+			text-align: center;
+			img {width: 75%;}
+		}
+	}
 	
 
 

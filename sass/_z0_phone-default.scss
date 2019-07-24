@@ -61,6 +61,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
+	letter-spacing: 1px;
 	.leftSection, .rightSection {
 		display: flex;
 		justify-content: space-between;
@@ -448,7 +449,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*##################################################
 ##############    03. Why Us?    ###################
 ###################################################*/
-.component-whyUs {
+.component-whyUs_largeScreen {display: none;}
+.component-whyUs_medScreen {
 	display: flex;
 	flex-direction: column;
 	padding: (80em/16) 0 (170em/16) 0;
@@ -469,7 +471,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		p {
 			font-size: 15px;
 			font-weight: $light-openSans;
-			text-align: center;
+			color: #8C8C8C;
 		}
 	}
 	.componentAppendix {

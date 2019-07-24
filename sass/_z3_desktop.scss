@@ -5,12 +5,15 @@
   
 
  /*
-	Content 
+	Content
 	00. General for small device
-	01. Header
-		01.00 First row
-		01.01 2nd row
-	02. BannerAppendix
+	01. Landing Page
+		01.00 Header
+		01.01 mainBanner
+		01.02 info
+			01.02.00 appendixAd
+	02. Online Presence
+	03. Why us?
 	xx. Miscellaneous
     
 */
@@ -75,5 +78,67 @@
 		}
 		.glide__bullets {display: none;}
 	}
+
+
+
+	/*##################################################
+	##############    03. Why Us?    ###################
+	###################################################*/
+	.component-whyUs_medScreen {display: none;}
+	.component-whyUs_largeScreen {
+		display: flex;
+		justify-content: center;
+		padding: (50em/16) 0 (150em/16) 0;
+		
+		.rightSec {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.componentHeading {
+			font-size: (33em/16);
+			font-weight: $bold-openSans;
+			color: #636363;
+			padding-bottom: 30px;
+		}
+		.componentImage img{
+			width: 100%;
+			height: auto;
+		}
+		.componentContent {
+			padding: (10em/16) 0 (50em/16) 0;
+			p {
+				font-size: 15px;
+				font-weight: $light-openSans;
+				  color: #8C8C8C;
+			}
+		}
+		.componentAppendix {
+			.item {
+				display: flex;
+				height: 68px;
+				background-color: #F4F4F4;
+				padding-left: 34px;
+				align-items: center;
+				margin-bottom: 2px;
+	
+				&:last-child {margin-bottom: 0;}
+				
+				.icon i {
+					font-size: 14px;
+					color: #8D8D8D;
+				}
+				.heading {
+					font-size: 14px;
+					color: #8C8C8C;
+					font-family: $montserrat;
+					font-weight: $regular-montserrat;
+					padding-left: 19px;
+				}
+			}
+		}
+	}
+
+
 
 }
