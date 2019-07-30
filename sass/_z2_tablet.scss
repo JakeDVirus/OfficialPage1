@@ -104,7 +104,7 @@
 		}
 		.heading p {
 			font-size: (30em/16);
-			font-weight: $regular-openSans;
+			font-weight: $semiBold-openSans;
 			line-height: 46px;
 		}
 		.content {
@@ -162,10 +162,22 @@
 			.cardHeading {
 				font-size: 20px;
 			}
-			.card {
-				width: 80%;
+			.cardContent {
+				font-size: 14px;
+				color: #808080;
 			}
-
+			.thirdRow {
+				padding-top: 32px;
+				text-align: left;
+			}
+		}
+		.card {
+			width: 80%;
+			padding: 42px 37px;
+		}
+		.card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);	
 		}
 	}
 	 

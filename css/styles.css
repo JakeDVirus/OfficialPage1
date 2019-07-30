@@ -975,12 +975,15 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       margin-left: 0.9375em;
       color: #636363; }
     .component-onlinePresence .cards .cardContent {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 300;
       line-height: 1.8;
-      color: #808080; }
+      color: #808080;
+      color: #464646; }
     .component-onlinePresence .cards .thirdRow {
-      padding-top: 32px; }
+      padding-top: 32px;
+      padding-top: 10px;
+      text-align: right; }
     .component-onlinePresence .cards .button {
       color: #F7931D;
       font-size: 14px;
@@ -996,13 +999,11 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     background-color: #fff;
     margin-top: 4.0625em;
     padding: 42px 37px;
+    padding: 42px 37px 35px 37px;
     box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
     transition: all 0.4s ease; }
     .component-onlinePresence .card:first-child {
       margin-top: 0; }
-  .component-onlinePresence .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
 
 /*##################################################
 ##############    03. Why Us?    ###################
@@ -1016,7 +1017,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   padding: 5em 0 10.625em 0; }
   .component-whyUs_medScreen .componentHeading {
     font-size: 2.0625em;
-    font-weight: 700;
+    font-weight: 600;
     color: #636363;
     text-align: center;
     padding-bottom: 30px; }
@@ -1030,23 +1031,31 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-weight: 300;
       color: #8C8C8C; }
   .component-whyUs_medScreen .componentAppendix .item {
+    max-height: 68px;
+    overflow: hidden;
+    transition: all .7s ease-in;
+    margin-bottom: 2px; }
+  .component-whyUs_medScreen .componentAppendix .item.expand {
+    max-height: 15.625em; }
+  .component-whyUs_medScreen .componentAppendix .header {
     display: flex;
     height: 68px;
     background-color: #F4F4F4;
     padding-left: 34px;
-    align-items: center;
-    margin-bottom: 2px; }
-    .component-whyUs_medScreen .componentAppendix .item:last-child {
+    align-items: center; }
+    .component-whyUs_medScreen .componentAppendix .header:last-child {
       margin-bottom: 0; }
-    .component-whyUs_medScreen .componentAppendix .item .icon i {
+    .component-whyUs_medScreen .componentAppendix .header .icon i {
       font-size: 14px;
       color: #8D8D8D; }
-    .component-whyUs_medScreen .componentAppendix .item .heading {
+    .component-whyUs_medScreen .componentAppendix .header .heading {
       font-size: 14px;
       color: #8C8C8C;
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
       padding-left: 19px; }
+  .component-whyUs_medScreen .componentAppendix .content {
+    padding: 20px 35px; }
 
 /*Medium devices (tablets, 768px and up)
  min width 48em = 768px */
@@ -1128,7 +1137,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     margin-bottom: 15px; }
   .component-onlinePresence .heading p {
     font-size: 1.875em;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 46px; }
   .component-onlinePresence .content {
     margin-bottom: 20px; }
@@ -1174,8 +1183,18 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     align-items: center; }
     .component-onlinePresence .cards .cardHeading {
       font-size: 20px; }
-    .component-onlinePresence .cards .card {
-      width: 80%; }
+    .component-onlinePresence .cards .cardContent {
+      font-size: 14px;
+      color: #808080; }
+    .component-onlinePresence .cards .thirdRow {
+      padding-top: 32px;
+      text-align: left; }
+  .component-onlinePresence .card {
+    width: 80%;
+    padding: 42px 37px; }
+  .component-onlinePresence .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
 
   /*##################################################
   ##############    03. Why Us?    ###################
@@ -1281,7 +1300,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       justify-content: center; }
     .component-whyUs_largeScreen .componentHeading {
       font-size: 2.0625em;
-      font-weight: 700;
+      font-weight: 600;
       color: #636363;
       padding-bottom: 30px; }
     .component-whyUs_largeScreen .componentImage img {

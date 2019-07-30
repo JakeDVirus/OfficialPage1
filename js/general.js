@@ -49,6 +49,27 @@ $('document').ready(function () {
 
 
 
+  /*######################################################
+	###                    Why Us                      #####
+  #######################################################*/
+
+  let expandElmsParent = document.querySelectorAll('.componentAppendix .item');
+  expandElmsParent.forEach(function(element,index){
+    element.addEventListener("click", function(){
+      element.classList.toggle("expand")
+    })
+  })
+  
+  
+  // expandElmsParent.addEventListener("click", function(e){
+  //   if (e.target && e.target.nodeName =="LI") {
+  //     console.log(e.target);
+  //     e.target.classList.toggle("expand");
+  //   }
+  // });
+  
+ 
+
 
 
 
