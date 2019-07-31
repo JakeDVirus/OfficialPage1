@@ -56,7 +56,8 @@ $('document').ready(function () {
   let expandElmsParent = document.querySelectorAll('.componentAppendix .item');
   expandElmsParent.forEach(function(element,index){
     element.addEventListener("click", function(){
-      element.classList.toggle("expand")
+      element.classList.toggle("expand");
+      element.firstElementChild.classList.toggle("expand");
     })
   })
   
