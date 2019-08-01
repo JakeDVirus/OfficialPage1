@@ -1064,7 +1064,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     .component-whyUs_medScreen .componentAppendix .header:hover .icon i, .component-whyUs_medScreen .componentAppendix .header:hover .heading, .component-whyUs_medScreen .componentAppendix .header.expand .icon i, .component-whyUs_medScreen .componentAppendix .header.expand .heading {
       color: #ffffff; }
   .component-whyUs_medScreen .componentAppendix .content {
-    padding: 20px 0 20px 68px; }
+    padding: 20px 10px 20px 20px; }
     .component-whyUs_medScreen .componentAppendix .content p {
       color: #8d8d8d;
       font-size: 15px; }
