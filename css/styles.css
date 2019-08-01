@@ -1043,7 +1043,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     background-color: #F4F4F4;
     padding-left: 34px;
     align-items: center;
-    transition: all 0.7s ease; }
+    transition: all 0.5s ease; }
     .component-whyUs_medScreen .componentAppendix .header:last-child {
       margin-bottom: 0; }
     .component-whyUs_medScreen .componentAppendix .header .icon i {
@@ -1061,7 +1061,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     .component-whyUs_medScreen .componentAppendix .header:hover .icon i, .component-whyUs_medScreen .componentAppendix .header:hover .heading, .component-whyUs_medScreen .componentAppendix .header.expand .icon i, .component-whyUs_medScreen .componentAppendix .header.expand .heading {
       color: #ffffff; }
   .component-whyUs_medScreen .componentAppendix .content {
-    padding: 20px 35px; }
+    padding: 20px 0 20px 68px; }
     .component-whyUs_medScreen .componentAppendix .content p {
       color: #8d8d8d;
       font-size: 15px; }
@@ -1334,7 +1334,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       background-color: #F4F4F4;
       padding-left: 34px;
       align-items: center;
-      transition: all 0.7s ease; }
+      transition: all 0.5s ease;
+      transition: background-color 0s; }
       .component-whyUs_largeScreen .componentAppendix .header:last-child {
         margin-bottom: 0; }
       .component-whyUs_largeScreen .componentAppendix .header .icon i {
@@ -1352,7 +1353,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       .component-whyUs_largeScreen .componentAppendix .header:hover .icon i, .component-whyUs_largeScreen .componentAppendix .header:hover .heading, .component-whyUs_largeScreen .componentAppendix .header.expand .icon i, .component-whyUs_largeScreen .componentAppendix .header.expand .heading {
         color: #ffffff; }
     .component-whyUs_largeScreen .componentAppendix .content {
-      padding: 20px 35px; }
+      padding: 20px 0 20px 68px; }
       .component-whyUs_largeScreen .componentAppendix .content p {
         color: #8d8d8d;
         font-size: 15px; } }

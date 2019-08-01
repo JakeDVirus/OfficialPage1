@@ -129,7 +129,8 @@
 				background-color: #F4F4F4;
 				padding-left: 34px;
 				align-items: center;
-				transition: all 0.7s ease;
+				transition: all 0.5s ease;
+				transition: background-color 0s;
 	
 				&:last-child {margin-bottom: 0;}
 				
@@ -150,8 +151,11 @@
 				transition: all 0.5s ease;
 				.icon i, .heading {color: #ffffff;}
 			}
+			.header:hover {
+				//transition: none;
+			}
 			.content {
-				padding: 20px 35px;
+				padding: 20px 0 20px 68px;
 				p {
 					color: rgb(141, 141, 141);
 					font-size: 15px;
