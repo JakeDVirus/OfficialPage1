@@ -8,6 +8,8 @@
 @import "01_generic-scss/tools/glideJS/glide.core";
 @import "01_generic-scss/tools/glideJS/glide.theme";
 
+@import "02_supersetPartials/dropDownNavigation1";
+
 @import "z0_phone-default";
 @import "z1_phoneLandscape";
 @import "z2_tablet";

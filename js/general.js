@@ -23,6 +23,43 @@ $('document').ready(function () {
     }
   }
 
+  /*===(2)=======================================================
+      DropDown Navigation
+  ===============================================================*/
+
+  let dropBtn = document.querySelectorAll(".dropBtn");
+  dropBtn.forEach(function(element, index) {
+    let dropDownContent = element.querySelector(".dropDownContent");
+    //mouseenter
+    element.addEventListener('mouseenter', function(){
+      element.classList.add("activeDropDown");
+      debouncer(function(){
+
+      },300)
+    });
+    //mouseleave
+    element.addEventListener('mouseleave', function(){
+      debouncer(function(){
+        element.classList.remove("activeDropDown");
+      },300)
+    });
+  })
+
+
+  // let dropBtn = document.querySelectorAll(".dropBtn");
+  // dropBtn.forEach(function(element, index) {
+  //   let dropDownContent = element.querySelector(".dropDownContent");
+  //   element.addEventListener('mouseenter', debouncer(function(){
+  //     dropDownContent.classList.add("activeDropDown");
+  //   }, 0));
+  //   element.addEventListener('mouseleave', debouncer(function(){
+  //     dropDownContent.classList.remove("activeDropDown");
+  //   },300))
+  // })
+
+
+
+
 
   /*######################################################
 	###               mainBanner                       #####

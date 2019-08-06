@@ -29,14 +29,21 @@
 		}
 		.wrapper-nav {
 			position: relative;
+			height: 100%;
+			#cbp-spmenu-s2 {height: 100%}
 			.nav-label {display:none;}
-			ul {
+			.navContainer {
 				display: flex;
+				height: 100%;
 			}
 			li a {
 				font-size: (14em/16);
 				padding-left: (20em/16);
 				padding-right: (20em/16);
+				height: 100%;
+				vertical-align: top;
+				display: flex;
+				align-items: center;
 			}
 			li:last-child a {
 				padding-right: 0;
