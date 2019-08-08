@@ -1088,7 +1088,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 #########     04. Quality and Cost     #############
 ###################################################*/
 .row-qualityAndCost {
-  background-color: #F3F3F3; }
+  background-color: #F3F3F3;
+  background-color: #3a3a3a; }
 
 .component-qualityAndCost {
   display: flex;
@@ -1098,7 +1099,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   padding-bottom: 3.5625em; }
   .component-qualityAndCost .heading, .component-qualityAndCost .content {
     text-align: center;
-    color: #636363; }
+    color: #636363;
+    color: #ffffff; }
   .component-qualityAndCost .heading {
     padding-bottom: 2em; }
     .component-qualityAndCost .heading p {
@@ -1260,6 +1262,11 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   /*##################################################
   ##############    04 Quality and cost    ###########
   ###################################################*/
+  .row-qualityAndCost {
+    background-color: #F3F3F3; }
+
+  .component-qualityAndCost .heading, .component-qualityAndCost .content {
+    color: #636363; }
   .component-qualityAndCost .heading {
     padding-bottom: 1.125em; }
     .component-qualityAndCost .heading p {

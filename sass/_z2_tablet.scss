@@ -197,7 +197,13 @@
 	/*##################################################
 	##############    04 Quality and cost    ###########
 	###################################################*/
+	.row-qualityAndCost {
+		background-color: #F3F3F3;
+	}
 	.component-qualityAndCost {
+		.heading, .content {
+			color: #636363;
+		}
 		.heading {
 			padding-bottom: (18em/16);
 			p {font-size: (27em/16);}
