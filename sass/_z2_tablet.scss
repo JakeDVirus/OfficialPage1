@@ -11,6 +11,7 @@
 			01.02.00 appendixAd
 	02. Online Presence
 	03. Why us?
+	04. quality and cost
 	xx. Miscellaneous
 */
 
@@ -193,11 +194,33 @@
 		}
 	}
 	
-
-
+	/*##################################################
+	##############    04 Quality and cost    ###########
+	###################################################*/
+	.component-qualityAndCost {
+		.heading {
+			padding-bottom: (18em/16);
+			p {font-size: (27em/16);}
+		}
+	}
 
  	
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 48em) and (orientation: portrait) {
 

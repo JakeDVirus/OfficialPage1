@@ -163,7 +163,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		li a {
 			text-transform: uppercase;
 			color: #f3f3f3;
+			font-size: 14px;
+			transition: all 0.3s ease-in-out
 		}
+		li a:hover {color: #f7931d}
 	}
 }
 
@@ -523,5 +526,37 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 				font-size: 15px;
 			}
 		}
+	}
+}
+
+
+
+/*##################################################
+#########     04. Quality and Cost     #############
+###################################################*/
+.row-qualityAndCost {
+	background-color: #F3F3F3;
+}
+.component-qualityAndCost {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: (32em/16);
+	padding-bottom: (32em/16);
+	.heading, .content {
+		text-align: center;
+		color: #636363;
+	}
+	.heading {
+		padding-bottom: (32em/16);
+		p {
+			font-size: (25em/16);
+			line-height: 35px;
+			font-weight: $semiBold-openSans;
+		}
+	}
+	.content {
+		font-size: 1em;
+		line-height: 26px;
 	}
 }

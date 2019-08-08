@@ -14,6 +14,7 @@
 			01.02.00 appendixAd
 	02. Online Presence
 	03. Why us?
+	04. Quality and Cost
 	xx. Miscellaneous
     
 */
@@ -37,7 +38,7 @@
 				height: 100%;
 			}
 			li a {
-				font-size: (14em/16);
+				//font-size: (14em/16);
 				padding-left: (20em/16);
 				padding-right: (20em/16);
 				height: 100%;
@@ -170,6 +171,28 @@
 			}
 		}
 	}
+
+
+
+	/*##################################################
+	##############    04 Quality and cost    ###########
+	###################################################*/
+	.component-qualityAndCost {
+		padding-top: (60em/16);
+		padding-bottom: (60em/16);
+		.heading p , .content {
+			line-height: 43px;
+		}
+		.heading {
+			padding-bottom: (14em/16);
+			p {font-size: (36em/16);}
+		}
+		.content {font-size: (26em/16);}
+	}	
+
+
+
+
 
 
 
