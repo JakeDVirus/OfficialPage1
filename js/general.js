@@ -99,9 +99,6 @@ $('document').ready(function () {
   var componentMainBannerChildren = document.querySelector('.component-mainBanner').children;
   componentMainBannerChildren = Array.from(componentMainBannerChildren); //Since parent.children returns HTMLCollection, not nodeList
   var mainBannerBgImg = document.querySelector(".row-mainBanner");
-  componentMainBannerChildren.forEach(function(){
-    elm.classList.add("waypoint-hide");
-  })
 
   //backgroundImage load event tool
   
