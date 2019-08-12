@@ -96,6 +96,23 @@ $('document').ready(function () {
   // })
 
 
+  var componentMainBannerChildren = document.querySelector('.component-mainBanner').children;
+  componentMainBannerChildren = Array.from(componentMainBannerChildren); //Since parent.children returns HTMLCollection, not nodeList
+  componentMainBannerChildren.forEach(function(elm){
+    if (elm.classList.contains("heading")) {
+      elm.classList.add("animated","slideInRight")
+    }
+    if (elm.classList.contains("subHeading")) {
+      elm.classList.add("animated","slideInRight", "delay-100s")
+    }
+    if (elm.classList.contains("buttons")) {
+      elm.classList.add("animated","slideInRight", "delay-200s")
+    }
+    
+  })
+
+
+
 
   var componentWhyUs = document.querySelector(".component-whyUs_largeScreen");
   var componentWhyUsChildren = componentWhyUs.querySelectorAll('.componentHeading, .componentImage, .componentContent, .componentAppendix');
