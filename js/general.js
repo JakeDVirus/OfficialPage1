@@ -48,7 +48,7 @@ $('document').ready(function () {
   })
 
 
-
+ 
 
 
 
@@ -57,7 +57,7 @@ $('document').ready(function () {
 	###               mainBanner                       #####
   #######################################################*/
   
-  /*===(2)=======================================================
+  /*===(1)=======================================================
     Making the buttons same size
   ===============================================================*/
   
@@ -75,6 +75,64 @@ $('document').ready(function () {
     }    
 
   }
+
+  /*===(1)=======================================================
+      animate the banner on scroll
+  ===============================================================*/
+  // var waypoint1 = new Waypoint({
+  //   element: document.querySelector(".col-whyUs"),
+  //   handler: function() {
+  //     var targetElms = document.querySelectorAll('.componentHeading, .componentImage');
+  //     targetElms.forEach(function(elm){
+  //       if (elm.classList.contains("componentHeading")) {
+  //         elm.classList.add("animated", "slideInRight");
+  //       }
+  //       if (elm.classList.contains("componentImage")) {
+  //         elm.classList.add('animated', 'slideInLeft');
+  //       }
+  //     });
+  //   },
+  //   offset: '25%'
+  // })
+
+
+
+  var componentWhyUs = document.querySelector(".component-whyUs_largeScreen");
+  var componentWhyUsChildren = componentWhyUs.querySelectorAll('.componentHeading, .componentImage, .componentContent, .componentAppendix');
+  componentWhyUsChildren.forEach(function(elm){
+    elm.classList.add("waypoint-hide");
+  })
+
+  var waypoint1 = new Waypoint({
+    element: document.querySelector(".component-whyUs_largeScreen"),
+    handler: function() {      
+      componentWhyUsChildren.forEach(function(elm){
+        if (elm.classList.contains("componentHeading")) {
+          elm.classList.add("animated", "slideInRight");
+          elm.classList.replace("waypoint-hide", "waypoint-reveal")
+        }
+        if (elm.classList.contains("componentImage")) {
+          elm.classList.add('animated', 'slideInLeft');
+          elm.classList.replace("waypoint-hide", "waypoint-reveal")
+        }
+        if (elm.classList.contains("componentContent") || elm.classList.contains("componentAppendix")) {
+          elm.classList.add('animated','slideInRight');
+          elm.classList.replace("waypoint-hide", "waypoint-reveal")
+        }
+      });
+    },
+    offset: '25%'
+  })
+
+
+
+
+
+
+
+
+
+
 
 
 
