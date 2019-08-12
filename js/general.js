@@ -99,6 +99,9 @@ $('document').ready(function () {
   var componentMainBannerChildren = document.querySelector('.component-mainBanner').children;
   componentMainBannerChildren = Array.from(componentMainBannerChildren); //Since parent.children returns HTMLCollection, not nodeList
   var mainBannerBgImg = document.querySelector(".row-mainBanner");
+  componentMainBannerChildren.forEach(function(){
+    elm.classList.add("waypoint-hide");
+  })
 
   //backgroundImage load event tool
   
@@ -115,6 +118,7 @@ $('document').ready(function () {
       if (elm.classList.contains("buttons")) {
         elm.classList.add("animated","slideInRight", "delay-200s")
       }    
+      elm.classList.replace("waypoint-hide", "waypoint-reveal")
     })
   };//end of .onload function
 

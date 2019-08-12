@@ -1,0 +1,17 @@
+.delay-100ms {
+    animation-delay: 100ms;
+}
+.delay-200s {
+    animation-delay: 200ms;
+}
+// .delay-300s {
+//     animation-delay: 300s;
+// }
+
+
+.waypoint-hide {
+    opacity: 0;
+}
+.waypoint-reveal {
+    opacity: 1;
+}
