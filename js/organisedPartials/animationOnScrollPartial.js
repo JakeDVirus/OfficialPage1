@@ -20,15 +20,18 @@ $("document").ready(function() {
   backgroundImageOnScroll_1.onload = function () {
     componentMainBannerChildren.forEach(function(elm){
       if (elm.classList.contains("heading")) {
-        elm.classList.add("animated","slideInRight", "delay-300ms")
+        elm.classList.add("animated","slideInRight", "delay-200ms")
+        elm.style.transitionDelay = "200ms";  
       }
       if (elm.classList.contains("subHeading")) {
-        elm.classList.add("animated","slideInRight", "delay-300ms")
+        elm.classList.add("animated","slideInRight", "delay-600ms")
+        elm.style.transitionDelay = "600ms";  
       }
       if (elm.classList.contains("buttons")) {
-        elm.classList.add("animated","slideInRight", "delay-300ms")
+        elm.classList.add("animated","slideInRight", "delay-900ms")
+        elm.style.transitionDelay = "900ms";  
       }  
-      elm.style.transitionDelay = "300ms";  
+      // elm.style.transitionDelay = "300ms";  
       elm.classList.replace("waypoint-hide", "waypoint-reveal")
     })
   };//end of .onload function

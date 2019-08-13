@@ -1528,6 +1528,12 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 .delay-700ms {
   animation-delay: 700ms; }
 
+.delay-800ms {
+  animation-delay: 800ms; }
+
+.delay-900ms {
+  animation-delay: 900ms; }
+
 .waypoint-hide {
   opacity: 0; }
 
