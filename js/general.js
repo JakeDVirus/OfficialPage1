@@ -107,14 +107,15 @@ $('document').ready(function () {
   backgroundImageOnScroll_1.onload = function () {
     componentMainBannerChildren.forEach(function(elm){
       if (elm.classList.contains("heading")) {
-        elm.classList.add("animated","slideInRight")
+        elm.classList.add("animated","slideInRight", "delay-300ms")
       }
       if (elm.classList.contains("subHeading")) {
-        elm.classList.add("animated","slideInRight", "delay-100ms")
+        elm.classList.add("animated","slideInRight", "delay-300ms")
       }
       if (elm.classList.contains("buttons")) {
-        elm.classList.add("animated","slideInRight", "delay-200ms")
-      }    
+        elm.classList.add("animated","slideInRight", "delay-300ms")
+      }  
+      elm.style.transitionDelay = "300ms";  
       elm.classList.replace("waypoint-hide", "waypoint-reveal")
     })
   };//end of .onload function
@@ -137,20 +138,20 @@ $('document').ready(function () {
     handler: function() {  
       componentWhyUsChildren.forEach(function(elm){
         if (elm.classList.contains("componentHeading")) {
-          elm.classList.add("animated", "slideInRight", "delay-100");
+          elm.classList.add("animated", "slideInRight");
           elm.classList.replace("waypoint-hide", "waypoint-reveal")
         }
         if (elm.classList.contains("componentImage")) {
-          elm.classList.add('animated', 'slideInLeft', "delay-300");
+          elm.classList.add('animated', 'slideInLeft');
           elm.classList.replace("waypoint-hide", "waypoint-reveal")
         }
         if (elm.classList.contains("componentContent") || elm.classList.contains("componentAppendix")) {
           elm.classList.add('animated','slideInRight');
-          elm.classList.replace("waypoint-hide", "waypoint-reveal", "delay-500");
+          elm.classList.replace("waypoint-hide", "waypoint-reveal");
         }
       });
     },
-    offset: '25%'
+    offset: '40%'
   })
 
 
