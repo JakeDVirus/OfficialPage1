@@ -6,35 +6,47 @@ $("document").ready(function() {
 
 
   /*===(1)=======================================================
-      animate the banner on scroll
+      animate the banner on scroll 
+      Only for large screen > 992px
   ===============================================================*/
 
-  var componentMainBannerChildren = document.querySelector('.component-mainBanner').children;
-  componentMainBannerChildren = Array.from(componentMainBannerChildren); //Since parent.children returns HTMLCollection, not nodeList
-  var mainBannerBgImg = document.querySelector(".row-mainBanner");
+  let mql_lgBpMin = window.matchMedia('(min-width: 62em)');
+  screenTest_lgBpMin_animationOnScroll(mql_lgBpMin);
+  mql_lgBpMin.addListener(screenTest_lgBpMin_animationOnScroll);
 
-  //backgroundImage load event tool
-  
-  var backgroundImageOnScroll_1 = document.createElement('img');
-  backgroundImageOnScroll_1.src = getBgUrl(mainBannerBgImg);
-  backgroundImageOnScroll_1.onload = function () {
-    componentMainBannerChildren.forEach(function(elm){
-      if (elm.classList.contains("heading")) {
-        elm.classList.add("animated","slideInRight", "delay-200ms")
-        elm.style.transitionDelay = "200ms";  
-      }
-      if (elm.classList.contains("subHeading")) {
-        elm.classList.add("animated","slideInRight", "delay-600ms")
-        elm.style.transitionDelay = "600ms";  
-      }
-      if (elm.classList.contains("buttons")) {
-        elm.classList.add("animated","slideInRight", "delay-900ms")
-        elm.style.transitionDelay = "900ms";  
-      }  
-      // elm.style.transitionDelay = "300ms";  
-      elm.classList.replace("waypoint-hide", "waypoint-reveal")
-    })
-  };//end of .onload function
+  function screenTest_lgBpMin_animationOnScroll(e) {
+    if(e.matches) {
+
+      var componentMainBannerChildren = document.querySelector('.component-mainBanner').children;
+      componentMainBannerChildren = Array.from(componentMainBannerChildren); //Since parent.children returns HTMLCollection, not nodeList
+      var mainBannerBgImg = document.querySelector(".row-mainBanner");
+    
+      //backgroundImage load event tool
+      
+      var backgroundImageOnScroll_1 = document.createElement('img');
+      backgroundImageOnScroll_1.src = getBgUrl(mainBannerBgImg);
+      backgroundImageOnScroll_1.onload = function () {
+        componentMainBannerChildren.forEach(function(elm){
+          if (elm.classList.contains("heading")) {
+            elm.classList.add("animated","slideInRight", "slow", "delay-200ms")
+            elm.style.transitionDelay = "200ms";  
+          } else if (elm.classList.contains("subHeading")) {
+            elm.classList.add("animated","slideInRight", "slow", "delay-1s")
+            elm.style.transitionDelay = "1s";  
+          } else if (elm.classList.contains("buttons")) {
+            elm.classList.add("animated","slideInRight", "slow", "delay-1800ms")
+            elm.style.transitionDelay = "1800ms";  
+          }  
+          elm.classList.replace("waypoint-hide", "waypoint-reveal")
+          // elm.style.transitionDelay = "300ms";  
+        })
+      };//end of .onload function
+      
+    }// End of e.matches
+  }
+
+
+
 
 
   

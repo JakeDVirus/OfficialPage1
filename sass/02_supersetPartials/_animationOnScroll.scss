@@ -22,6 +22,9 @@
 .delay-900ms {
     animation-delay: 900ms;
 }
+.delay-1800ms {
+    animation-delay: 1800ms;
+}
 
 
 .waypoint-hide {
@@ -33,4 +36,8 @@
 
 
 
-
+@keyframes slideInRight {
+    0% {
+		transform: translate3d(180%,0,0);
+    }
+}
