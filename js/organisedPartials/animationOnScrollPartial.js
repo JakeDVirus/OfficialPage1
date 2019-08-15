@@ -1,22 +1,28 @@
 $("document").ready(function() {
+
+
+  
   /*######################################################
-  ###               mainBanner                       #####
-  #######################################################*/
+  ###               only for larger screen           #####
+  #######################################################*/  
 
-
-
-  /*===(1)=======================================================
-      animate the banner on scroll 
-      Only for large screen > 992px
-  ===============================================================*/
-
+  
   let mql_lgBpMin = window.matchMedia('(min-width: 62em)');
   screenTest_lgBpMin_animationOnScroll(mql_lgBpMin);
   mql_lgBpMin.addListener(screenTest_lgBpMin_animationOnScroll);
-
+  
+  
   function screenTest_lgBpMin_animationOnScroll(e) {
     if(e.matches) {
-
+      
+      /*######################################################
+      ###               mainBanner                       #####
+      #######################################################*/
+    
+      /*===(1)=======================================================
+          animate the banner on scroll 
+          Only for large screen > 992px
+      ===============================================================*/
       var componentMainBannerChildren = document.querySelector('.component-mainBanner').children;
       componentMainBannerChildren = Array.from(componentMainBannerChildren); //Since parent.children returns HTMLCollection, not nodeList
       var mainBannerBgImg = document.querySelector(".row-mainBanner");
@@ -41,48 +47,45 @@ $("document").ready(function() {
           // elm.style.transitionDelay = "300ms";  
         })
       };//end of .onload function
+
       
-    }// End of e.matches
-  }
 
-
-
-
-
-  
-
-  /*######################################################
-  ###                   Why Us                       #####
-  #######################################################*/
-
-//---------------------------------------------
-
-  var componentWhyUs = document.querySelector(".component-whyUs_largeScreen");
-  var componentWhyUsChildren = componentWhyUs.querySelectorAll('.componentHeading, .componentImage, .componentContent, .componentAppendix');
-  componentWhyUsChildren.forEach(function(elm){
-    elm.classList.add("waypoint-hide");
-  })
-
-  var waypoint1 = new Waypoint({
-    element: document.querySelector(".component-whyUs_largeScreen"),
-    handler: function() {  
+      /*######################################################
+      ###                   Why Us                       #####
+      #######################################################*/
+    
+      var componentWhyUs = document.querySelector(".component-whyUs_largeScreen");
+      var componentWhyUsChildren = componentWhyUs.querySelectorAll('.componentHeading, .componentImage, .componentContent, .componentAppendix');
       componentWhyUsChildren.forEach(function(elm){
-        if (elm.classList.contains("componentHeading")) {
-          elm.classList.add("animated", "slideInRight");
-          elm.classList.replace("waypoint-hide", "waypoint-reveal")
-        }
-        if (elm.classList.contains("componentImage")) {
-          elm.classList.add('animated', 'fadeInUp');
-          elm.classList.replace("waypoint-hide", "waypoint-reveal")
-        }
-        if (elm.classList.contains("componentContent") || elm.classList.contains("componentAppendix")) {
-          elm.classList.add('animated','slideInRight');
-          elm.classList.replace("waypoint-hide", "waypoint-reveal");
-        }
-      });
-    },
-    offset: '40%'
-  })
+        elm.classList.add("waypoint-hide");
+      })
+    
+      var waypoint1 = new Waypoint({
+        element: document.querySelector(".component-whyUs_largeScreen"),
+        handler: function() {  
+          componentWhyUsChildren.forEach(function(elm){
+            if (elm.classList.contains("componentHeading")) {
+              elm.classList.add("animated", "slideInRight");
+              elm.classList.replace("waypoint-hide", "waypoint-reveal")
+            }
+            if (elm.classList.contains("componentImage")) {
+              elm.classList.add('animated', 'fadeInUp');
+              elm.classList.replace("waypoint-hide", "waypoint-reveal")
+            }
+            if (elm.classList.contains("componentContent") || elm.classList.contains("componentAppendix")) {
+              elm.classList.add('animated','slideInRight');
+              elm.classList.replace("waypoint-hide", "waypoint-reveal");
+            }
+          });
+        },
+        offset: '40%'
+      })
+
+
+    }// End of e.matches
+  }//End of function screeTest_lgBpMin_animationOnScroll()
+
+
 
 
 
