@@ -563,3 +563,113 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		line-height: 26px;
 	}
 }
+
+
+/*##################################################
+#########     05. Our Services	       #############
+###################################################*/
+.row-ourServices {
+	@media only screen and (max-width: 36.9375em) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+.component-ourServices {
+	padding-top: (100em/16);
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: (50em/16);
+	}
+	.componentHeading p {
+		font-size: (24em/16);
+		color: rgb(26, 26, 26);
+		font-weight: $semiBold-montserrat;
+		padding: 8px 0 10px 0;
+	}
+	.headerDivider {
+		background-color: rgb(191, 191, 191);
+		margin: 15px auto 40px auto;
+		height: 2px;
+		width: 40px;
+	}
+	.componentSubHeading {
+		color: #595959;
+    	font-size: 15px;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+	}
+	.list {
+		display: flex;
+		flex-direction: column;
+		padding: 30px 15px 50px 15px;
+	}
+	.listIconArea {
+		margin-bottom: 40px;
+		display: inline-block;
+		text-align: center;
+		i {
+			font-size: 42px;
+			line-height: 110px;
+			color: #777777;
+		}
+	}
+	.iconOuter {
+		height: 110px;
+		width: 110px;
+		display: block;
+		border-radius: 100%;
+		background-color: #eaeaea;
+		box-shadow: 0 0 0 10px #f4f4f4;
+		margin: auto;
+		transition: background-color 0.3s, box-shadow 0.5s;
+	}
+	.listHeading p {
+		font-size: 15px;
+    	margin-bottom: 15px;
+		margin-top: 15px;
+		font-family: $montserrat;
+		color: #1a1a1a;
+    	font-weight: $semiBold-montserrat;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.listText {
+		font-size: 14px;
+		color: #999999;
+		text-align: center;
+	}
+	.listKnowMore {
+		text-align: center;
+		a:before {
+			content: "\2192";
+			display: inline-block;
+			color: #333333;
+			margin-left: 10px;
+			vertical-align: top;
+			font-size: 22px;
+			transition: margin-left 0.2s linear;
+			float: right;
+			line-height: 1;
+			color: #fff;
+			display: block;
+			margin-top: -2px;
+		}
+		a {
+			margin-top: 35px;
+			font-size: 13px;
+			color: #999999;
+			color: #ffffff;
+			background-color: #f7931d;
+			text-align: center;
+			padding: 8px 21px;
+			border: 1px solid #f7931d;
+			letter-spacing: 1px;
+			border-radius: 4px;
+		}
+
+	}
+}
