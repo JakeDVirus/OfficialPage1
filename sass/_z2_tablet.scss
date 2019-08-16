@@ -12,6 +12,7 @@
 	02. Online Presence
 	03. Why us?
 	04. quality and cost
+	05. Our Services
 	xx. Miscellaneous
 */
 
@@ -207,6 +208,18 @@
 		.heading {
 			padding-bottom: (18em/16);
 			p {font-size: (27em/16);}
+		}
+	}
+
+
+
+
+	/*##################################################
+	#########     05. Our Services	       #############
+	###################################################*/
+	.component-ourServices {
+		.list {
+			width: 270px;
 		}
 	}
 
