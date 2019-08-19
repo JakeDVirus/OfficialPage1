@@ -1020,6 +1020,143 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       margin-top: 0; }
 
 /*##################################################
+#########     05. Our Services	       #############
+###################################################*/
+@media only screen and (max-width: 36.9375em) {
+  .row-ourServices {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+.component-ourServices {
+  padding-top: 6.25em; }
+  .component-ourServices .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5em; }
+  .component-ourServices .componentHeading p {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 8px 0 10px 0; }
+  .component-ourServices .headerDivider {
+    background-color: #bfbfbf;
+    margin: 15px auto 40px auto;
+    height: 2px;
+    width: 40px; }
+  .component-ourServices .componentSubHeading {
+    color: #595959;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .component-ourServices .listContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .component-ourServices .listWrapper1 {
+    margin-bottom: 90px;
+    border: 1px solid #eeeeee;
+    background: #fefefe;
+    padding: 10px;
+    transition: box-shadow 0.3s, transform 0.3s; }
+  .component-ourServices .listWrapper1:hover {
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px); }
+  .component-ourServices .list {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 90px 15px;
+    padding: 57px 25px 30px 25px;
+    border-radius: 2px;
+    border: 1px solid #f7931d; }
+  .component-ourServices .listIconArea {
+    margin-bottom: 40px;
+    display: inline-block;
+    text-align: center; }
+    .component-ourServices .listIconArea i {
+      font-size: 42px;
+      line-height: 110px;
+      color: #777777; }
+  .component-ourServices .iconOuter {
+    height: 110px;
+    width: 110px;
+    display: block;
+    border-radius: 100%;
+    background-color: #eaeaea;
+    box-shadow: 0 0 0 10px #f4f4f4;
+    margin: auto;
+    transition: background-color 0.3s, box-shadow 0.5s; }
+  .component-ourServices .listHeading p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #1a1a1a;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center; }
+  .component-ourServices .listText {
+    font-size: 14px;
+    color: #999999;
+    text-align: center; }
+  .component-ourServices .listKnowMore {
+    text-align: center; }
+    .component-ourServices .listKnowMore a:before {
+      content: "\2192";
+      display: inline-block;
+      color: #333333;
+      margin-left: 10px;
+      vertical-align: top;
+      font-size: 22px;
+      transition: margin-left 0.2s linear;
+      float: right;
+      line-height: 1;
+      color: #fff;
+      display: block;
+      margin-top: -2px; }
+    .component-ourServices .listKnowMore a {
+      margin-top: 35px;
+      font-size: 13px;
+      color: #999999;
+      color: #ffffff;
+      background-color: #f7931d;
+      text-align: center;
+      padding: 8px 21px;
+      border: 1px solid #f7931d;
+      letter-spacing: 1px;
+      border-radius: 4px; }
+
+/*##################################################
+#########     04. Quality and Cost     #############
+###################################################*/
+.row-qualityAndCost {
+  background-color: #F3F3F3;
+  background-color: #3a3a3a; }
+
+.component-qualityAndCost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.5625em;
+  padding-bottom: 3.5625em; }
+  .component-qualityAndCost .heading, .component-qualityAndCost .content {
+    text-align: center;
+    color: #636363;
+    color: #ffffff; }
+  .component-qualityAndCost .heading {
+    padding-bottom: 2em; }
+    .component-qualityAndCost .heading p {
+      font-size: 1.5625em;
+      line-height: 35px;
+      font-weight: 600; }
+  .component-qualityAndCost .content {
+    font-size: 1em;
+    line-height: 26px; }
+
+/*##################################################
 ##############    03. Why Us?    ###################
 ###################################################*/
 .component-whyUs_largeScreen {
@@ -1083,129 +1220,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     .component-whyUs_medScreen .componentAppendix .content p {
       color: #8d8d8d;
       font-size: 15px; }
-
-/*##################################################
-#########     04. Quality and Cost     #############
-###################################################*/
-.row-qualityAndCost {
-  background-color: #F3F3F3;
-  background-color: #3a3a3a; }
-
-.component-qualityAndCost {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3.5625em;
-  padding-bottom: 3.5625em; }
-  .component-qualityAndCost .heading, .component-qualityAndCost .content {
-    text-align: center;
-    color: #636363;
-    color: #ffffff; }
-  .component-qualityAndCost .heading {
-    padding-bottom: 2em; }
-    .component-qualityAndCost .heading p {
-      font-size: 1.5625em;
-      line-height: 35px;
-      font-weight: 600; }
-  .component-qualityAndCost .content {
-    font-size: 1em;
-    line-height: 26px; }
-
-/*##################################################
-#########     05. Our Services	       #############
-###################################################*/
-@media only screen and (max-width: 36.9375em) {
-  .row-ourServices {
-    padding-right: 15px;
-    padding-left: 15px; } }
-
-.component-ourServices {
-  padding-top: 6.25em; }
-  .component-ourServices .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3.125em; }
-  .component-ourServices .componentHeading p {
-    font-size: 1.5em;
-    color: #1a1a1a;
-    font-weight: 600;
-    padding: 8px 0 10px 0; }
-  .component-ourServices .headerDivider {
-    background-color: #bfbfbf;
-    margin: 15px auto 40px auto;
-    height: 2px;
-    width: 40px; }
-  .component-ourServices .componentSubHeading {
-    color: #595959;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
-  .component-ourServices .listContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .component-ourServices .list {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 15px 50px 15px; }
-  .component-ourServices .listIconArea {
-    margin-bottom: 40px;
-    display: inline-block;
-    text-align: center; }
-    .component-ourServices .listIconArea i {
-      font-size: 42px;
-      line-height: 110px;
-      color: #777777; }
-  .component-ourServices .iconOuter {
-    height: 110px;
-    width: 110px;
-    display: block;
-    border-radius: 100%;
-    background-color: #eaeaea;
-    box-shadow: 0 0 0 10px #f4f4f4;
-    margin: auto;
-    transition: background-color 0.3s, box-shadow 0.5s; }
-  .component-ourServices .listHeading p {
-    font-size: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: #1a1a1a;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center; }
-  .component-ourServices .listText {
-    font-size: 14px;
-    color: #999999;
-    text-align: center; }
-  .component-ourServices .listKnowMore {
-    text-align: center; }
-    .component-ourServices .listKnowMore a:before {
-      content: "\2192";
-      display: inline-block;
-      color: #333333;
-      margin-left: 10px;
-      vertical-align: top;
-      font-size: 22px;
-      transition: margin-left 0.2s linear;
-      float: right;
-      line-height: 1;
-      color: #fff;
-      display: block;
-      margin-top: -2px; }
-    .component-ourServices .listKnowMore a {
-      margin-top: 35px;
-      font-size: 13px;
-      color: #999999;
-      color: #ffffff;
-      background-color: #f7931d;
-      text-align: center;
-      padding: 8px 21px;
-      border: 1px solid #f7931d;
-      letter-spacing: 1px;
-      border-radius: 4px; }
 
 /*Medium devices (tablets, 768px and up)
  min width 48em = 768px */
@@ -1372,8 +1386,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   /*##################################################
   #########     05. Our Services	       #############
   ###################################################*/
+  .component-ourServices .header {
+    padding-bottom: 5.625em; }
   .component-ourServices .list {
-    width: 270px; } }
+    width: 260px; } }
 @media only screen and (min-width: 48em) and (orientation: portrait) {
   /*###############################################
   ##############     01 Landing page    ###########
