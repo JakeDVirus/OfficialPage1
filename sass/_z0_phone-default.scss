@@ -592,31 +592,71 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 #########     04. Quality and Cost     #############
 ###################################################*/
 .row-qualityAndCost {
-	background-color: #F3F3F3;
-	background-color: #3a3a3a;
+	padding: 0;
+}
+.col-qualityAndCost {
+	padding: 0 5%;
+	background-color: #f3f3f3;
+}
+.row-qualityAndCost a.button {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: $semiBold-openSans;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	color: #ffffff;
+	background-color: #292929;
+	border: 1px solid #292929;
+	border-radius: 4px;
+	letter-spacing: 1px;
+	&.orange {
+		background-color: #f7931d;
+		border-color: #f7931d;
+	}
+	.faIcon1 {
+		display: inline-block;
+		margin-left: 16px;
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+}
+
+.component-qualityAndCost, .component-qualityAndCostSkills {
+	padding: 60px 0; 
+	.heading p {
+		font-size: (24em/16);
+		font-weight: $semiBold-openSans;
+		color: #292929;
+		line-height: 36px;
+	}
 }
 .component-qualityAndCost {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: (57em/16);
-	padding-bottom: (57em/16);
-	.heading, .content {
-		text-align: center;
-		color: #636363;
-		color: #ffffff;
+	.heading p {
+		padding-bottom: 40px;
 	}
-	.heading {
-		padding-bottom: (32em/16);
-		p {
-			font-size: (25em/16);
-			line-height: 35px;
-			font-weight: $semiBold-openSans;
+	.content p {
+		color: #636363;
+	}
+	.buttons {
+		padding-top: 43px;
+		display: flex;
+		&:first-child{
+			//margin-right: 
 		}
 	}
-	.content {
-		font-size: 1em;
-		line-height: 26px;
+}
+
+
+/*********************************
+		only mobile screens 
+**********************************/
+
+@media only screen and (max-width: 47.9375em) {
+	.component-qualityAndCost {
+		.heading .exceptSmallScreen {
+			display: none;
+		}
 	}
 }
 
