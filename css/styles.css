@@ -1152,9 +1152,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   border: 1px solid #292929;
   border-radius: 4px;
   letter-spacing: 1px; }
-  .row-qualityAndCost a.button.orange {
-    background-color: #f7931d;
-    border-color: #f7931d; }
   .row-qualityAndCost a.button .faIcon1 {
     display: inline-block;
     margin-left: 16px;
