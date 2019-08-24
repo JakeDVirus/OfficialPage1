@@ -183,8 +183,14 @@
 		}
 	}
 	 
+	/*##################################################
+	##############    04 Quality and cost    ###########
+	###################################################*/
+	.component-qualityAndCost {
+		
+	}
 	
-
+	
 	/*##################################################
 	##############    03. Why Us?    ###################
 	###################################################*/
@@ -195,21 +201,6 @@
 		}
 	}
 	
-	/*##################################################
-	##############    04 Quality and cost    ###########
-	###################################################*/
-	.row-qualityAndCost {
-		background-color: #F3F3F3;
-	}
-	.component-qualityAndCost {
-		.heading, .content {
-			color: #636363;
-		}
-		.heading {
-			padding-bottom: (18em/16);
-			p {font-size: (27em/16);}
-		}
-	}
 
 
 
@@ -264,19 +255,55 @@
 
 
 
-
 @media only screen and (max-width: 61.9375em) {
+//only upto tablet display
 
 	/*###############################################
 	############       01.02 info        ############
 	################################################*/
 
-	/*##########################
+	/***************************
 		  row-mainInfo
-	############################*/
+	****************************/
 	.row-mainInfo {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-}
+
+
+	/*##################################################
+	#########     04. Quality and Cost     #############
+	###################################################*/
+
+	.component-qualityAndCost {
+		.heading .exceptSmallScreen {
+			display: none;
+		}
+	}
+
+}//end of media query
+
+
+@media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+//only tablet screen
+
+
+	/*##################################################
+	#########     04. Quality and Cost     #############
+	###################################################*/
+
+	.component-qualityAndCost {
+		>div, .buttons {
+			text-align: center;
+		}
+		.heading p {
+			padding-bottom: 25px;
+		}
+		.buttons {
+			padding-top: 25px;
+		}
+	}
+
+
+}//end of media query

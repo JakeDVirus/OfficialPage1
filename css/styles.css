@@ -1136,9 +1136,12 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 .row-qualityAndCost {
   padding: 0; }
 
-.col-qualityAndCost {
-  padding: 0 5%;
-  background-color: #f3f3f3; }
+.col-qualityAndCost .col-child {
+  padding: 0 5%; }
+.col-qualityAndCost .col-child.left {
+  background-color: #F9F9F9; }
+.col-qualityAndCost .col-child.right {
+  background-color: #F0F0F0; }
 
 .row-qualityAndCost a.button {
   font-size: 14px;
@@ -1158,28 +1161,24 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     padding-left: 9px;
     padding-right: 9px; }
 
-.component-qualityAndCost, .component-qualityAndCostSkills {
+.component-qualityAndCost {
   padding: 60px 0; }
-  .component-qualityAndCost .heading p, .component-qualityAndCostSkills .heading p {
+  .component-qualityAndCost .heading p {
     font-size: 1.5em;
     font-weight: 600;
     color: #292929;
-    line-height: 36px; }
+    line-height: 36px;
+    padding-bottom: 40px; }
+  .component-qualityAndCost .heading .optional {
+    display: none; }
+  .component-qualityAndCost .content p {
+    color: #636363; }
+  .component-qualityAndCost .buttons {
+    padding-top: 43px; }
 
-.component-qualityAndCost .heading p {
-  padding-bottom: 40px; }
-.component-qualityAndCost .content p {
-  color: #636363; }
-.component-qualityAndCost .buttons {
-  padding-top: 43px;
-  display: flex; }
+.component-qualityAndCostSkills {
+  padding: 60px 0; }
 
-/*********************************
-		only mobile screens 
-**********************************/
-@media only screen and (max-width: 47.9375em) {
-  .component-qualityAndCost .heading .exceptSmallScreen {
-    display: none; } }
 /*##################################################
 ##############    05. Why Us?    ###################
 ###################################################*/
@@ -1387,25 +1386,15 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
 
   /*##################################################
+  ##############    04 Quality and cost    ###########
+  ###################################################*/
+  /*##################################################
   ##############    03. Why Us?    ###################
   ###################################################*/
   .component-whyUs_medScreen .componentImage {
     text-align: center; }
     .component-whyUs_medScreen .componentImage img {
       width: 75%; }
-
-  /*##################################################
-  ##############    04 Quality and cost    ###########
-  ###################################################*/
-  .row-qualityAndCost {
-    background-color: #F3F3F3; }
-
-  .component-qualityAndCost .heading, .component-qualityAndCost .content {
-    color: #636363; }
-  .component-qualityAndCost .heading {
-    padding-bottom: 1.125em; }
-    .component-qualityAndCost .heading p {
-      font-size: 1.6875em; }
 
   /*##################################################
   #########     05. Our Services	       #############
@@ -1432,12 +1421,22 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   /*###############################################
   ############       01.02 info        ############
   ################################################*/
-  /*##########################
+  /***************************
   	  row-mainInfo
-  ############################*/
+  ****************************/
   .row-mainInfo {
     padding-left: 0;
     padding-right: 0; } }
+@media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+  /*##################################################
+  #########     04. Quality and Cost     #############
+  ###################################################*/
+  .component-qualityAndCost > div, .component-qualityAndCost .buttons {
+    text-align: center; }
+  .component-qualityAndCost .heading p {
+    padding-bottom: 25px; }
+  .component-qualityAndCost .buttons {
+    padding-top: 25px; } }
 /* Large devices (desktops, 992px and up)
    min-width 992px = 62em 
    max-width 1199px =74.9375em */
@@ -1504,6 +1503,33 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       display: none; }
 
   /*##################################################
+  #########     04. Quality and Cost     #############
+  ###################################################*/
+  .col-qualityAndCost {
+    display: flex;
+    padding: 0; }
+    .col-qualityAndCost .col-child {
+      flex-basis: 50%;
+      display: flex;
+      padding: 0; }
+      .col-qualityAndCost .col-child.left {
+        padding-left: 5%;
+        justify-content: flex-end; }
+        .col-qualityAndCost .col-child.left .component {
+          padding-right: 60px; }
+      .col-qualityAndCost .col-child.right {
+        padding-right: 5%;
+        justify-content: flex-start; }
+        .col-qualityAndCost .col-child.right .component {
+          padding-left: 60px; }
+      .col-qualityAndCost .col-child .component {
+        max-width: 60rem; } }
+@media only screen and (min-width: 62em) and (min-width: 72.5) {
+  .component-qualityAndCost .heading .optional {
+    display: block; } }
+
+@media only screen and (min-width: 62em) {
+  /*##################################################
   ##############    03. Why Us?    ###################
   ###################################################*/
   .component-whyUs_medScreen {
@@ -1566,22 +1592,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       padding: 20px 0 20px 68px; }
       .component-whyUs_largeScreen .componentAppendix .content p {
         color: #8d8d8d;
-        font-size: 15px; }
-
-  /*##################################################
-  ##############    04 Quality and cost    ###########
-  ###################################################*/
-  .component-qualityAndCost {
-    padding-top: 3.75em;
-    padding-bottom: 3.75em; }
-    .component-qualityAndCost .heading p, .component-qualityAndCost .content {
-      line-height: 43px; }
-    .component-qualityAndCost .heading {
-      padding-bottom: 0.875em; }
-      .component-qualityAndCost .heading p {
-        font-size: 2.25em; }
-    .component-qualityAndCost .content {
-      font-size: 1.625em; } }
+        font-size: 15px; } }
 /* Extra large devices (large desktops, 1200px and up) 
    min-width 1200px = 75em*/
 @media only screen and (min-width: 75em) {
@@ -1596,7 +1607,25 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     justify-content: space-evenly; }
   .component-onlinePresence .card {
     flex-basis: 350px;
-    margin: 0 15px; } }
+    margin: 0 15px; }
+
+  /*################## ################################
+  #########     04. Quality and Cost     #############
+  ###################################################*/
+  .col-qualityAndCost {
+    max-width: 100%; }
+    .col-qualityAndCost .col-child {
+      display: flex; }
+      .col-qualityAndCost .col-child.left {
+        justify-content: flex-end; }
+        .col-qualityAndCost .col-child.left .component {
+          padding-right: 60px; }
+      .col-qualityAndCost .col-child.right {
+        justify-content: flex-start; }
+        .col-qualityAndCost .col-child.right .component {
+          padding-left: 60px; }
+      .col-qualityAndCost .col-child .component {
+        max-width: 60rem; } }
 @media only screen and (min-width: 85.375em) {
   .component-mainBanner .heading p {
     font-size: 3.0625em; }
