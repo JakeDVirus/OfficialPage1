@@ -1,10 +1,61 @@
 $("document").ready(function() {
 
 
-  
+
+
   /*######################################################
-  ###               only for larger screen           #####
-  #######################################################*/  
+	###               Quality And Cost                 #####
+	#######################################################*/
+
+  /*===(1)=======================================================
+  Animating Progress bar
+  ===============================================================*/
+  var componentQualityAndCostSkills = document.querySelector('.component.qualityAndCostSkills')
+  console.log(componentQualityAndCostSkills);
+  var progressBarsSet1 = document.querySelectorAll(".qualityAndCostSkills .progressBar");
+  
+  //animation on scroll: progressBar
+  var waypoint2 = new Waypoint({
+    element: componentQualityAndCostSkills,
+    handler: assignProgressAnimation1,
+    offset: '40%'
+  })
+
+
+
+  //assining function animation to Nodelists
+  function assignProgressAnimation1() {
+    progressBarsSet1.forEach(function(elm){
+      progressBarMove1(elm, elm.value);
+    })
+  }
+
+  //function def: animation: progressBar
+  function progressBarMove1(elem, maxPerc) {
+    //var elem = document.getElementById("myBar"); 
+    elem.value = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (elem.value >= maxPerc) {
+        clearInterval(id);
+      } else {
+        elem.value++;
+      }
+    }
+  }
+
+
+
+
+
+
+
+  
+  /***************************************************************
+  ****************************************************************
+                     only for larger screen    
+  ****************************************************************
+  ****************************************************************/  
 
   
   let mql_lgBpMin = window.matchMedia('(min-width: 62em)');

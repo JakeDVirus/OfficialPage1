@@ -498,7 +498,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		flex-wrap: wrap;
 	}
 	.listWrapper1 {
-		margin-bottom: 90px;
+		margin-bottom: 160px;
 		border: 1px solid #eeeeee;
 		background: #fefefe;
 		padding: 10px;
@@ -646,9 +646,40 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 }
 
 
-.component-qualityAndCostSkills {
+.component.qualityAndCostSkills {
 	padding: 60px 0;
-	
+	.title {
+		font-size: 18px;
+		font-weight: $semiBold-openSans;
+		color: #292929;
+	}
+	.skill {
+		margin-top: 16px;
+		&:first-child {margin-top: 0;}
+	}
+	.skillHeader {
+		display: flex;
+		justify-content: flex-end;
+		color: #616161;
+		font-weight: $semiBold-openSans;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	.progressBar{
+		height: 14px;
+		background-color: rgba(70, 70, 70, 0.1);
+		width: 100%;
+		.bar {
+			width: 5%;
+			height: 100%;
+			background-color: #f7931d;
+		}
+	}
+	.progressBar {
+		&::-webkit-progress-bar {background-color: rgba(70, 70, 70, 0.1)}
+		&::-webkit-progress-value {background-color: #f7931d}
+		&::-webkit-progress-value {background-color: #46C7DF}
+	}
 }
 
 

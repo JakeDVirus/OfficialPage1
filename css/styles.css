@@ -110,6 +110,9 @@ body {
 .orangeHighlight {
   color: #F7931D; }
 
+.hidden {
+  display: none; }
+
 .glide {
   position: relative;
   width: 100%;
@@ -1057,7 +1060,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     justify-content: space-between;
     flex-wrap: wrap; }
   .component-ourServices .listWrapper1 {
-    margin-bottom: 90px;
+    margin-bottom: 160px;
     border: 1px solid #eeeeee;
     background: #fefefe;
     padding: 10px;
@@ -1176,8 +1179,37 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   .component-qualityAndCost .buttons {
     padding-top: 43px; }
 
-.component-qualityAndCostSkills {
+.component.qualityAndCostSkills {
   padding: 60px 0; }
+  .component.qualityAndCostSkills .title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #292929; }
+  .component.qualityAndCostSkills .skill {
+    margin-top: 16px; }
+    .component.qualityAndCostSkills .skill:first-child {
+      margin-top: 0; }
+  .component.qualityAndCostSkills .skillHeader {
+    display: flex;
+    justify-content: flex-end;
+    color: #616161;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px; }
+  .component.qualityAndCostSkills .progressBar {
+    height: 14px;
+    background-color: rgba(70, 70, 70, 0.1);
+    width: 100%; }
+    .component.qualityAndCostSkills .progressBar .bar {
+      width: 5%;
+      height: 100%;
+      background-color: #f7931d; }
+  .component.qualityAndCostSkills .progressBar::-webkit-progress-bar {
+    background-color: rgba(70, 70, 70, 0.1); }
+  .component.qualityAndCostSkills .progressBar::-webkit-progress-value {
+    background-color: #f7931d; }
+  .component.qualityAndCostSkills .progressBar::-webkit-progress-value {
+    background-color: #46C7DF; }
 
 /*##################################################
 ##############    05. Why Us?    ###################
@@ -1426,7 +1458,13 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   ****************************/
   .row-mainInfo {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  /*##################################################
+  #########     04. Quality and Cost     #############
+  ###################################################*/
+  .component-qualityAndCost .heading .exceptSmallScreen {
+    display: none; } }
 @media only screen and (min-width: 48em) and (max-width: 61.9375em) {
   /*##################################################
   #########     04. Quality and Cost     #############
@@ -1523,7 +1561,8 @@ $xsBp-max= max-width = 36.9375em;  //575px */
         .col-qualityAndCost .col-child.right .component {
           padding-left: 60px; }
       .col-qualityAndCost .col-child .component {
-        max-width: 60rem; } }
+        max-width: 60rem;
+        flex-basis: 100%; } }
 @media only screen and (min-width: 62em) and (min-width: 72.5) {
   .component-qualityAndCost .heading .optional {
     display: block; } }
@@ -1613,19 +1652,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   #########     04. Quality and Cost     #############
   ###################################################*/
   .col-qualityAndCost {
-    max-width: 100%; }
-    .col-qualityAndCost .col-child {
-      display: flex; }
-      .col-qualityAndCost .col-child.left {
-        justify-content: flex-end; }
-        .col-qualityAndCost .col-child.left .component {
-          padding-right: 60px; }
-      .col-qualityAndCost .col-child.right {
-        justify-content: flex-start; }
-        .col-qualityAndCost .col-child.right .component {
-          padding-left: 60px; }
-      .col-qualityAndCost .col-child .component {
-        max-width: 60rem; } }
+    max-width: 100%; } }
 @media only screen and (min-width: 85.375em) {
   .component-mainBanner .heading p {
     font-size: 3.0625em; }
