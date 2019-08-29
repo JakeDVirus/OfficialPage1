@@ -78,46 +78,6 @@ $('document').ready(function () {
 
   
 
-  /*######################################################
-	###               Quality And Cost                 #####
-	#######################################################*/
-
-  /*===(1)=======================================================
-  Animating Progress bar
-  ===============================================================*/
-  var progressBarsSet1 = document.querySelectorAll(".qualityAndCostSkills .progressBar");
-  progressBarsSet1.forEach(function(elm){
-    progressBarMove(elm, elm.value);
-  })
-
-
-  // function progressBarMove(elem, maxPerc) {
-  //   //var elem = document.getElementById("myBar"); 
-  //   var width = 10;
-  //   var id = setInterval(frame, 10);
-  //   function frame() {
-  //     if (width >= maxPerc) {
-  //       clearInterval(id);
-  //     } else {
-  //       width++; 
-  //       elem.style.width = width + '%'; 
-  //       elem.innerHTML = width * 1 + '%';
-  //     }
-  //   }
-  // }
-
-  function progressBarMove(elem, maxPerc) {
-    //var elem = document.getElementById("myBar"); 
-    elem.value = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (elem.value >= maxPerc) {
-        clearInterval(id);
-      } else {
-        elem.value++;
-      }
-    }
-  }
 
 
 

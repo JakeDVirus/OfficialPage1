@@ -236,6 +236,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	03. Our Services
 	04. quality and cost
 	05. Why Us?
+	  . Footer
 	xx. Miscellaneous
 */
 /*###############################################
@@ -1276,6 +1277,137 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       color: #8d8d8d;
       font-size: 15px; }
 
+/*##################################################
+##############    Footer         ###################
+###################################################*/
+.container.footer {
+  background-color: #222222; }
+
+.component.footer {
+  padding-top: 50px; }
+  .component.footer .description .titleLogo {
+    height: 45px;
+    margin-bottom: 15px;
+    text-align: center; }
+    .component.footer .description .titleLogo img {
+      height: 100%; }
+  .component.footer .description .content p {
+    font-size: 14px;
+    text-align: center;
+    color: #bababa; }
+  .component.footer .description .footerSocial {
+    margin-top: 20px;
+    text-align: center; }
+    .component.footer .description .footerSocial a {
+      color: #ce7107;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 12px;
+      text-align: center; }
+  .component.footer .navigation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; }
+    .component.footer .navigation .quickLinks {
+      margin-right: 57px; }
+    .component.footer .navigation .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 19px; }
+    .component.footer .navigation .links {
+      font-size: 14px;
+      color: #CE7107; }
+      .component.footer .navigation .links .link {
+        margin-bottom: 9px; }
+      .component.footer .navigation .links .link:last-child {
+        margin-bottom: 0; }
+  .component.footer .newsletter {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .component.footer .newsletter .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 15px; }
+    .component.footer .newsletter .content p {
+      font-size: 14px;
+      text-align: center;
+      color: #bababa; }
+    .component.footer .newsletter .inputGroup {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      margin-top: 20px; }
+      .component.footer .newsletter .inputGroup .formControl {
+        color: #bababa;
+        height: 48px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid #bababa;
+        border-radius: 25px;
+        flex: 1 1 auto;
+        letter-spacing: 1px;
+        font-size: 14px; }
+        .component.footer .newsletter .inputGroup .formControl::placeholder {
+          color: #bababa; }
+        .component.footer .newsletter .inputGroup .formControl :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: red; }
+        .component.footer .newsletter .inputGroup .formControl ::-webkit-input-placeholder {
+          /* Edge */
+          color: red; }
+        .component.footer .newsletter .inputGroup .formControl ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: red; }
+      .component.footer .newsletter .inputGroup .inputBtn {
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .component.footer .newsletter .inputGroup .button {
+        padding: 16px 25px;
+        border-radius: 25px;
+        line-height: 14px;
+        color: #fff;
+        background-color: #f7931d;
+        border: 1px solid #f7931d;
+        font-size: 14px; }
+        .component.footer .newsletter .inputGroup .button i {
+          padding-right: 5px; }
+
+.row.subFooter {
+  margin-top: 30px;
+  background-color: #1a1a1a; }
+
+.component.subFooter {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #898989;
+  padding: 20px 0;
+  letter-spacing: 1px; }
+  .component.subFooter .footerBrand {
+    margin-bottom: 15px; }
+    .component.subFooter .footerBrand a {
+      color: #f7931d; }
+  .component.subFooter .footerPayment {
+    flex: 0 0 100%;
+    flex-basis: 100%;
+    display: flex; }
+    .component.subFooter .footerPayment .icons {
+      margin-right: 10px; }
+      .component.subFooter .footerPayment .icons:last-child {
+        margin-right: 0; }
+    .component.subFooter .footerPayment i {
+      font-size: 40px;
+      color: #fff; }
+
 /*Medium devices (tablets, 768px and up)
  min width 48em = 768px */
 /*
@@ -1652,7 +1784,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   #########     04. Quality and Cost     #############
   ###################################################*/
   .col-qualityAndCost {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .component.qualityAndCost .heading .optional {
+    display: block; } }
 @media only screen and (min-width: 85.375em) {
   .component-mainBanner .heading p {
     font-size: 3.0625em; }

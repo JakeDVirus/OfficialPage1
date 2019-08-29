@@ -31,11 +31,12 @@
 	###################################################*/
 	.col-qualityAndCost {
 		max-width: 100%;
-		.col-child {
-			
-		}		
 	}
-
+	.component.qualityAndCost {
+		.heading .optional {
+			display: block;
+		}
+	}
 
 
 

@@ -11,7 +11,6 @@ $("document").ready(function() {
   Animating Progress bar
   ===============================================================*/
   var componentQualityAndCostSkills = document.querySelector('.component.qualityAndCostSkills')
-  console.log(componentQualityAndCostSkills);
   var progressBarsSet1 = document.querySelectorAll(".qualityAndCostSkills .progressBar");
   
   //animation on scroll: progressBar
