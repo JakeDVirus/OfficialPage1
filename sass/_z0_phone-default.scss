@@ -783,7 +783,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		.titleLogo {
 			height: 45px;
 			margin-bottom: 15px;
-			text-align: center;
 			img {
 				height: 100%;
 			}
@@ -791,12 +790,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		.content p {
 			font-size: 14px;
 			// letter-spacing: 1px;
-			text-align: center;
 			color: #bababa;
 		}
 		.footerSocial {
 			margin-top: 20px;
-			text-align: center;
 			a {
 				color: #ce7107;
 				display: inline-block;
@@ -809,7 +806,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		}
 	}
 	.navigation {
-		margin-top: 40px;
 		display: flex;
 		justify-content: center;
 		.quickLinks {
@@ -922,6 +918,18 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		i{
 			font-size: 40px;
 			color: #fff;
+		}
+	}
+}
+
+//screen < tablet  
+@media only screen and (max-width: 47.9375em) {
+	.component.footer {
+		.description, .content p, .footerSocial {
+			text-align: center
+		}
+		.navigation {
+			margin-top: 40px;
 		}
 	}
 }

@@ -1287,17 +1287,14 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   padding-top: 50px; }
   .component.footer .description .titleLogo {
     height: 45px;
-    margin-bottom: 15px;
-    text-align: center; }
+    margin-bottom: 15px; }
     .component.footer .description .titleLogo img {
       height: 100%; }
   .component.footer .description .content p {
     font-size: 14px;
-    text-align: center;
     color: #bababa; }
   .component.footer .description .footerSocial {
-    margin-top: 20px;
-    text-align: center; }
+    margin-top: 20px; }
     .component.footer .description .footerSocial a {
       color: #ce7107;
       display: inline-block;
@@ -1307,7 +1304,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-size: 12px;
       text-align: center; }
   .component.footer .navigation {
-    margin-top: 40px;
     display: flex;
     justify-content: center; }
     .component.footer .navigation .quickLinks {
@@ -1408,6 +1404,11 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-size: 40px;
       color: #fff; }
 
+@media only screen and (max-width: 47.9375em) {
+  .component.footer .description, .component.footer .content p, .component.footer .footerSocial {
+    text-align: center; }
+  .component.footer .navigation {
+    margin-top: 40px; } }
 /*Medium devices (tablets, 768px and up)
  min width 48em = 768px */
 /*
@@ -1550,9 +1551,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
 
   /*##################################################
-  ##############    04 Quality and cost    ###########
-  ###################################################*/
-  /*##################################################
   ##############    03. Why Us?    ###################
   ###################################################*/
   .component-whyUs_medScreen .componentImage {
@@ -1566,7 +1564,20 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   .component-ourServices .header {
     padding-bottom: 5.625em; }
   .component-ourServices .list {
-    width: 260px; } }
+    width: 260px; }
+
+  /*##################################################
+  ##############    Footer         ###################
+  ###################################################*/
+  .component.footer {
+    display: flex;
+    flex-wrap: wrap; }
+    .component.footer .description, .component.footer .navigation {
+      flex: 1 1 50%; }
+    .component.footer .newsletter {
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-right: 0; } }
 @media only screen and (min-width: 48em) and (orientation: portrait) {
   /*###############################################
   ##############     01 Landing page    ###########
@@ -1606,7 +1617,17 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   .component-qualityAndCost .heading p {
     padding-bottom: 25px; }
   .component-qualityAndCost .buttons {
-    padding-top: 25px; } }
+    padding-top: 25px; }
+
+  /*##################################################
+  #########           Footer             #############
+  ###################################################*/
+  .component.footer .description .content p {
+    width: 264px; }
+  .component.footer .newsletter {
+    margin-top: 55px; }
+    .component.footer .newsletter .inputGroup {
+      width: 338px; } }
 /* Large devices (desktops, 992px and up)
    min-width 992px = 62em 
    max-width 1199px =74.9375em */
