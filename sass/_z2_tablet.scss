@@ -215,12 +215,17 @@
 	.component.footer {
 		display: flex;
 		flex-wrap: wrap;
+		letter-spacing: 1px;
 		.description, .navigation {flex: 1 1 50%}
 		.newsletter {
 			flex: 1 1 100%;
 			margin-left: 0;
 			margin-right: 0;
 		}
+	}
+	.component.subFooter {
+		justify-content: space-between;
+		align-items: center;
 	}
 	 
 	
@@ -336,6 +341,7 @@
 			}
 		}
 	}
+	
 
 
 

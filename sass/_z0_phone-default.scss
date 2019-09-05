@@ -857,6 +857,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 				flex: 1 1 auto;
 				letter-spacing: 1px;
 				font-size: 14px;
+				transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 				&::placeholder {
 					color: #bababa;
 				}
@@ -869,6 +870,9 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 				::-ms-input-placeholder { /* Microsoft Edge */
 					color: red;
 				}
+			}
+			.formControl:focus {
+				border-color: #f7931d;
 			}
 			.inputBtn {
 				position: absolute;
@@ -892,24 +896,20 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 
 //--- .row.subFooter
 .row.subFooter {
-	margin-top: 30px;
+	margin-top: 50px;
 	background-color: #1a1a1a;
 }
 .component.subFooter {
 	font-size: 14px;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	color: #898989;
 	padding: 20px 0;
 	letter-spacing: 1px;
 	.footerBrand {
-		margin-bottom: 15px;
 		a {color: #f7931d}
 	}
 	.footerPayment {
-		flex: 0 0 100%;
-		flex-basis: 100%;
 		display: flex;
 		.icons {
 			margin-right: 10px;
@@ -930,6 +930,16 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		}
 		.navigation {
 			margin-top: 40px;
+		}
+	}
+	.component.subFooter {
+		flex-direction: column;
+		.footerPayment {
+			flex: 0 0 100%;
+			flex-basis: 100%;
+		}
+		.footerBrand {
+			margin-bottom: 15px;
 		}
 	}
 }

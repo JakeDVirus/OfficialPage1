@@ -49,6 +49,10 @@
 
 @media only screen and (min-width: 85.375em) {
 	// 85.375em =1366
+
+	/*###################################################
+	#########           Main Banner         #############
+	###################################################*/
 	.component-mainBanner {
 		.heading p {
 			font-size: (49em/16);
@@ -62,4 +66,24 @@
 			padding-top: (27em/16);
 		}
 	}
+
+
+	/*###################################################
+	#########          Footer               #############
+	###################################################*/
+	.component.footer {
+		flex-wrap: nowrap;
+		.description, .navigation, .newsletter {
+			flex: 1 1 33.33%;
+		}
+		.newsletter {
+			align-items: flex-start;
+			margin-top: 0;
+			.content p {
+				text-align: left;
+			}
+		}
+	}
+
+
 }
