@@ -94,7 +94,7 @@ $("document").ready(function() {
             elm.style.transitionDelay = "1800ms";  
           }  
           elm.classList.replace("waypoint-hide", "waypoint-reveal")
-          // elm.style.transitionDelay = "300ms";  
+          //elm.style.transitionDelay = "300ms";  
         })
       };//end of .onload function
 

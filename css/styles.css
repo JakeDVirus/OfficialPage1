@@ -119,6 +119,32 @@ body {
 .hidden {
   display: none; }
 
+/**************************************************************  
+*******     Component Style - Self Made (CSSM)       **********
+***************************************************************/
+.cssm-componentHeaderStyle1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6.25em; }
+  .cssm-componentHeaderStyle1 .componentHeading p {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 8px 0 10px 0; }
+  .cssm-componentHeaderStyle1 .headerDivider {
+    background-color: #bfbfbf;
+    margin: 15px auto 40px auto;
+    height: 2px;
+    width: 40px; }
+  .cssm-componentHeaderStyle1 .componentSubHeading {
+    color: #595959;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
 .glide {
   position: relative;
   width: 100%;
@@ -1041,28 +1067,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 
 .component-ourServices {
   padding-top: 6.25em; }
-  .component-ourServices .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 5em; }
-  .component-ourServices .componentHeading p {
-    font-size: 1.5em;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    color: #1a1a1a;
-    font-weight: 600;
-    padding: 8px 0 10px 0; }
-  .component-ourServices .headerDivider {
-    background-color: #bfbfbf;
-    margin: 15px auto 40px auto;
-    height: 2px;
-    width: 40px; }
-  .component-ourServices .componentSubHeading {
-    color: #595959;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
   .component-ourServices .listContainer {
     display: flex;
     justify-content: space-evenly;
@@ -1283,6 +1287,58 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     .component-whyUs_medScreen .componentAppendix .content p {
       color: #8d8d8d;
       font-size: 15px; }
+
+/*##################################################
+#########     03. Our Features	       #############
+###################################################*/
+@media only screen and (max-width: 36.9375em) {
+  .row.ourFeatures {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+.component.ourFeatures {
+  padding-top: 100px;
+  padding-bottom: 110px; }
+  .component.ourFeatures .listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .component.ourFeatures .listContainer > * {
+      flex: 0 1 auto; }
+  .component.ourFeatures .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 216px;
+    box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
+    margin-bottom: 40px; }
+    .component.ourFeatures .list .listIconWrapper {
+      width: 100%;
+      height: 210px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(ellipse at center, #fdfdfd 0%, #f3f3f3 100%); }
+    .component.ourFeatures .list .listHeading {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      margin-top: 48px;
+      margin-bottom: 40px; }
+    .component.ourFeatures .list .listButton {
+      margin-bottom: 48px; }
+      .component.ourFeatures .list .listButton a {
+        font-size: 13px;
+        padding: 11px 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        background-color: #0fd4bb;
+        letter-spacing: 1px;
+        color: #ffffff;
+        border-radius: 3px;
+        line-height: 13px; }
 
 /*##################################################
 ##############    Footer         ###################
@@ -1580,6 +1636,12 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     width: 260px; }
 
   /*##################################################
+  #########     03. Our Features	       #############
+  ###################################################*/
+  .component.ourFeatures .list {
+    margin-right: 30px; }
+
+  /*##################################################
   ##############    Footer         ###################
   ###################################################*/
   .component.footer {
@@ -1810,7 +1872,18 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       padding: 20px 0 20px 68px; }
       .component-whyUs_largeScreen .componentAppendix .content p {
         color: #8d8d8d;
-        font-size: 15px; } }
+        font-size: 15px; }
+
+  /*##################################################
+  #########     03. Our Features	       #############
+  ###################################################*/
+  .component.ourFeatures .list {
+    transition: box-shadow 0.3s, transform 0.3s; }
+    .component.ourFeatures .list:last-child {
+      margin-right: 0; }
+  .component.ourFeatures .list:hover {
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px); } }
 /* Extra large devices (large desktops, 1200px and up) 
    min-width 1200px = 75em*/
 @media only screen and (min-width: 75em) {
