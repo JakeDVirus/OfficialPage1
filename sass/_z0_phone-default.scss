@@ -179,11 +179,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 ##############   01.01 mainBanner    ###############
 ###################################################*/
 
-//------ Imports ------
-@import "02_supersetPartials/heroImage";
-
-//------ End of Imports ----
-
 .container-mainBanner {
 	flex: 1;
 	.row-mainBanner, .col-mainBanner { height: 100%;}
@@ -745,7 +740,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 
 
 /*##################################################
-#########     03. Our Features	       #############
+#########     05. Our Features	       #############
 ###################################################*/
 .row.ourFeatures {
 	@media only screen and (max-width: 36.9375em) {
@@ -805,7 +800,23 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 }
 
 
-
+/*##################################################
+#########       06. Our Blog 	       #############
+###################################################*/
+.row.ourBlog {
+	padding-top: 110px;
+	padding-bottom: 90px;
+	background-color: #f7f7f7;
+}
+.component.ourBlog {
+	.list {
+		margin-right: 30px;
+		width: 370px;
+		.firstHalf {
+			height: 304px;
+		}
+	}
+}
 
 
 

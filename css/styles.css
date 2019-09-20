@@ -1,3 +1,6 @@
+/*###########################################################
+#############        Intrinsic Partials        ##############
+############################################################*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -78,6 +81,9 @@ html {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
+/*###########################################################
+###############        Generic Partials        ##############
+############################################################*/
 /***********************************************  
 ***************   TYPOGRAPHY    ****************
 ************************************************/
@@ -119,6 +125,13 @@ body {
 .hidden {
   display: none; }
 
+/************************************************************************  
+*************      general tyles for specific screens size     **********
+************************************************************************/
+@media only screen and (max-width: 48.9375em) {
+  .notForSm {
+    display: none; } }
+
 /**************************************************************  
 *******     Component Style - Self Made (CSSM)       **********
 ***************************************************************/
@@ -126,7 +139,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 6.25em; }
+  padding-bottom: 7.1875em; }
   .cssm-componentHeaderStyle1 .componentHeading p {
     font-size: 1.5em;
     font-family: "Montserrat", sans-serif;
@@ -254,6 +267,98 @@ body {
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing; }
 
+/*###########################################################
+#############       Dependency partials        ##############
+############################################################*/
+.dropBtn.activeDropDown .dropDownContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column; }
+
+.dropBtn .dropDownContent {
+  display: none;
+  border-top: 3px solid #f7931d;
+  background-color: #2a2a2a;
+  padding: 0 20px;
+  width: 220px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; }
+  .dropBtn .dropDownContent li > a {
+    font-size: 13px;
+    color: #c1c1c1;
+    border-top: 1px solid #494949;
+    padding: 10px 0; }
+  .dropBtn .dropDownContent li:first-child > a {
+    border-top: 1px solid transparent; }
+
+.dropBtn.hoverEffect .dropDownContent {
+  opacity: 1;
+  transition: all 0.3s ease-in-out; }
+
+.delay-100ms {
+  animation-delay: 100ms; }
+
+.delay-200ms {
+  animation-delay: 200ms; }
+
+.delay-300ms {
+  animation-delay: 300ms; }
+
+.delay-500ms {
+  animation-delay: 500ms; }
+
+.delay-600ms {
+  animation-delay: 600ms; }
+
+.delay-700ms {
+  animation-delay: 700ms; }
+
+.delay-800ms {
+  animation-delay: 800ms; }
+
+.delay-900ms {
+  animation-delay: 900ms; }
+
+.delay-1800ms {
+  animation-delay: 1800ms; }
+
+.waypoint-hide {
+  opacity: 0; }
+
+.waypoint-reveal {
+  opacity: 1; }
+
+@keyframes slideInRight {
+  0% {
+    transform: translate3d(180%, 0, 0); } }
+/*##################################################
+##############   01.01 mainBanner    ###############
+###################################################*/
+.row-mainBanner {
+  background-size: cover;
+  background-image: url("../images/banner/mobile/heroImage-1x.jpg");
+  background-image: -webkit-image-set(url("../images/banner/mobile/heroImage-1x.jpg") 1x, url("../images/banner/mobile/heroImage-2x.jpg") 2x);
+  background-image: image-set(url("../images/banner/mobile/heroImage-1x.jpg") 1x, url("../images/banner/mobile/heroImage-2x.jpg") 2x); }
+  @media only screen and (min-width: 48em) {
+    .row-mainBanner {
+      background-image: url("../images/banner/tablet/heroImage-1x.jpg");
+      background-image: -webkit-image-set(url("../images/banner/tablet/heroImage-1x.jpg") 1x, url("../images/banner/tablet/heroImage-2x.jpg") 2x); } }
+  @media only screen and (min-width: 62em) {
+    .row-mainBanner {
+      background-image: url("../images/banner/desktop/123.jpg"); } }
+
+/*##################################################
+##############   01.01 Our Blog    #################
+###################################################*/
+.component.ourBlog .list .firstHalf {
+  background-image: cover;
+  background-image: url("../images/blog/392-320.jpg");
+  background-image: -webkit-image-set(url("../images/blog/392-320.jpg") 1x, url("../images/blog/392-320@2x.jpg") 2x);
+  background-image: image-set(url("../images/blog/392-320.jpg") 1x, url("../images/blog/392-320@2x.jpg") 2x); }
+
+/*###########################################################
+#################      Main partials        #################
+############################################################*/
 /* Extra small device 
 $xsBp-max= max-width = 36.9375em;  //575px */
 /*
@@ -826,19 +931,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*##################################################
 ##############   01.01 mainBanner    ###############
 ###################################################*/
-.row-mainBanner {
-  background-size: cover;
-  background-image: url("../images/banner/mobile/heroImage-1x.jpg");
-  background-image: -webkit-image-set(url("../images/banner/mobile/heroImage-1x.jpg") 1x, url("../images/banner/mobile/heroImage-2x.jpg") 2x);
-  background-image: image-set(url("../images/banner/mobile/heroImage-1x.jpg") 1x, url("../images/banner/mobile/heroImage-2x.jpg") 2x); }
-  @media only screen and (min-width: 48em) {
-    .row-mainBanner {
-      background-image: url("../images/banner/tablet/heroImage-1x.jpg");
-      background-image: -webkit-image-set(url("../images/banner/tablet/heroImage-1x.jpg") 1x, url("../images/banner/tablet/heroImage-2x.jpg") 2x); } }
-  @media only screen and (min-width: 62em) {
-    .row-mainBanner {
-      background-image: url("../images/banner/desktop/123.jpg"); } }
-
 .container-mainBanner {
   flex: 1; }
   .container-mainBanner .row-mainBanner, .container-mainBanner .col-mainBanner {
@@ -1289,7 +1381,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-size: 15px; }
 
 /*##################################################
-#########     03. Our Features	       #############
+#########     05. Our Features	       #############
 ###################################################*/
 @media only screen and (max-width: 36.9375em) {
   .row.ourFeatures {
@@ -1339,6 +1431,20 @@ $xsBp-max= max-width = 36.9375em;  //575px */
         color: #ffffff;
         border-radius: 3px;
         line-height: 13px; }
+
+/*##################################################
+#########       06. Our Blog 	       #############
+###################################################*/
+.row.ourBlog {
+  padding-top: 110px;
+  padding-bottom: 90px;
+  background-color: #f7f7f7; }
+
+.component.ourBlog .list {
+  margin-right: 30px;
+  width: 370px; }
+  .component.ourBlog .list .firstHalf {
+    height: 304px; }
 
 /*##################################################
 ##############    Footer         ###################
@@ -1955,66 +2061,5 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     padding-top: 1.0625em; }
   .component-mainBanner .buttons {
     padding-top: 1.875em; } }
-.dropBtn.activeDropDown .dropDownContent {
-  position: absolute;
-  display: flex;
-  flex-direction: column; }
-
-.dropBtn .dropDownContent {
-  display: none;
-  border-top: 3px solid #f7931d;
-  background-color: #2a2a2a;
-  padding: 0 20px;
-  width: 220px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out; }
-  .dropBtn .dropDownContent li > a {
-    font-size: 13px;
-    color: #c1c1c1;
-    border-top: 1px solid #494949;
-    padding: 10px 0; }
-  .dropBtn .dropDownContent li:first-child > a {
-    border-top: 1px solid transparent; }
-
-.dropBtn.hoverEffect .dropDownContent {
-  opacity: 1;
-  transition: all 0.3s ease-in-out; }
-
-.delay-100ms {
-  animation-delay: 100ms; }
-
-.delay-200ms {
-  animation-delay: 200ms; }
-
-.delay-300ms {
-  animation-delay: 300ms; }
-
-.delay-500ms {
-  animation-delay: 500ms; }
-
-.delay-600ms {
-  animation-delay: 600ms; }
-
-.delay-700ms {
-  animation-delay: 700ms; }
-
-.delay-800ms {
-  animation-delay: 800ms; }
-
-.delay-900ms {
-  animation-delay: 900ms; }
-
-.delay-1800ms {
-  animation-delay: 1800ms; }
-
-.waypoint-hide {
-  opacity: 0; }
-
-.waypoint-reveal {
-  opacity: 1; }
-
-@keyframes slideInRight {
-  0% {
-    transform: translate3d(180%, 0, 0); } }
 
 /*# sourceMappingURL=styles.css.map */

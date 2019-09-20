@@ -1,7 +1,15 @@
+/*###########################################################
+#############        Intrinsic Partials        ##############
+############################################################*/
 @import "00_intrinsic-scss/00-reset";
 @import "00_intrinsic-scss/01-normalize-selfMade";
 @import "00_intrinsic-scss/02-fixQuirks";
 
+
+
+/*###########################################################
+###############        Generic Partials        ##############
+############################################################*/
 @import "01_generic-scss/00-variables";
 @import "01_generic-scss/01-mixins";
 @import "01_generic-scss/02-genericStyles";
@@ -9,13 +17,22 @@
 @import "01_generic-scss/tools/glideJS/glide.theme";
 
 
+
+/*###########################################################
+#############       Dependency partials        ##############
+############################################################*/
+@import "02_supersetPartials/dropDownNavigation1";
+@import "02_supersetPartials/_animationOnScroll.scss";
+@import "02_supersetPartials/bgImages"; //retina
+
+
+
+/*###########################################################
+#################      Main partials        #################
+############################################################*/
 @import "z0_phone-default";
 @import "z1_phoneLandscape";
 @import "z2_tablet";
 @import "z3_desktop";
 @import "z4_desktopLarge";
 @import "z5_desktopXL";
-
-
-@import "02_supersetPartials/dropDownNavigation1";
-@import "02_supersetPartials/_animationOnScroll.scss";
