@@ -255,6 +255,19 @@
 	}
 
 
+	/*##################################################
+	#########       06. Our Blog 	       #############
+	###################################################*/
+	.component.ourBlog {
+		.listContainer {
+			flex-direction: row;
+		}
+		.list {margin-right: 30px;}
+		.list:last-child {
+			margin-right: 0;
+		}
+	}
+
 
 
 
