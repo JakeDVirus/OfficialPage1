@@ -36,16 +36,18 @@
 ##############   01.01 Our Blog    #################
 ###################################################*/
 .component.ourBlog {
-    .list .firstHalf {
-        background-image: cover;
-        background-image: url("../images/blog/392-320.jpg");
-        background-image: -webkit-image-set(
-            url("../images/blog/392-320.jpg") 1x,
-            url("../images/blog/392-320@2x.jpg") 2x
-        );
-        background-image: image-set(
-            url("../images/blog/392-320.jpg") 1x,
-            url("../images/blog/392-320@2x.jpg") 2x
-        )
+    .list {
+        .firstHalf {
+            background-image: cover;
+            background-image: url("../images/blog/392-320.jpg");
+            background-image: -webkit-image-set(
+                url("../images/blog/392-320.jpg") 1x,
+                url("../images/blog/392-320@2x.jpg") 2x
+            );
+            background-image: image-set(
+                url("../images/blog/392-320.jpg") 1x,
+                url("../images/blog/392-320@2x.jpg") 2x
+            )
+        }
     }
 }
