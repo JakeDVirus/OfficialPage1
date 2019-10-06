@@ -1442,116 +1442,129 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 ###################################################*/
 .row.ourBlog {
   padding-top: 110px;
-  padding-bottom: 90px;
+  padding-bottom: 180px;
   background-color: #f7f7f7; }
 
-.component.ourBlog .listContainer {
+.component.ourBlog {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center; }
-.component.ourBlog .list {
-  margin-bottom: 30px;
-  flex: 0 1 370px;
-  max-width: 370px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
-  transition: box-shadow 0.3s, transform 0.3s;
-  background-color: #fff; }
-  .component.ourBlog .list .postThumbnail {
-    height: 304px;
+  .component.ourBlog .listContainer {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between; }
-    .component.ourBlog .list .postThumbnail .left.tag {
-      margin: 15px;
-      font-size: 14px;
-      font-weight: 300;
-      background-color: #1a1a1a;
-      border-radius: 20px;
-      color: #e6e6e6;
-      display: block;
-      font-size: 13px;
-      padding: 2px 12px 3px;
-      transition: background-color 0.5s;
-      text-transform: uppercase; }
-      .component.ourBlog .list .postThumbnail .left.tag:hover {
-        background-color: #4d4d4d;
-        color: #fff; }
-    .component.ourBlog .list .postThumbnail .right.date {
-      margin: 5px;
-      padding: 10px;
-      text-transform: uppercase;
-      background-color: #0fd4bb;
-      text-align: center;
-      color: #fff; }
-      .component.ourBlog .list .postThumbnail .right.date .day {
-        padding: 0 5px 10px 5px;
-        font-size: 32px;
-        letter-spacing: 2px;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-        margin-bottom: 10px; }
-      .component.ourBlog .list .postThumbnail .right.date .monthyear {
-        font-size: 14px;
-        line-height: 1;
-        font-weight: 600;
-        letter-spacing: 1px; }
-        .component.ourBlog .list .postThumbnail .right.date .monthyear p {
-          margin: 5px;
-          letter-spacing: 1px; }
-  .component.ourBlog .list .postMain {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding: 0 50px 40px 50px; }
-  .component.ourBlog .list .pin {
-    align-self: flex-end;
-    margin-right: 15px;
-    background-color: #4d4d4d;
-    border: 3px solid #fff;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    margin-top: -28px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .component.ourBlog .list .pin i {
-      color: #fff; }
-  .component.ourBlog .list .postTitle {
+    align-items: center; }
+  .component.ourBlog .checkAll {
+    margin-top: 5px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 15px;
-    color: #1a1a1a;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 15px 0; }
-  .component.ourBlog .list .postContent {
-    font-size: 14px;
-    font-weight: 400;
-    color: #999999;
-    line-height: 1.8; }
-  .component.ourBlog .list .button {
-    align-self: flex-start;
-    margin-top: 30px;
-    color: #b3b3b3;
-    font-family: "Montserrat", sans-serif;
     font-size: 13px;
-    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 15px 50px;
+    background-color: #0fd4bb;
+    transition: .3s all ease-in-out;
     text-transform: uppercase;
-    transition: all 0.3s;
-    border-top: 1px solid #b3b3b3;
-    border-bottom: 1px solid #b3b3b3; }
-    .component.ourBlog .list .button:hover {
+    transition: all 0.5s; }
+    .component.ourBlog .checkAll:hover {
+      background-color: #333333; }
+  .component.ourBlog .list {
+    margin-bottom: 60px;
+    flex: 0 1 370px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: #fff; }
+    .component.ourBlog .list:hover .button {
       color: #00C0FF;
       border: 1px solid #00c0ff;
       padding: 0 10px; }
-      .component.ourBlog .list .button:hover i {
+      .component.ourBlog .list:hover .button i {
         margin-left: 25px; }
-    .component.ourBlog .list .button i {
-      margin-left: 10px;
-      transition: margin-left 0.2s linear; }
+    .component.ourBlog .list .postThumbnail {
+      height: 275px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .component.ourBlog .list .postThumbnail .left.tag {
+        margin: 15px;
+        font-size: 14px;
+        font-weight: 300;
+        background-color: #1a1a1a;
+        border-radius: 20px;
+        color: #e6e6e6;
+        display: block;
+        font-size: 13px;
+        padding: 2px 12px 3px;
+        transition: background-color 0.5s;
+        text-transform: uppercase; }
+        .component.ourBlog .list .postThumbnail .left.tag:hover {
+          background-color: #4d4d4d;
+          color: #fff; }
+      .component.ourBlog .list .postThumbnail .right.date {
+        margin: 5px;
+        padding: 10px;
+        text-transform: uppercase;
+        background-color: #0fd4bb;
+        text-align: center;
+        color: #fff; }
+        .component.ourBlog .list .postThumbnail .right.date .day {
+          padding: 0 5px 10px 5px;
+          font-size: 32px;
+          letter-spacing: 2px;
+          text-align: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          margin-bottom: 10px; }
+        .component.ourBlog .list .postThumbnail .right.date .monthyear {
+          font-size: 14px;
+          line-height: 1;
+          font-weight: 600;
+          letter-spacing: 1px; }
+          .component.ourBlog .list .postThumbnail .right.date .monthyear p {
+            margin: 5px;
+            letter-spacing: 1px; }
+    .component.ourBlog .list .postMain {
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px 15px 30px; }
+    .component.ourBlog .list .postFooter {
+      border-top: 1px solid #e9e9e9;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .component.ourBlog .list .postFooter .comment {
+        font-size: 14px;
+        font-weight: 400;
+        color: #8d8d8d; }
+    .component.ourBlog .list .postTitle {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #1a1a1a;
+      margin: 30px 0 15px 0; }
+    .component.ourBlog .list .postContent {
+      font-size: 15px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 1.8; }
+    .component.ourBlog .list .button {
+      align-self: flex-start;
+      color: #505050;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      border-top: 1px solid #b3b3b3;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #b3b3b3;
+      border-bottom: 1px solid #ffffff; }
+      .component.ourBlog .list .button i {
+        margin-left: 10px;
+        transition: margin-left 0.2s linear; }
 
 /*##################################################
 ##############    Footer         ###################
@@ -1878,6 +1891,17 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   .component.subFooter {
     justify-content: space-between;
     align-items: center; } }
+/*##########################################################
+############################################################
+#######											############
+#######											############
+#######											############
+#######				screen >= tablet			############
+#######				(Portrait Mode)				############
+#######											############
+#######											############
+############################################################
+##########################################################*/
 @media only screen and (min-width: 48em) and (orientation: portrait) {
   /*###############################################
   ##############     01 Landing page    ###########
@@ -1892,7 +1916,24 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     flex: 0; }
     .container-mainBanner .row-mainBanner {
       height: 22.5em; } }
+/*##########################################################
+############################################################
+#######											############
+#######											############
+#######											############
+#######				screen < desktop			############
+#######											############
+#######											############
+#######											############
+############################################################
+##########################################################*/
 @media only screen and (max-width: 61.9375em) {
+  /*###############################################
+  ############     01.01 mainBanner    ############
+  ###############################################*/
+  .container-mainBanner .waypoint-hide {
+    opacity: 1; }
+
   /*###############################################
   ############       01.02 info        ############
   ################################################*/
@@ -1908,6 +1949,17 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   ###################################################*/
   .component-qualityAndCost .heading .exceptSmallScreen {
     display: none; } }
+/*##########################################################
+############################################################
+#######											############
+#######											############
+#######											############
+#######		   tablet < SCREEN <desktop			############
+#######											############
+#######											############
+#######											############
+############################################################
+##########################################################*/
 @media only screen and (min-width: 48em) and (max-width: 61.9375em) {
   /*##################################################
   #########     04. Quality and Cost     #############
