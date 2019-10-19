@@ -176,13 +176,20 @@
 				color: #808080;
 			}
 			.thirdRow {
-				padding-top: 32px;
+				position: relative;
+				padding-top: 25px;
 				text-align: left;
+			}
+			.button {
+				position: absolute;
+				padding: 7px 15px;
+				border: 1px solid #dd7a08;
+				transition: all 0.3s ease-in-out;
 			}
 		}
 		.card {
 			width: 80%;
-			padding: 42px 37px;
+			padding: 42px 37px 59px 37px;
 		}
 		.card:hover {
 			transform: translateY(-10px);

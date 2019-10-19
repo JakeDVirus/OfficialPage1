@@ -1101,7 +1101,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     .component-onlinePresence .cards .firstRow {
       display: flex;
       align-items: center;
-      margin-bottom: 20px; }
+      margin-bottom: 27px; }
     .component-onlinePresence .cards .secoundRow {
       margin-top: 32px; }
     .component-onlinePresence .cards .headingIcon {
@@ -1120,7 +1120,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       color: #636363; }
     .component-onlinePresence .cards .cardContent {
       font-size: 15px;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.8;
       color: #808080;
       color: #464646; }
@@ -1134,11 +1134,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-weight: 400;
       line-height: 11px;
       letter-spacing: 1px; }
-      .component-onlinePresence .cards .button:hover {
-        color: #fff;
-        border-color: #dd7a08;
-        background-color: #dd7a08;
-        transition: all 0.3s ease-in-out; }
   .component-onlinePresence .card {
     background-color: #fff;
     margin-top: 4.0625em;
@@ -1467,7 +1462,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     text-transform: uppercase;
     transition: all 0.5s; }
     .component.ourBlog .checkAll:hover {
-      background-color: #333333; }
+      background-color: #0fd4bb; }
   .component.ourBlog .list {
     margin-bottom: 60px;
     flex: 0 1 370px;
@@ -1475,14 +1470,12 @@ $xsBp-max= max-width = 36.9375em;  //575px */
     display: flex;
     flex-direction: column;
     box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
-    transition: box-shadow 0.3s, transform 0.3s;
+    transition: all 0.3s;
     background-color: #fff; }
     .component.ourBlog .list:hover .button {
-      color: #00C0FF;
-      border: 1px solid #00c0ff;
-      padding: 0 10px; }
-      .component.ourBlog .list:hover .button i {
-        margin-left: 25px; }
+      padding: 4px 17px;
+      color: #0fd4bb;
+      border-color: #0fd4bb; }
     .component.ourBlog .list .postThumbnail {
       height: 275px;
       display: flex;
@@ -1537,17 +1530,24 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       color: #999999;
       line-height: 1.8; }
     .component.ourBlog .list .button {
+      padding: 4px 0;
       align-self: flex-start;
-      color: #505050;
       font-family: "Montserrat", sans-serif;
       font-size: 13px;
       font-weight: 400;
       text-transform: uppercase;
       transition: all 0.3s;
-      border-top: 1px solid #b3b3b3;
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #b3b3b3;
-      border-bottom: 1px solid #ffffff; }
+      letter-spacing: 1px;
+      margin-top: -4px;
+      margin-bottom: -4px;
+      border: 1px solid #fff;
+      color: #505050; }
+      .component.ourBlog .list .button:hover {
+        color: #ffffff;
+        background-color: #000000;
+        border-color: #000000; }
+        .component.ourBlog .list .button:hover i {
+          margin-left: 25px; }
       .component.ourBlog .list .button i {
         margin-left: 10px;
         transition: margin-left 0.2s linear; }
@@ -1822,11 +1822,17 @@ $xsBp-max= max-width = 36.9375em;  //575px */
       font-size: 14px;
       color: #808080; }
     .component-onlinePresence .cards .thirdRow {
-      padding-top: 32px;
+      position: relative;
+      padding-top: 25px;
       text-align: left; }
+    .component-onlinePresence .cards .button {
+      position: absolute;
+      padding: 7px 15px;
+      border: 1px solid #dd7a08;
+      transition: all 0.3s ease-in-out; }
   .component-onlinePresence .card {
     width: 80%;
-    padding: 42px 37px; }
+    padding: 42px 37px 59px 37px; }
   .component-onlinePresence .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15); }
@@ -1988,7 +1994,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
   ##############     01.01 2nd row    ##############
   ################################################*/
   .container-header .row-navigation.sticky {
-    background-color: #fff;
     box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.3); }
     .container-header .row-navigation.sticky .wrapper-nav li.firstLevelList > a {
       color: #000; }

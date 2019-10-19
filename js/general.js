@@ -4,24 +4,6 @@ $('document').ready(function () {
 	###               HEADER                           #####
 	#######################################################*/
   
-  /*===(1)=======================================================
-    Making .row-navigation sticky when scrolled (fixed position)
-  ===============================================================*/
-  window.onscroll = function() {
-    var rowNavigation = document.querySelector('.container-header .row-navigation');
-    var rowWelcome = rowNavigation.previousElementSibling;
-    var rowWelcomeHeight = rowWelcome.offsetHeight;
-
-    var nextDomElement = rowNavigation.parentElement.nextElementSibling;
-
-    if (window.pageYOffset > rowWelcomeHeight ) {
-      rowNavigation.classList.add('sticky');
-      nextDomElement.style.paddingTop = rowNavigation.offsetHeight + "px";
-    } else {
-      rowNavigation.classList.remove('sticky');
-      nextDomElement.style.paddingTop = "0px";
-    }
-  }
 
   /*===(2)=======================================================
       DropDown Navigation
@@ -222,4 +204,24 @@ $('document').ready(function () {
   }//end of function screenTest_uptoMdBpMax
 
 
-}); //end of media query
+
+
+
+
+
+
+
+
+
+  /*###########################################################
+	#############################################################
+	#############################################################
+	########                                             ########
+	########             screen >                    ######## //mdBp-max = tablet max
+	########                                             ########
+	#############################################################
+	#############################################################  
+  ############################################################*/
+
+
+}); 
