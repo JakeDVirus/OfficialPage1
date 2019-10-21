@@ -115,10 +115,10 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 *******************************************/
 
 //------ Imports ------
-@import "03_thirdParty/mobileMenu/mobileMenuBase";
+@import '0-plugins/icebox/mobileMenu/mobileMenuBase';
 .component-navigation {
-	.wrapperAtomAnimation { @import "03_thirdParty/atomAnimation1";}
-	.wrapperHamburger {@import "03_thirdParty/mobileMenu/hamburgerAnimation1";} 
+	.wrapperAtomAnimation { @import "0-plugins/icebox/atomAnimation1";}
+	.wrapperHamburger {@import "0-plugins/icebox/mobileMenu/hamburgerAnimation1";} 
 }
 
 //------ End of Imports ----

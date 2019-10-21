@@ -1,162 +1,8 @@
-/*###########################################################
-#############        Intrinsic Partials        ##############
-############################################################*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+.waypoint-hide {
+  opacity: 0; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*-----------------------------------------------------
----------    Priority: Ultra    -----------
------------------------------------------------------*/
-html {
-  font-size: 10px;
-  height: 100%; }
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  font-size: 1.6rem;
-  height: 100%; }
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit; }
-
-:focus {
-  outline: none; }
-
-::-moz-focus-inner {
-  border: 0; }
-
-/* Prevents adjustments of font size after orientation changes in IE on Windows Phone and in iOS */
-html {
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-/*###########################################################
-###############        Generic Partials        ##############
-############################################################*/
-/***********************************************  
-***************   TYPOGRAPHY    ****************
-************************************************/
-/*****************************************************  
-************       MEDIA QUERRIES      ***************
-******************************************************/
-/********* BREAKPOINT ***********/
-/* Small devices (landscape phones, 576px and up)
-Medium devices (tablets, 768px and up)
-Large devices (desktops, 992px and up)
-Extra large devices (large desktops, 1200px and up) */
-/*###############################################
-#############    02 Media Querry    ###########
-################################################*/
-/************************************************  
-******    general tags and attributes      ******
-*************************************************/
-[role=button] {
-  cursor: pointer; }
-
-/************************************************  
-*******      BODY AND ITS COMPONENT      ********
-*************************************************/
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.5em; }
-
-.col {
-  margin-right: auto;
-  margin-left: auto; }
-
-/************************************************  
-*************      General styles      **********
-*************************************************/
-.orangeHighlight {
-  color: #F7931D; }
-
-.hidden {
-  display: none; }
-
-/************************************************************************  
-*************      general tyles for specific screens size     **********
-************************************************************************/
-@media only screen and (max-width: 48.9375em) {
-  .notForSm {
-    display: none; } }
-
-/**************************************************************  
-*******     Component Style - Self Made (CSSM)       **********
-***************************************************************/
-.cssm-componentHeaderStyle1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 7.1875em; }
-  .cssm-componentHeaderStyle1 .componentHeading p {
-    font-size: 1.5em;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    color: #1a1a1a;
-    font-weight: 600;
-    padding: 8px 0 10px 0; }
-  .cssm-componentHeaderStyle1 .headerDivider {
-    background-color: #bfbfbf;
-    margin: 15px auto 40px auto;
-    height: 2px;
-    width: 40px; }
-  .cssm-componentHeaderStyle1 .componentSubHeading {
-    color: #595959;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
+.waypoint-reveal {
+  opacity: 1; }
 
 .glide {
   position: relative;
@@ -267,6 +113,190 @@ body {
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing; }
 
+/***********************************************  
+***************   TYPOGRAPHY    ****************
+************************************************/
+/*****************************************************  
+************       MEDIA QUERRIES      ***************
+******************************************************/
+/********* BREAKPOINT ***********/
+/* Small devices (landscape phones, 576px and up)
+Medium devices (tablets, 768px and up)
+Large devices (desktops, 992px and up)
+Extra large devices (large desktops, 1200px and up) */
+/*###############################################
+#############    02 Media Querry    ###########
+################################################*/
+.delay-100ms {
+  animation-delay: 100ms; }
+
+.delay-200ms {
+  animation-delay: 200ms; }
+
+.delay-300ms {
+  animation-delay: 300ms; }
+
+.delay-500ms {
+  animation-delay: 500ms; }
+
+.delay-600ms {
+  animation-delay: 600ms; }
+
+.delay-700ms {
+  animation-delay: 700ms; }
+
+.delay-800ms {
+  animation-delay: 800ms; }
+
+.delay-900ms {
+  animation-delay: 900ms; }
+
+.delay-1800ms {
+  animation-delay: 1800ms; }
+
+@keyframes slideInRight {
+  0% {
+    transform: translate3d(180%, 0, 0); } }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-----------------------------------------------------
+---------    Priority: Ultra    -----------
+-----------------------------------------------------*/
+html {
+  font-size: 10px;
+  height: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  height: 100%; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; }
+
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
+
+/* Prevents adjustments of font size after orientation changes in IE on Windows Phone and in iOS */
+html {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/************************************************  
+******    general tags and attributes      ******
+*************************************************/
+[role=button] {
+  cursor: pointer; }
+
+/************************************************  
+*******      BODY AND ITS COMPONENT      ********
+*************************************************/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em; }
+
+.col {
+  margin-right: auto;
+  margin-left: auto; }
+
+/************************************************  
+*************      General styles      **********
+*************************************************/
+.orangeHighlight {
+  color: #F7931D; }
+
+.hidden {
+  display: none; }
+
+/************************************************************************  
+*************      general tyles for specific screens size     **********
+************************************************************************/
+@media only screen and (max-width: 48.9375em) {
+  .notForSm {
+    display: none; } }
+
+/**************************************************************  
+*******     Component Style - Self Made (CSSM)       **********
+***************************************************************/
+.cssm-componentHeaderStyle1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 7.1875em; }
+  .cssm-componentHeaderStyle1 .componentHeading p {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 8px 0 10px 0; }
+  .cssm-componentHeaderStyle1 .headerDivider {
+    background-color: #bfbfbf;
+    margin: 15px auto 40px auto;
+    height: 2px;
+    width: 40px; }
+  .cssm-componentHeaderStyle1 .componentSubHeading {
+    color: #595959;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
 /*###########################################################
 #############       Dependency partials        ##############
 ############################################################*/
@@ -295,42 +325,6 @@ body {
   opacity: 1;
   transition: all 0.3s ease-in-out; }
 
-.delay-100ms {
-  animation-delay: 100ms; }
-
-.delay-200ms {
-  animation-delay: 200ms; }
-
-.delay-300ms {
-  animation-delay: 300ms; }
-
-.delay-500ms {
-  animation-delay: 500ms; }
-
-.delay-600ms {
-  animation-delay: 600ms; }
-
-.delay-700ms {
-  animation-delay: 700ms; }
-
-.delay-800ms {
-  animation-delay: 800ms; }
-
-.delay-900ms {
-  animation-delay: 900ms; }
-
-.delay-1800ms {
-  animation-delay: 1800ms; }
-
-.waypoint-hide {
-  opacity: 0; }
-
-.waypoint-reveal {
-  opacity: 1; }
-
-@keyframes slideInRight {
-  0% {
-    transform: translate3d(180%, 0, 0); } }
 /*##################################################
 ##############   01.01 mainBanner    ###############
 ###################################################*/
