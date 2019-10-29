@@ -297,34 +297,6 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-/*###########################################################
-#############       Dependency partials        ##############
-############################################################*/
-.dropBtn.activeDropDown .dropDownContent {
-  position: absolute;
-  display: flex;
-  flex-direction: column; }
-
-.dropBtn .dropDownContent {
-  display: none;
-  border-top: 3px solid #f7931d;
-  background-color: #2a2a2a;
-  padding: 0 20px;
-  width: 220px;
-  opacity: 0;
-  transition: all 0.3s ease-in-out; }
-  .dropBtn .dropDownContent li > a {
-    font-size: 13px;
-    color: #c1c1c1;
-    border-top: 1px solid #494949;
-    padding: 10px 0; }
-  .dropBtn .dropDownContent li:first-child > a {
-    border-top: 1px solid transparent; }
-
-.dropBtn.hoverEffect .dropDownContent {
-  opacity: 1;
-  transition: all 0.3s ease-in-out; }
-
 /*##################################################
 ##############   01.01 mainBanner    ###############
 ###################################################*/
@@ -349,6 +321,31 @@ body {
   background-image: url("../images/blog/392-320.jpg");
   background-image: -webkit-image-set(url("../images/blog/392-320.jpg") 1x, url("../images/blog/392-320@2x.jpg") 2x);
   background-image: image-set(url("../images/blog/392-320.jpg") 1x, url("../images/blog/392-320@2x.jpg") 2x); }
+
+.dropBtn.activeDropDown .dropDownContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column; }
+
+.dropBtn .dropDownContent {
+  display: none;
+  border-top: 3px solid #f7931d;
+  background-color: #2a2a2a;
+  padding: 0 20px;
+  width: 220px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; }
+  .dropBtn .dropDownContent li > a {
+    font-size: 13px;
+    color: #c1c1c1;
+    border-top: 1px solid #494949;
+    padding: 10px 0; }
+  .dropBtn .dropDownContent li:first-child > a {
+    border-top: 1px solid transparent; }
+
+.dropBtn.hoverEffect .dropDownContent {
+  opacity: 1;
+  transition: all 0.3s ease-in-out; }
 
 /*###########################################################
 #################      Main partials        #################
@@ -990,9 +987,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*##################################################
 #################   01.02 info    ###################
 ###################################################*/
-.component-mainInfo .glide__slide {
-  background-color: #fff; }
-
 .container-info {
   background-image: url("../images/info/info_bg.png");
   background-size: auto; }
