@@ -2,6 +2,7 @@
   "name": "jakedvirus.github.io",
   "version": "1.0.0",
   "description": "My startup project",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,14 +20,17 @@
   "homepage": "https://github.com/JakeDVirus/JakeDVirus.github.io#readme",
   "devDependencies": {
     "css-loader": "^3.2.0",
+    "expose-loader": "^0.7.5",
     "file-loader": "^4.3.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "install": "^0.13.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
-  }
+  },
+  "dependencies": {}
 }
