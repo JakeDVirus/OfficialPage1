@@ -1,4 +1,10 @@
-import { Script } from "vm";
+import './sass/styles.scss';
+//import 'waypoints';
+import 'waypoints/lib/noframework.waypoints.min.js';
 
-import './rough';
-console.log(rgh);
+var waypoint = new Waypoint({
+    element: document.querySelector('body'),
+    handler: function() {
+      console.log("kutte kamine :D :D :D")
+    }
+})

@@ -1,6 +1,7 @@
 const htmlWebPackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin =require('mini-css-extract-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
@@ -36,7 +37,23 @@ module.exports = {
             },  
         ]
     },
+
+    // optimization : {
+    //     splitChunks: {
+    //         cacheGroups: {
+    //             vendors: {
+    //                 test: /[\\/]node_modules[\\/]/,
+    //                 name: 'vendor',
+    //                 chunks: "all"
+    //             }
+    //         }
+    //     }
+    // },
+
     plugins: [
+        new webpack.ProvidePlugin({
+            waypoints: './node_modules/waypoints'
+        }),
         new htmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"

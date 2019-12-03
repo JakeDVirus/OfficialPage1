@@ -1,0 +1,279 @@
+/* Large devices (desktops, 992px and up)
+   min-width 992px = 62em 
+   max-width 1199px =74.9375em */
+  
+  
+
+ /*
+	Content
+	00. General for small device
+	01. Landing Page
+		01.00 Header
+		01.01 mainBanner
+		01.02 info
+			01.02.00 appendixAd
+	02. Online Presence
+	03. Why us?
+	04. Quality and Cost
+	xx. Miscellaneous
+    
+*/
+
+@media only screen and (min-width: 62em) {
+
+	/*###############################################
+	##############     01.01 2nd row    ##############
+	################################################*/	 
+	.container-header .row-navigation.sticky {
+		//background-color: #fff;
+		box-shadow: 0px -2px 8px rgba(0,0,0,0.3);
+		.wrapper-nav li.firstLevelList > a {
+			color: #000;
+			&:hover {color: #f7931d}
+		}
+	}
+    .component-navigation {
+        .wrapperAtomAnimation, .wrapperHamburger {
+            display: none;
+		}
+		.wrapper-nav {
+			position: relative;
+			height: 100%;
+			#cbp-spmenu-s2 {height: 100%}
+			.nav-label {display:none;}
+			.navContainer {
+				display: flex;
+				height: 100%;
+			}
+			li a {
+				//font-size: (14em/16);
+				padding-left: (20em/16);
+				padding-right: (20em/16);
+				height: 100%;
+				vertical-align: top;
+				display: flex;
+				align-items: center;
+			}
+			li:last-child a {
+				padding-right: 0;
+			}
+		}
+    }
+    
+
+
+	/*###############################################
+	############     02 mainBanner    ############
+	################################################*/
+
+	.component-mainBanner {
+		.heading p {
+			font-size: (49em/16);
+		}
+		.subHeading p {
+			font-size: (24em/16);
+		}
+	}
+	 
+	
+
+	/*###############################################
+	############     03 info    #####################
+	################################################*/
+
+	.component-mainInfo {
+		padding-top: (18em/16);
+		.glide__slides {
+			justify-content: space-between;
+			padding: (19em/16) 0 (32em/16) 0;
+
+		}
+		.glide__slide {
+			width: 23%;
+			flex-shrink: 0;
+		}
+		.glide__bullets {display: none;}
+	}
+
+
+	/*##################################################
+	#########     04. Quality and Cost     #############
+	###################################################*/
+	.col-qualityAndCost {
+		display: flex;
+		padding: 0;
+		.col-child {
+			flex-basis: 50%;
+			display: flex;
+			padding: 0;
+			&.left {
+				padding-left: 5%;
+				justify-content: flex-end;
+				.component {
+					padding-right: 60px
+				}
+			}
+			&.right {
+				padding-right: 5%;
+				justify-content: flex-start;
+				.component {
+					padding-left: 60px;
+				}
+			}
+			.component {
+				max-width: (120rem/2);
+				flex-basis: 100%;
+				
+			}
+		}
+	}
+	.component-qualityAndCost {
+		.heading .optional {
+			@media only screen and (min-width: 72.5) {
+				display: block;
+			}
+		}
+	}
+
+
+
+	// /*##################################################
+	// ##############    04 Quality and cost    ###########
+	// ###################################################*/
+	// .component-qualityAndCost {
+	// 	padding-top: (60em/16);
+	// 	padding-bottom: (60em/16);
+	// 	.heading p , .content {
+	// 		line-height: 43px;
+	// 	}
+	// 	.heading {
+	// 		padding-bottom: (14em/16);
+	// 		p {font-size: (36em/16);}
+	// 	}
+	// 	.content {font-size: (26em/16);}
+	// }	
+
+
+
+	/*##################################################
+	##############    03. Why Us?    ###################
+	###################################################*/
+	.component-whyUs_medScreen {display: none;}
+	.component-whyUs_largeScreen {
+		display: flex;
+		justify-content: center;
+		padding: (50em/16) 0 (150em/16) 0;
+		
+		.rightSec {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.componentHeading {
+			font-size: (33em/16);
+			font-weight: $semiBold-openSans;
+			color: #636363;
+			padding-bottom: 30px;
+		}
+		.componentImage img{
+			width: 100%;
+			height: auto;
+		}
+		.componentContent {
+			padding: (10em/16) 0 (50em/16) 0;
+			p {
+				font-size: 15px;
+				font-weight: $light-openSans;
+				  color: #8C8C8C;
+			}
+		}
+		.componentAppendix {
+			.item {
+				max-height: 68px;
+				overflow: hidden;
+				transition: all .7s ease-in;
+				margin-bottom: 2px;
+			}
+			.item.expand {
+				max-height: (250em/16);
+			}
+			.header {
+				display: flex;
+				height: 68px;
+				background-color: #F4F4F4;
+				padding-left: 34px;
+				align-items: center;
+				transition: all 0.5s ease;
+				transition: background-color 0s;
+	
+				&:last-child {margin-bottom: 0;}
+				
+				.icon i {
+					font-size: 14px;
+					color: #8D8D8D;
+				}
+				.heading {
+					font-size: 14px;
+					color: #8C8C8C;
+					font-family: $montserrat;
+					font-weight: $regular-montserrat;
+					padding-left: 19px;
+				}
+			}
+			.header:hover, .header.expand {
+				background-color: #47c9e5;
+				transition: all 0.5s ease;
+				.icon i, .heading {color: #ffffff;}
+			}
+			.header:hover {
+				//transition: none;
+			}
+			.content {
+				padding: 20px 0 20px 68px;
+				p {
+					color: rgb(141, 141, 141);
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+
+	/*##################################################
+	#########     03. Our Features	       #############
+	###################################################*/	
+	.component.ourFeatures {
+		.list {
+			//margin-right: 30px;
+			transition: box-shadow 0.3s, transform 0.3s;
+			&:last-child {margin-right: 0;}
+		}
+		.list:hover {
+			box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+			transform: translateY(-10px);
+		}
+	}
+
+
+	/*##################################################
+	#########       06. Our Blog 	       #############
+	###################################################*/
+	.component.ourBlog {
+		.listContainer {
+			flex-direction: row;
+		}
+		.list {margin-right: 30px;}
+		.list:last-child {
+			margin-right: 0;
+		}
+	}
+
+
+
+
+
+
+
+
+
+}

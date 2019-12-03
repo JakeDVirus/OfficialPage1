@@ -1,0 +1,70 @@
+/***********************************************  
+***************   TYPOGRAPHY    ****************
+************************************************/
+
+//----- FONT FAMILIES ----
+
+//OPEN SANS
+$openSans: 'Open Sans', sans-serif;
+$light-openSans: 300;
+$regular-openSans: 400;
+$semiBold-openSans: 600;
+
+
+
+//Montserrat
+$montserrat: 'Montserrat', sans-serif;
+$regular-montserrat: 400;
+$semiBold-montserrat: 600;
+
+//----- COLOR ------------
+
+
+
+
+
+/*****************************************************  
+************       MEDIA QUERRIES      ***************
+******************************************************/
+
+
+
+/********* BREAKPOINT ***********/
+
+/* Small devices (landscape phones, 576px and up)
+Medium devices (tablets, 768px and up)
+Large devices (desktops, 992px and up)
+Extra large devices (large desktops, 1200px and up) */
+
+
+
+//--- MIN-WIDTH ----
+
+//$xs-min : (default)        //phone
+$smBp-min : 36em;  //576px   //phone landscape  
+$mdBp-min : 48em;  //768px   //tablet 
+$lgBp-min : 62em;  //992px   //desktop 
+$xlBp-min : 75em;  //1200px  //desktop large
+$xxlBp-min: 100em; //1600px  //desktop extra large
+
+//--- MAX-WIDTH ----
+
+$xsBp-max : 36.9375em;  //575px   
+$smBp-max : 47.9375em;  //767px   
+$mdBp-max : 61.9375em;  //991px   
+$lgBp-max : 74.9375em;  //1199px  
+$xlBp-max : 99.9375em;  //1599px  
+
+
+//map of breakpoints for min-width media query mixins 
+$breakpoints: (
+	"phoneLandscape-min" : $smBp-min,
+	"tablet-min" : $mdBp-min,
+	"desktop-min" : $lgBp-min,
+	"desktopL-min" : $xlBp-min,
+	"desktopXL-min" : $xxlBp-min,
+	
+	"phoneLandscape-max": $smBp-max,
+	"tablet-max": $mdBp-max,
+	"desktopL-max": $xlBp-max
+);

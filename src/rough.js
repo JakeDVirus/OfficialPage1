@@ -1,1 +1,0 @@
-var rgh = "kya"
