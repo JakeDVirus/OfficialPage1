@@ -1,5 +1,7 @@
-$('document').ready(function() {
-  window.onscroll = function() {
+
+  //window.onscroll = function() {
+  
+  export function myOnScroll1() {
 
     /*######################################################
 	###               HEADER                           #####
@@ -26,5 +28,4 @@ $('document').ready(function() {
 
 
     
-  }// end of onscroll function
-})
+  }// end of myOnscroll function

@@ -1,5 +1,3 @@
-$('document').ready(function () {
-
   /*######################################################
 	###               HEADER                           #####
 	#######################################################*/
@@ -9,17 +7,18 @@ $('document').ready(function () {
       DropDown Navigation
   ===============================================================*/
 
-  let dropBtn = document.querySelectorAll(".dropBtn");
+  export let dropBtn = document.querySelectorAll(".dropBtn");
+  
   dropBtn.forEach(function(element, index) {
-    let dropDownContent = element.querySelector(".dropDownContent");
-    //mouseenter
-    element.addEventListener('mouseenter', function(){
-      element.classList.add("activeDropDown");
-      setTimeout(function(){
-        element.classList.add("hoverEffect");
-      },100);
-      
-    });
+      let dropDownContent = element.querySelector(".dropDownContent");
+      //mouseenter
+      element.addEventListener('mouseenter', function(){
+          element.classList.add("activeDropDown");
+          setTimeout(function(){
+            element.classList.add("hoverEffect");
+          },100);
+      });
+
     //mouseleave
     element.addEventListener('mouseleave', function(){
       element.classList.remove("hoverEffect");
@@ -45,11 +44,11 @@ $('document').ready(function () {
   
   buttonEqualizerOne();
 
-  function buttonEqualizerOne() {
+  export function buttonEqualizerOne() {
     let buttonOne = document.querySelector('.component-mainBanner .button1');
     let buttonTwo = document.querySelector('.component-mainBanner .button2');
-    buttonOneWidth = buttonOne.offsetWidth;
-    buttonTwoWidth = buttonTwo.offsetWidth;
+    let buttonOneWidth = buttonOne.offsetWidth;
+    let buttonTwoWidth = buttonTwo.offsetWidth;
     if(buttonOneWidth > buttonTwoWidth) {
       buttonTwo.style.width = buttonOneWidth + "px";
     } else {
@@ -70,7 +69,7 @@ $('document').ready(function () {
 	###                    Why Us                      #####
   #######################################################*/
 
-  let expandElmsParent = document.querySelectorAll('.componentAppendix .item');
+  export let expandElmsParent = document.querySelectorAll('.componentAppendix .item');
   expandElmsParent.forEach(function(element,index){
     element.addEventListener("click", function(){
       element.classList.toggle("expand");
@@ -102,11 +101,11 @@ $('document').ready(function () {
 	#############################################################
 	#############################################################  
   ############################################################*/
-  let mql_uptoMdBpMax = window.matchMedia('(max-width: 61.9375em)'); 
+  export let mql_uptoMdBpMax = window.matchMedia('(max-width: 61.9375em)'); 
   screenTest_uptoMdBpMax(mql_uptoMdBpMax);
   mql_uptoMdBpMax.addListener(screenTest_uptoMdBpMax);
   
-  function screenTest_uptoMdBpMax(e) {
+  export function screenTest_uptoMdBpMax(e) {
     if(e.matches) {      
       
       /*=============================================================================
@@ -222,6 +221,3 @@ $('document').ready(function () {
 	#############################################################
 	#############################################################  
   ############################################################*/
-
-
-}); 
