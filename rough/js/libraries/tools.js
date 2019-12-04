@@ -1,5 +1,5 @@
 //debouncer 
-function debouncer( func , timeout ) {
+export function debouncer( func , timeout ) {
   var timeoutID , timeout = timeout || 200;
   return function () {
       var scope = this , args = arguments;
@@ -12,7 +12,7 @@ function debouncer( func , timeout ) {
 
 
 ////fade in 
-function unfade(element, initialOp) {
+export function unfade(element, initialOp) {
   var op = InitialOp || 0.1;  // initial opacity
   element.style.display = 'block';
   var timer = setInterval(function () {
@@ -32,7 +32,7 @@ function unfade(element, initialOp) {
 ###         Background Image load event            #####
 #######################################################*/
 
-function getBgUrl(el) {
+export function getBgUrl(el) {
   var bg = "";
   if (el.currentStyle) { // IE
       bg = el.currentStyle.backgroundImage;

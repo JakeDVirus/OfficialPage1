@@ -1,4 +1,4 @@
-$("document").ready(function() {
+import {getBgUrl} from '../libraries/tools';
 
 
 
@@ -10,11 +10,11 @@ $("document").ready(function() {
   /*===(1)=======================================================
   Animating Progress bar
   ===============================================================*/
-  var componentQualityAndCostSkills = document.querySelector('.component.qualityAndCostSkills')
-  var progressBarsSet1 = document.querySelectorAll(".qualityAndCostSkills .progressBar");
+  export var componentQualityAndCostSkills = document.querySelector('.component.qualityAndCostSkills')
+  export var progressBarsSet1 = document.querySelectorAll(".qualityAndCostSkills .progressBar");
   
   //animation on scroll: progressBar
-  var waypoint2 = new Waypoint({
+  export var waypoint2 = new Waypoint({
     element: componentQualityAndCostSkills,
     handler: assignProgressAnimation1,
     offset: '40%'
@@ -23,14 +23,14 @@ $("document").ready(function() {
 
 
   //assining function animation to Nodelists
-  function assignProgressAnimation1() {
+  export function assignProgressAnimation1() {
     progressBarsSet1.forEach(function(elm){
       progressBarMove1(elm, elm.value);
     })
   }
 
   //function def: animation: progressBar
-  function progressBarMove1(elem, maxPerc) {
+  export function progressBarMove1(elem, maxPerc) {
     //var elem = document.getElementById("myBar"); 
     elem.value = 10;
     var id = setInterval(frame, 10);
@@ -57,12 +57,12 @@ $("document").ready(function() {
   ****************************************************************/  
 
   
-  let mql_lgBpMin = window.matchMedia('(min-width: 62em)');
+  export let mql_lgBpMin = window.matchMedia('(min-width: 62em)');
   screenTest_lgBpMin_animationOnScroll(mql_lgBpMin);
   mql_lgBpMin.addListener(screenTest_lgBpMin_animationOnScroll);
   
   
-  function screenTest_lgBpMin_animationOnScroll(e) {
+  export function screenTest_lgBpMin_animationOnScroll(e) {
     if(e.matches) {
       
       /*######################################################
@@ -135,8 +135,3 @@ $("document").ready(function() {
     }// End of e.matches
   }//End of function screeTest_lgBpMin_animationOnScroll()
 
-
-
-
-
-})//End of ready function
