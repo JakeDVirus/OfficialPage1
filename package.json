@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JakeDVirus/JakeDVirus.github.io#readme",
   "devDependencies": {
+    "animate.css": "^3.7.2",
     "css-loader": "^3.2.0",
     "expose-loader": "^0.7.5",
     "file-loader": "^4.3.0",
