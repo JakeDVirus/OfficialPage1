@@ -6,8 +6,8 @@ const webpack = require('webpack');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'main.[contentHash].js',
+        path: path.resolve(__dirname, 'dist')
     },
     mode: 'none',
     module: {
