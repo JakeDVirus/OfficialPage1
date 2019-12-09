@@ -5,11 +5,6 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
-    output: {
-        filename: 'main.[contentHash].js',
-        path: path.resolve(__dirname, 'dist')
-    },
-    mode: 'none',
     module: {
         rules: [
             {
@@ -37,25 +32,13 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
+                    'style-loader',  //3. Inject styles to DOM
+                    'css-loader',    //2. Turns css into commonJS
+                    'sass-loader'    //1. Turns sass into css
                 ]
             },  
         ]
     },
-
-    // optimization : {
-    //     splitChunks: {
-    //         cacheGroups: {
-    //             vendors: {
-    //                 test: /[\\/]node_modules[\\/]/,
-    //                 name: 'vendor',
-    //                 chunks: "all"
-    //             }
-    //         }
-    //     }
-    // },
 
     plugins: [
         new webpack.ProvidePlugin({
