@@ -3,6 +3,10 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
+    output: {
+        filename: 'main.[contentHash].js',
+        path: path.resolve(__dirname, 'dist')
+    },
     module: {
         rules: [
             {
@@ -10,6 +14,7 @@ module.exports = {
                 use: [
                     {
                         loader: 'html-loader',
+                        options: {interpolate: true}
                     }
                 ]
             },
@@ -34,6 +39,7 @@ module.exports = {
     },
 
     plugins: [
+        new CleanWebpackPlugin(),
         new webpack.ProvidePlugin({
             //waypoints: './node_modules/waypoints'
         })

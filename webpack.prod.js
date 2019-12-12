@@ -9,10 +9,6 @@ const htmlWebPackPlugin = require('html-webpack-plugin');
 
 
 module.exports = merge(common, {
-    output: {
-        filename: 'main.[contentHash].js',
-        path: path.resolve(__dirname, 'dist')
-    },
     mode: 'production',
     optimization: {
         minimizer: [
@@ -41,7 +37,6 @@ module.exports = merge(common, {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].[contentHash].css",
         })
