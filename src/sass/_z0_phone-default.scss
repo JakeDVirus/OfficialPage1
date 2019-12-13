@@ -7,8 +7,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	01. Landing Page
 		01.00 Header
 		01.01 mainBanner
-		01.02 info
-			01.02.00 appendixAd
+		01.02 bannerFooter
 	02. Online Presense
 	03. Our Services
 	04. quality and cost
@@ -184,6 +183,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	.row-mainBanner, .col-mainBanner { height: 100%;}
 }
 .component-mainBanner {
+	position: relative;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -249,107 +249,16 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		}		
 		.button1 {display: none;}
 	}
-}
-
-
-
-
-/*##################################################
-#################   01.02 info    ###################
-###################################################*/
-
-.container-info {
-	display: none;
-}
-.container-info {
-	//background-image: url("../images/info/info_bg.png");
-	//background-size: auto;
-}
-
-
-/*##########################
-		  row-mainInfo
-############################*/
-
-.component-mainInfo {	
-	padding-top: (30em/16);
-	padding-bottom: (18em/16);
-	letter-spacing: 1px;
-	.glide__slides {
-		padding-bottom: (19em/16);
-	}
-	.glide__slide {
-		position: relative;
-		padding: (19em/16) 1em;
-		background-color: #654928;
-		border: 2px solid #8A5E29;
-		display: flex;
-		align-items: center;
-		height: (111em/16);
-		border-radius: 4px;
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0; left: 20px; bottom: 0; right: 20px;
-			box-shadow: 0 8px 20px rgba(0,0,0,0.74);
-			z-index: -1;
-		}
-
-		.text {
-			font-size: (14em/16);
-			color: rgba(244, 244, 244, 0.81);
-			font-family: $openSans;
-			font-weight: $light-openSans;
-			text-align: center;
-			transition: height 300ms ease;
-			line-height: 23px;
+	.bannerFooter {
+		position: absolute;
+		bottom: 0;
+		padding-bottom: 10%;
+		.scrollDownAnimationMouse {
+			display: block;
+			@import "../librariesSelfMade/css/scrollDownAnimation-mouse";
 		}
 	}
-	.glide__bullets {
-		position: static;
-		transform: none;
-		display: flex;
-		justify-content: center;
-	}
-	.glide__bullet {
-		height: 11px;
-		width: 11px;
-	}
-	.glide__bullet--active {
-		background-color: #F7931D;
-	}
-
 }
-
-
-/*##########################
-		row-appendixInfo
-############################*/
-.row-appendixInfo {
-	background-color: rgba(17,17,17,0.48);
-	background-color: rgba(35,35,35,0.48);
-}
-.component-appendixInfo {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: (8em/16) 0;
-
-	.text {
-		color: #959595;
-		font-size: (13em/16);
-	}
-	a {
-		color: #ffffff;
-		font-size: (12em/16);
-		padding: 4px 24px;
-		border: 1px solid #F7931D;
-		border-radius: 4px;
-	}
-}
-
-
-
 
 /*#######################################################
 #######          02. Online Presense          ###########

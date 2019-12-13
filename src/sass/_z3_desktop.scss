@@ -77,26 +77,6 @@
 	 
 	
 
-	/*###############################################
-	############     03 info    #####################
-	################################################*/
-	.container-info {
-		display: block;
-	}
-	.component-mainInfo {
-		padding-top: (18em/16);
-		.glide__slides {
-			justify-content: space-between;
-			padding: (19em/16) 0 (32em/16) 0;
-
-		}
-		.glide__slide {
-			width: 23%;
-			flex-shrink: 0;
-		}
-		.glide__bullets {display: none;}
-	}
-
 
 	/*##################################################
 	#########     04. Quality and Cost     #############
