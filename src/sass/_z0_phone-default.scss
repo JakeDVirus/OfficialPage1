@@ -176,7 +176,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*##################################################
 ##############   01.01 mainBanner    ###############
 ###################################################*/
-
+.container-mainBanner {position: relative;}
 .container-mainBanner {
 	flex: 1;
 	.row-mainBanner, .col-mainBanner { height: 100%;}
@@ -248,20 +248,28 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		}		
 		.button1 {display: none;}
 	}
-	.bannerFooter {
-		position: absolute;
-		bottom: 0;
-		padding-bottom: 10%;
-		.componentScrollDownAnimationMouse {
-			@import "../librariesSelfMade/css/scrollDownAnimation-mouse";
-		}
+}
+
+.component.bannerFooter {
+	position: absolute;
+	width: 100%;
+	left: 0%; 
+	bottom: 0;
+	padding-bottom: 10%;
+	.componentScrollDownAnimationMouse {
+		@import "../librariesSelfMade/css/scrollDownAnimation-mouse";
 	}
 }
+
+
 
 /*#######################################################
 #######          02. Online Presense          ###########
 #########################################################*/
-.row-onlinePresence {background-color: #f7f7f7;}
+.container-onlinePresence {
+	padding-top: 8.3em; //half the size of .component.bannerFooter
+	background-color: #f7f7f7;
+}
 .component-onlinePresence {
 	padding: (80em/16) 0;
 

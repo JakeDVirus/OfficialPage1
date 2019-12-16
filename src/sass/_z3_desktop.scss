@@ -67,15 +67,23 @@
 	################################################*/
 
 	.component-mainBanner {
+		position: relative;
 		.heading p {
 			font-size: (49em/16);
 		}
 		.subHeading p {
 			font-size: (24em/16);
 		}
-		.componentCards {
+	}
+	.component.bannerFooter {
+		.cards {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
 			font-size: 1rem; //10px
 			display: flex;
+			transform: translate(0%,50%);
+			justify-content: center;
 			.card {
 				padding: 1.8em;
 				background-color: #2b2b2b;
@@ -92,24 +100,32 @@
 			}
 			.innerContainer {
 				width: 27.5em;
-				padding-top: 22px;
-				padding-bottom: 23px;
+				padding-top: 2.2em;
+				padding-bottom: 2.3em;
+				background-color: rgba(178, 178, 178, 0.1);
+				border: 1px solid rgba(112, 112, 112, 0.34);
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				background-color: rgba(178, 178, 178, 0.1);
-				border: 1px solid rgba(112, 112, 112, 0.34);
+			}
+			.wrapperContent {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 20.6em;
+				letter-spacing: 1px;
 			}
 			.label {
 				font-size: 1.6em;
 				font-weight: $semiBold-openSans;
 				color: #fff;
-				padding-bottom: 1.1em;
+				padding-bottom: (11em/16);
 			}
 			.text {
 				font-size: 1.4em;
 				font-weight: $semiBold-openSans;
 				color: #8a8a8a;
+				text-align: center;
 			}
 		}
 	}
