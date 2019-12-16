@@ -98,38 +98,6 @@ import {getBgUrl} from '../libraries/tools';
         })
       };//end of .onload function
 
-      
-
-      /*######################################################
-      ###                   Why Us                       #####
-      #######################################################*/
-    
-      var componentWhyUs = document.querySelector(".component-whyUs_largeScreen");
-      var componentWhyUsChildren = componentWhyUs.querySelectorAll('.componentHeading, .componentImage, .componentContent, .componentAppendix');
-      componentWhyUsChildren.forEach(function(elm){
-        elm.classList.add("waypoint-hide");
-      })
-    
-      var waypoint1 = new Waypoint({
-        element: document.querySelector(".component-whyUs_largeScreen"),
-        handler: function() {  
-          componentWhyUsChildren.forEach(function(elm){
-            if (elm.classList.contains("componentHeading")) {
-              elm.classList.add("animated", "slideInRight");
-              elm.classList.replace("waypoint-hide", "waypoint-reveal")
-            }
-            if (elm.classList.contains("componentImage")) {
-              elm.classList.add('animated', 'fadeInUp');
-              elm.classList.replace("waypoint-hide", "waypoint-reveal")
-            }
-            if (elm.classList.contains("componentContent") || elm.classList.contains("componentAppendix")) {
-              elm.classList.add('animated','slideInRight');
-              elm.classList.replace("waypoint-hide", "waypoint-reveal");
-            }
-          });
-        },
-        offset: '40%'
-      })
 
 
     }// End of e.matches
