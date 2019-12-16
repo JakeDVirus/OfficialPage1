@@ -84,6 +84,9 @@
 			display: flex;
 			transform: translate(0%,50%);
 			justify-content: center;
+			@media only screen and (min-width: 100em) {
+				font-size: 1.25rem;
+			}
 			.card {
 				padding: 1.8em;
 				background-color: #2b2b2b;
