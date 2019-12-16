@@ -7,7 +7,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 	01. Landing Page
 		01.00 Header
 		01.01 mainBanner
-		01.02 bannerFooter
 	02. Online Presense
 	03. Our Services
 	04. quality and cost
@@ -253,8 +252,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		position: absolute;
 		bottom: 0;
 		padding-bottom: 10%;
-		.scrollDownAnimationMouse {
-			display: block;
+		.componentScrollDownAnimationMouse {
 			@import "../librariesSelfMade/css/scrollDownAnimation-mouse";
 		}
 	}

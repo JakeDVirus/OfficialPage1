@@ -73,6 +73,45 @@
 		.subHeading p {
 			font-size: (24em/16);
 		}
+		.componentCards {
+			font-size: 1rem; //10px
+			display: flex;
+			.card {
+				padding: 1.8em;
+				background-color: #2b2b2b;
+			}
+			.card:nth-child(2) {
+				background-color: #dd993a;
+				.innerContainer {
+					background-color:rgba(255, 255, 255, 0.14);
+					border-color: rgba(255, 255, 255, 0.34);
+				}
+				.text {
+					color: #fff;
+				}
+			}
+			.innerContainer {
+				width: 27.5em;
+				padding-top: 22px;
+				padding-bottom: 23px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: rgba(178, 178, 178, 0.1);
+				border: 1px solid rgba(112, 112, 112, 0.34);
+			}
+			.label {
+				font-size: 1.6em;
+				font-weight: $semiBold-openSans;
+				color: #fff;
+				padding-bottom: 1.1em;
+			}
+			.text {
+				font-size: 1.4em;
+				font-weight: $semiBold-openSans;
+				color: #8a8a8a;
+			}
+		}
 	}
 	 
 	
@@ -116,28 +155,6 @@
 			}
 		}
 	}
-
-
-
-	// /*##################################################
-	// ##############    04 Quality and cost    ###########
-	// ###################################################*/
-	// .component-qualityAndCost {
-	// 	padding-top: (60em/16);
-	// 	padding-bottom: (60em/16);
-	// 	.heading p , .content {
-	// 		line-height: 43px;
-	// 	}
-	// 	.heading {
-	// 		padding-bottom: (14em/16);
-	// 		p {font-size: (36em/16);}
-	// 	}
-	// 	.content {font-size: (26em/16);}
-	// }	
-
-
-
-
 
 	/*##################################################
 	#########     03. Our Features	       #############

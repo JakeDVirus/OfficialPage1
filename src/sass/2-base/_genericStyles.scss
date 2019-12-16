@@ -43,11 +43,16 @@ body {
 .notForSm {
 	@media only screen and (max-width: 47.9375em) {
 		display: none;
-	}
+	}	
 }
 .onlyForSm {
-	@media only screen and (min-width: 48.9375) {
-		display: none !important;
+	@media only screen and (min-width: 48em) {
+		display: none;
+	}
+}
+.onlyForDesktop {
+	@media only screen and (max-width: 61.9375em) {
+		display: none;
 	}
 }
 
