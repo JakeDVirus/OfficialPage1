@@ -86,16 +86,25 @@
 			justify-content: center;
 			.card {
 				padding: 1.8em;
-				background-color: #2b2b2b;
-			}
-			.card:nth-child(2) {
-				background-color: #dd993a;
-				.innerContainer {
-					background-color:rgba(255, 255, 255, 0.14);
-					border-color: rgba(255, 255, 255, 0.34);
+
+				&:first-child {
+					background: #2b2b2b url('../assets/icons/clock1.png') no-repeat right -34px top -23px;
+					background-size: 227px;
 				}
-				.text {
-					color: #fff;
+				&:nth-child(2) {
+					background: #dd993a url('../assets/icons/world.png') no-repeat right -23px top -12px;
+					background-size:184px;
+					.innerContainer {
+						background-color:rgba(255, 255, 255, 0.14);
+						border-color: rgba(255, 255, 255, 0.34);
+					}
+					.text {
+						color: #fff;
+					}
+				}
+				&:last-child {
+					background: #2b2b2b url('../assets/icons/setting.png') no-repeat right -66px top -34px;
+					background-size: 250px;
 				}
 			}
 			.innerContainer {
