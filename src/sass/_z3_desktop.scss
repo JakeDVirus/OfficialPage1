@@ -88,12 +88,12 @@
 				padding: 1.8em;
 
 				&:first-child {
-					background: #2b2b2b url('../assets/icons/clock1.png') no-repeat right -34px top -23px;
-					background-size: 227px;
+					background: #2b2b2b url('../assets/icons/clock1.png') no-repeat right -3.4em top -2.3em;
+					background-size: 22.7em;
 				}
 				&:nth-child(2) {
-					background: #dd993a url('../assets/icons/world.png') no-repeat right -23px top -12px;
-					background-size:184px;
+					background: #dd993a url('../assets/icons/world.png') no-repeat right -2.3em top -1.2em;
+					background-size:18.4em;
 					.innerContainer {
 						background-color:rgba(255, 255, 255, 0.14);
 						border-color: rgba(255, 255, 255, 0.34);
@@ -103,8 +103,8 @@
 					}
 				}
 				&:last-child {
-					background: #2b2b2b url('../assets/icons/setting.png') no-repeat right -66px top -34px;
-					background-size: 250px;
+					background: #2b2b2b url('../assets/icons/setting.png') no-repeat right -6.6em top -3.4em;
+					background-size: 25.0em;
 				}
 			}
 			.innerContainer {

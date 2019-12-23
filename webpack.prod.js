@@ -6,6 +6,13 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var TerserPlugin = require("terser-webpack-plugin"); 
 const htmlWebPackPlugin = require('html-webpack-plugin');
 
+// for `minify` of htmlWebpackPlugin
+const configurationObject1 = {    
+    removeAttributeQuotes: true,
+    collapseWhitespace: true,
+    removeComments: true
+}
+
 
 module.exports = merge(common, {
     mode: 'production',
@@ -15,11 +22,12 @@ module.exports = merge(common, {
             new TerserPlugin,
             new htmlWebPackPlugin({
                 template: "./src/index.html",
-                minify: {
-                    removeAttributeQuotes: true,
-                    collapseWhitespace: true,
-                    removeComments: true
-                }
+                minify: configurationObject1 
+            }),
+            new htmlWebPackPlugin({
+                filename: "blogs_all.html",
+                template: "./src/htmlPages/blogs_all.html",
+                minify: configurationObject1
             })
         ]
     },
