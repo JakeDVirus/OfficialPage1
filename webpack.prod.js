@@ -21,12 +21,14 @@ module.exports = merge(common, {
             new OptimizeCssAssetsPlugin(),
             new TerserPlugin,
             new htmlWebPackPlugin({
-                template: "./src/index.html",
+                template: "./src/htmlPages/index.html",
+                chunks: ['home'],
                 minify: configurationObject1 
             }),
             new htmlWebPackPlugin({
                 filename: "blogs_all.html",
                 template: "./src/htmlPages/blogs_all.html",
+                chunks: ['allBlogs'],
                 minify: configurationObject1
             })
         ]

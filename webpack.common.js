@@ -4,10 +4,18 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        home: './src/js/00_root/home.js',
+        allBlogs: './src/js/00_root/allBlogs.js'
+    },
     output: {
-        filename: 'main.[contentHash].js',
+        filename: '[name].[contentHash].js',
         path: path.resolve(__dirname, 'dist')
+    },
+    optimization: {
+        splitChunks: {
+            //chunks: "all"
+        }
     },
     module: {
         rules: [

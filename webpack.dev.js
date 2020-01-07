@@ -27,11 +27,13 @@ module.exports = merge(common, {
     },
     plugins: [
         new htmlWebPackPlugin({
-            template: "./src/index.html",
+            template: "./src/htmlPages/index.html",
+            chunks: ['home']
         }),
         new htmlWebPackPlugin({
             filename: "blogs_all.html",
-            template: "./src/htmlPages/blogs_all.html"
+            template: "./src/htmlPages/blogs_all.html",
+            chunks: ['allBlogs']
         })
     ]
 
