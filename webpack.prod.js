@@ -2,8 +2,8 @@ const path = require('path');
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin =require('mini-css-extract-plugin');
-var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-var TerserPlugin = require("terser-webpack-plugin"); 
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); //optimize/minimize css plugin
+var TerserPlugin = require("terser-webpack-plugin"); //minimize javascript plugin
 const htmlWebPackPlugin = require('html-webpack-plugin');
 
 // for `minify` of htmlWebpackPlugin
@@ -18,18 +18,18 @@ module.exports = merge(common, {
     mode: 'production',
     optimization: {
         minimizer: [
-            new OptimizeCssAssetsPlugin(),
+            new OptimizeCssAssetsPlugin(), 
             new TerserPlugin,
             new htmlWebPackPlugin({
                 template: "./src/htmlPages/index.html",
                 chunks: ['home'],
-                minify: configurationObject1 
+                minify: configurationObject1 //its a variable
             }),
             new htmlWebPackPlugin({
                 filename: "blogs_all.html",
                 template: "./src/htmlPages/blogs_all.html",
                 chunks: ['allBlogs'],
-                minify: configurationObject1
+                minify: configurationObject1 //its a variable
             })
         ]
     },
