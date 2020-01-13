@@ -1,10 +1,7 @@
 
-.component-navigation .wrapper-nav { 
-	@import "sideMenu";
+@import "sideMenu";
 	
-	ul {overflow: auto;}
-}
-
+ul {overflow: auto;}
 
 @media only screen and (max-width: 61.9375em) {
 	//class for disable body scrolling when the menu is open
@@ -22,7 +19,7 @@
 	.bgColor {
 		background-color: rgba(0,0,0,0.6);		
 	}
-	.wrapper-nav {	
+	.l-pageNav {	
 		transition: background-color 500ms !important;
 	}
 

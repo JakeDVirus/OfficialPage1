@@ -21,132 +21,23 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 /*###############################################
 #######   00. General for small device   ########
 ################################################*/
-.row {
-	padding-right: 5%;
-	padding-left: 5%;
-}
-.col {
-	width: 100%;
-}
 
 
-/*##################################################
-##############   01 Landing page    ################
-###################################################*/
-.landingPage {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
 
 
 
 /*##################################################
 ##############   01.00 Header    ###################
 ###################################################*/
-.container-header {
-	font-size: 1.6rem; // 1.6 * 10px = 16px
-}
-
-/******************************************
-***             First row               ***
-*******************************************/
-
-.container-header .row-welcome {
-	background-color: #F7931D;
-}
-
-.component-welcome {
-	font-size: 1.2rem;
-	padding: (5em/12) 0;
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-	letter-spacing: 1px;
-	.leftSection, .rightSection {
-		display: flex;
-		justify-content: space-between;
-		> * {
-			margin-left: (10em/12);//10px;
-			padding-left: 10px;
-			border-left: 1px solid rgba(255,255,255,0.6);
-			&:first-child {margin: 0; padding: 0; border: 0;}
-		}
-	}
-	i {vertical-align: middle;}
-
-	.wrapperSocialNetwork {
-		display: flex;
-		.socialNetwork {padding-right: (10em/12);} //10px, base 12px
-		.socialNetwork:last-child {padding-right: 0;}
-		i {
-			font-size: (13em/12); //13px
-			color: #fff;
-		}
-	}
-	.wrapperContactNumber i {font-size: (10em/12); position: relative; bottom: 2px;}
-}
-
-
-/*XXXXXXXXXXXXXXXX  Only mobile specific XXXXXXXXXXXXXXX*/
-
-@media only screen and (max-width: 47.9375em) {
-	//max-width--> 767px
-	.component-welcome {
-		justify-content: center;
-		.leftSection {display: none;}
-	}
-}
-@media only screen and (max-width: 21.5625em) {
-	//max-width--> 320px
-	.component-welcome {
-		.wrapperLogin {display: none;}
-	}
-}
-
-
-
-
 
 /******************************************
 ***           2nd row                   ***
 *******************************************/
 
-//------ Imports ------
-@import '0-plugins/icebox/mobileMenu/mobileMenuBase';
+
 .component-navigation {
-	.wrapperAtomAnimation { @import "0-plugins/icebox/atomAnimation1";}
-	.wrapperHamburger {@import "0-plugins/icebox/mobileMenu/hamburgerAnimation1";} 
-}
-
-//------ End of Imports ----
-
-
-
-.container-header .row-navigation {
-	background-color: #222;
-}
-.container-header .row-navigation.sticky {
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	width: 100%;
-}
-.component-navigation {
-	font-size: 1.6rem; 
-	height: (66em/16);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	.wrapperAtomAnimation {
-		width: (66em/16);
-		height: (66em/16);
-		overflow: visible;
-		position: relative;
-		left: (-15em/16);
-	}
 	.wrapperLogo{display: flex; align-items: center;}
-	.wrapperHamburger {
+	.l-hamburger {
 		position: relative;
 		z-index: 98;
 		margin-right: (-12em/16);
@@ -157,18 +48,7 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 		position: relative;
 		z-index: 99;
 	}
-	.wrapper-nav {
-		position: fixed;
-		z-index: 1;
-		right: 0;
-		li a {
-			text-transform: uppercase;
-			color: #f3f3f3;
-			font-size: 14px;
-			transition: all 0.3s ease-in-out
-		}
-		li a:hover {color: #f7931d}
-	}
+	
 }
 
 

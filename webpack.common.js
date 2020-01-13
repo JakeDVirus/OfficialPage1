@@ -1,12 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const MiniCssExtractPlugin =require('mini-css-extract-plugin');
 
 
 module.exports = {
     entry: {
-        home: './src/js/00_root/home.js',
-        allBlogs: './src/js/00_root/allBlogs.js'
+        home: ['./src/js/00_root/pageHome.js', './src/js/00_root/tempHeader.js'],
+        allBlogs: ['./src/js/00_root/pageAllBlogs.js', './src/js/00_root/tempHeader.js']
     },
     output: {
         filename: '[name].[contentHash].js',
@@ -39,6 +40,20 @@ module.exports = {
                 }
             },
             {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,  //3. Extract css into files
+                    {
+                        loader: 'css-loader', //2. Turns css into commonJS
+                        options: { sourceMap: true }
+                    },
+                    {
+                        loader: 'sass-loader', //1. Turns sass into css
+                        options: { sourceMap: true }
+                    }
+                ]
+            },
+            {
                 test: /\.css$/,
                 use: [
                     'style-loader',
@@ -50,8 +65,8 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(),
-        new webpack.ProvidePlugin({
-            //waypoints: './node_modules/waypoints'
+        new MiniCssExtractPlugin({
+            filename: "[name].[contentHash].css",
         })
     ]
 }

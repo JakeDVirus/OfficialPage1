@@ -1,0 +1,72 @@
+#header {
+    font-size: 1.6rem; //16px
+}
+
+//preHeader
+.l-rowPreHeaderRow {
+	background-color: #F7931D;
+}
+.l-componentPreHeaderRow {
+    padding: (5em/12) 0;
+}
+
+//mainHeader
+.l-rowMainHeader {
+	background-color: #222;
+}
+.l-rowMainHeader.sticky {
+    position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+}
+.l-componentMainHeader {
+    font-size: 1.6rem; 
+	height: (66em/16);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}  
+.l-atomAnimation {
+	width: (66em/16);
+	height: (66em/16);
+	overflow: visible;
+	position: relative;
+	left: (-15em/16);
+}
+.l-pageNav {
+	@media only screen and (max-width: 61.9375em) {
+		position: fixed;
+	}
+	z-index: 1;
+	right: 0;
+	height: 100%;
+}
+
+.l-pageNav #cbp-spmenu-s2 {height: 100%}
+.l-pageNav .nav-label {
+	@media only screen and (min-width: 62em) {
+		display:none;
+	}
+}
+.l-pageNav .navContainer {
+	display: flex;
+	height: 100%;
+}
+.l-pageNav li a {
+	text-transform: uppercase;
+	color: #f3f3f3;
+	font-size: 14px;
+	transition: all 0.3s ease-in-out;
+	//font-size: (14em/16);
+	padding-left: (20em/16);
+	padding-right: (20em/16);
+	height: 100%;
+	vertical-align: top;
+	display: flex;
+	align-items: center;
+}
+.l-pageNav li:last-child a {
+	padding-right: 0;
+}
+.l-pageNav li a:hover {color: #f7931d}

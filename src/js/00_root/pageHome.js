@@ -10,4 +10,4 @@ import * as myGeneral from '../general';
 
 
 //onScroll
-window.onscroll = myOnScroll1;
+window.onscroll = myOnScroll1; 

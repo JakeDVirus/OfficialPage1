@@ -1,12 +1,12 @@
 
-@include mq("desktop-min", max) {
+@media only screen and (max-width: 61.9375em) {
 
 	/* General edited styles for all menus 
 		IMPORTANT --> some lines are commented as part of edit 
 	*/
 
 	//=======================================
-	.component-navigation .wrapper-nav ul {
+	ul {
 		flex-direction: column;
 		//align-items: stretch;	
 		li {

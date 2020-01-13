@@ -11,17 +11,26 @@
 
 
 /************************************************  
-*******      BODY AND ITS COMPONENT      ********
+*******              BODY                ********
 *************************************************/
 body {
 	//font-size: 1.6rem; //16px (set in set in the 00_intrinsic-scss/_02-normalizeSelfMade.scss)
 	font-family: $openSans;
 	font-weight: $regular-openSans; //300~normal, 600~bold
 	line-height: (24em/16);
-	//letter-spacing: 1px;
 }
-//#wrapper-page, main {height: 100%}
+
+
+
+/************************************************  
+*******          rows and columns        ********
+*************************************************/
+.row {
+	padding-right: 5%;
+	padding-left: 5%;
+}
 .col {
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -38,7 +47,7 @@ body {
 }
 
 /************************************************************************  
-*************      general tyles for specific screens size     **********
+*************      general styles for specific screens size     **********
 ************************************************************************/
 .notForSm {
 	@media only screen and (max-width: 47.9375em) {

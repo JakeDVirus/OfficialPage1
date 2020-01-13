@@ -1,0 +1,112 @@
+.preHeaderRow {
+    font-size: 1.2rem; // 12px, asummed html size = 10px
+    color: #fff;
+	display: flex;
+	justify-content: space-between;
+    letter-spacing: 1px;
+    background-color: #F7931D;
+}
+
+
+.preHeaderRow_section {
+    display: flex;
+    justify-content: space-between;
+}
+.preHeaderRow_section_item {
+    margin-left: (10em/12);//10px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255,255,255,0.6);
+    &:first-child {
+        margin: 0; 
+        padding: 0;   
+        border: 0;
+    }
+}
+
+
+.preHeaderRow .faIcon {
+    vertical-align: middle;
+}
+
+.preHeaderRow_socialMedia {
+    display: flex;
+}
+.preHeaderRow_socialMedia_item {
+	padding-right: (10em/12); //10px, base 12px
+}
+.preHeaderRow_socialMedia_item:last-child {
+    padding-right: 0;
+}
+.preHeaderRow_socialMedia .faIcon {
+    font-size: (13em/12); //13px
+    color: #fff;
+}
+
+.preHeaderRow_contactNumber .faIcon {
+    font-size: (10em/12); 
+    position: relative; 
+    bottom: 2px;
+
+}
+
+
+@media only screen and (max-width: 47.9375em) {
+	//max-width--> 767px
+	.preHeaderRow {
+		justify-content: center;
+	}
+    .preHeaderRow_leftSection {display: none;}
+}
+
+@media only screen and (max-width: 21.5625em) {
+	//max-width--> 320px
+    .preHeaderRow_login {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+// preHeaderRow, 
+// preHeaderRow_leftSection, 
+// preHeaderRow_rightSection, 
+// preHeaderRow_section, faIcons, 
+// preHeaderRow_section_item, 
+// preHeaderRow_socialNetwork, 
+// preHeaderRow_socialNetwork_
+
+/**
+
+<div class="preHeaderRow">
+    <div class="preHeaderRow_s ection">
+        <a href="#" class="preHeaderRow_section_item wrapperMail">
+            <i class="fas fa-envelope"></i>
+            <span> neelunstp@gmail.com</span>
+        </a>
+        <div class="preHeaderRow_section_item wrapperContactNumber">
+                <i class="fas fa-phone fa-flip-horizontal"></i>
+                <span>0361-2342264</span>
+        </div>
+    </div>
+    <div class="preHeaderRow_rightSection">
+        <div class="wrapperSocialNetwork">
+            <div class="socialNetwork facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="socialNetwork twitter"><a href="#"><i class="fab fa-twitter"></i></a></div>
+            <div class="socialNetwork linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="socialNetwork instagram"><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
+        <div class="wrapperContactNumber">
+            <i class="fas fa-phone fa-flip-horizontal"></i>
+            <span>0361-2342264</span>
+        </div>
+        <div class="wrapperFAQ"><a href="#">FAQ</a></div>
+        <div class="wrapperLogin"><a href="#">Login</a></div>
+    </div>
+</div>
+**/
