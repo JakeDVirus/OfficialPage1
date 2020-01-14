@@ -11,6 +11,7 @@
 }
 
 //mainHeader
+
 .l-rowMainHeader {
 	background-color: #222;
 }
@@ -19,7 +20,19 @@
 	z-index: 1;
 	top: 0;
 	width: 100%;
+	@media only screen and (width: 62em) {
+		box-shadow: 0px -2px 8px rgba(0,0,0,0.3);
+		.wrapper-nav li.firstLevelList > a {
+			color: #000;
+			&:hover {color: #f7931d}
+		}
+	}
 }
+.l-rowMainHeader.sticky .l-pageNav .firstLevelList > a {
+	color: #000;
+	&:hover {color: #f7931d}
+}
+
 .l-componentMainHeader {
     font-size: 1.6rem; 
 	height: (66em/16);
@@ -27,12 +40,32 @@
 	justify-content: space-between;
 	align-items: center;
 }  
+
+
+// .wrapperNavigation {
+// 	position: relative;
+// 	z-index: 99;
+// }
 .l-atomAnimation {
 	width: (66em/16);
 	height: (66em/16);
 	overflow: visible;
 	position: relative;
 	left: (-15em/16);
+	@media only screen and (min-width: 62em) {
+		display: none;
+	}
+}
+.l-logo{display: flex; align-items: center;}
+.l-hamburger {
+	position: relative;
+	z-index: 98;
+	margin-right: (-12em/16);
+	display: flex;
+	align-items: center;
+	@media only screen and (min-width: 62em) {
+		display: none;
+	}
 }
 .l-pageNav {
 	@media only screen and (max-width: 61.9375em) {
