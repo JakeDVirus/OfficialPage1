@@ -6,8 +6,8 @@ const MiniCssExtractPlugin =require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        home: ['./src/js/00_root/pageHome.js', './src/js/00_root/tempHeader.js'],
-        allBlogs: ['./src/js/00_root/pageAllBlogs.js', './src/js/00_root/tempHeader.js']
+        home: ['./src/js/00_root/pageHome.js', './src/js/00_root/tempHeader.js', './src/js/00_root/tempFooter.js'],
+        allBlogs: ['./src/js/00_root/pageAllBlogs.js', './src/js/00_root/tempHeader.js', './src/js/00_root/tempFooter.js']
     },
     output: {
         filename: '[name].[contentHash].js',

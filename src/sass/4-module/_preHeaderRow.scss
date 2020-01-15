@@ -64,7 +64,11 @@
         display: none;
     }
 }
-
+@media only screen and (min-width: 42em) {
+    .preHeaderRow_rightSection .preHeaderRow_contactNumber {
+        display: none;
+    }
+}
 
 
 

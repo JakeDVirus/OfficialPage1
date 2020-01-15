@@ -1,0 +1,207 @@
+.l-containerFooter {
+	background-color: #222222;
+}
+.footer {
+    padding-top: 50px;
+    @media only screen and (min-width: 42em) {
+		display: flex;
+		flex-wrap: wrap;
+		letter-spacing: 1px;
+    }
+}
+
+
+.footer_description {
+    @media only screen and (min-width: 42em) {
+		flex: 1 1 50%;
+    }
+}
+.footer_description_titleLogo {
+    height: 45px;
+    margin-bottom: 15px;
+    img {
+        height: 100%;
+    }
+}
+.footer_description_content .text {
+    font-size: 14px;
+    // letter-spacing: 1px;
+    color: #bababa;
+    @media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+        width: 264px;
+    }
+}
+.footer_description_socialMedia {
+    margin-top: 20px;
+}
+.footer_description_socialMedia a {
+    color: #ce7107;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+.footer_navigation {
+    display: flex;
+    justify-content: center;
+    @media only screen and (min-width: 42em) {
+		flex: 1 1 50%;
+    }
+}
+.footer_navigation_quickLinks {
+    margin-right: 57px;
+}
+.footer_navigation_quickLinks_title {
+    font-size: 18px;
+    font-weight: $semiBold-openSans;
+    color: #ffffff;
+    margin-bottom: 19px;
+}
+.footer_navigation_quickLinks_links {
+    font-size: 14px;
+    color: #CE7107;
+    .link {margin-bottom: 9px;}
+    .link:last-child {margin-bottom: 0}
+}
+
+
+
+.footer_newsletter {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: 42em) {
+        flex: 1 1 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+        margin-top: 55px;
+    }
+}
+.footer_newsletter_title {
+    font-size: 18px;
+    font-weight: $semiBold-openSans;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.footer_newsletter_content p {
+    font-size: 14px;
+    // letter-spacing: 1px;
+    text-align: center;
+    color: #bababa;
+}
+.footer_newsletter_inputGroup {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 20px;
+    @media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+        width: 338px;
+    }
+}
+.footer_newsletter_inputGroup .formControl {
+    color: #bababa;
+    height: 48px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #bababa;
+    border-radius: 25px;
+    flex: 1 1 auto;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &::placeholder {
+        color: #bababa;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+    }
+    ::-webkit-input-placeholder { /* Edge */
+        color: red;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+    }
+}
+.footer_newsletter_inputGroup .formControl:focus { 
+    border-color: #f7931d;
+}
+.footer_newsletter_inputGroup .formControl .inputBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer_newsletter_inputGroup .formControl .button {
+    padding: 16px 25px;
+    border-radius: 25px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #f7931d;
+    border: 1px solid #f7931d;
+    font-size: 14px;
+    i {padding-right: 5px;}
+}
+
+
+
+//--- .row.subFooter
+.row.subFooter {
+	margin-top: 50px;
+	background-color: #1a1a1a;
+}
+.component.subFooter {
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	color: #898989;
+	padding: 20px 0;
+    letter-spacing: 1px;
+    @media only screen and (min-width: 42em) {
+		justify-content: space-between;
+		align-items: center;
+    }
+	.footerBrand {
+		a {color: #f7931d}
+	}
+	.footerPayment {
+		display: flex;
+		.icons {
+			margin-right: 10px;
+			&:last-child {margin-right: 0;}
+		}
+		i{
+			font-size: 40px;
+			color: #fff;
+		}
+	}
+}
+
+//screen < tablet  
+@media only screen and (max-width: 47.9375em) {
+	.component.footer {
+		.description, .content p, .footerSocial {
+			text-align: center
+		}
+		.navigation {
+			margin-top: 40px;
+		}
+	}
+	.component.subFooter {
+		flex-direction: column;
+		.footerPayment {
+			flex: 0 0 100%;
+			flex-basis: 100%;
+		}
+		.footerBrand {
+			margin-bottom: 15px;
+		}
+	}
+}
