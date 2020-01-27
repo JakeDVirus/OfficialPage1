@@ -17,6 +17,8 @@ module.exports = merge(common, {
             template: "./src/htmlPages/blogs_all.html",
             chunks: ['allBlogs']
         })
-    ]
+    ],
+    devtool: "source-map"
+    
 
 }) //end of module.export

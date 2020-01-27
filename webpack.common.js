@@ -40,7 +40,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.(css|s[ac]ss)$/,
                 use: [
                     MiniCssExtractPlugin.loader,  //3. Extract css into files
                     {
@@ -52,14 +52,7 @@ module.exports = {
                         options: { sourceMap: true }
                     }
                 ]
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
-            }  
+            }
         ]
     },
 
