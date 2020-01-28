@@ -4,8 +4,8 @@ import '../../sass/styles.scss';
 
 import 'waypoints/lib/noframework.waypoints.min.js';
 
-import * as myAnimationOnScroll from '../organisedPartials/forHome/animationOnScrollPartial';
-import { myOnScroll1 } from '../organisedPartials/stickyNavBar';
+import * as myAnimationOnScroll from '../partials/forHome/animationOnScrollPartial';
+import { myOnScroll1 } from '../partials/stickyNavBar';
 import * as myGeneral from '../01_main/general';
 
 

@@ -1,4 +1,4 @@
-import {getBgUrl} from '../../libraries/tools';
+import {getBgUrl} from '../../utilities/tools';
 
 
 

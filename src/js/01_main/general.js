@@ -1,4 +1,4 @@
-  import {debouncer} from '../libraries/tools';
+  import {debouncer} from '../utilities/tools';
   
   /*######################################################
 	###               HEADER                           #####
