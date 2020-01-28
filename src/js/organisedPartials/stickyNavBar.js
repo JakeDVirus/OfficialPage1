@@ -22,7 +22,7 @@
     } else {
       rowNavigation.classList.remove('sticky');
       nextDomElement.style.paddingTop = "0px";
-    }
+    } 
 
 
 

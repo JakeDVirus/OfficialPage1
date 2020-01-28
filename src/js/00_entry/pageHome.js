@@ -4,11 +4,11 @@ import '../../sass/styles.scss';
 
 import 'waypoints/lib/noframework.waypoints.min.js';
 
-import * as myAnimationOnScroll from '../organisedPartials/animationOnScrollPartial';
-import { myOnScroll1 } from '../organisedPartials/onScrollEvents';
+import * as myAnimationOnScroll from '../organisedPartials/forHome/animationOnScrollPartial';
+import { myOnScroll1 } from '../organisedPartials/stickyNavBar';
 import * as myGeneral from '../01_main/general';
 
 
 //onScroll
 window.onscroll = myOnScroll1; 
-// , './src/js/00_root/tempHeader.js'
+// , './src/js/00_root/tempHeader.js' 
