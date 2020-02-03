@@ -24,8 +24,8 @@
       nextDomElement.style.paddingTop = "0px";
     } 
 
-
-
-
     
   }// end of myOnscroll function
+
+
+  window.onscroll = myOnScroll1;
