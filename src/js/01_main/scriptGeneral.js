@@ -18,7 +18,7 @@
           element.classList.add("activeDropDown");
           setTimeout(function(){
             element.classList.add("hoverEffect");
-          },100);
+          },100); 
       });
 
     //mouseleave

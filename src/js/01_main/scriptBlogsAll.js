@@ -16,7 +16,7 @@ dropBtn.forEach(function(element, index) {
     //mouseenter
     element.addEventListener('mouseenter', function(){
         element.classList.add("activeDropDown");
-        setTimeout(function(){
+        setTimeout(function(){ 
           element.classList.add("hoverEffect");
         },100);
     });

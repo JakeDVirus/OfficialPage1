@@ -18,8 +18,5 @@ import 'waypoints/lib/noframework.waypoints.min.js';
 
 //import * as myAnimationOnScroll from '../organisedPartials/animationOnScrollPartial';
 import { myOnScroll1 } from '../partials/stickyNavBar';
-import * as myGeneral from '../01_main/blogsAll';
+import '../01_main/scriptBlogsAll';
 
-
-//onScroll
-window.onscroll = myOnScroll1; 

@@ -27,5 +27,4 @@
     
   }// end of myOnscroll function
 
-
   window.onscroll = myOnScroll1;
