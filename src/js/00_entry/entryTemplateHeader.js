@@ -1,1 +1,1 @@
-import '../../sass/tempHeader.scss';
+import '../../sass/templateHeader.scss';

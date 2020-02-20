@@ -1,1 +1,1 @@
-import '../../sass/tempFooter.scss';
+import '../../sass/templateFooter.scss';
