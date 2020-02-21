@@ -1,0 +1,16 @@
+/*##################################################
+##############   01.01 mainBanner    ###############
+###################################################*/
+
+.l-containerMainBanner {
+    flex: 1;
+    position: relative;
+}
+.l-rowMainBanner, .l-colMainBanner {
+    height: 100%;
+}
+.l-containerMainBanner .waypoint-hide {
+    @media only screen and (max-width: 61.9375em) {
+        opacity: 1;
+    }
+}
