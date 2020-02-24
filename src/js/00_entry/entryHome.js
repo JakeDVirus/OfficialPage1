@@ -6,5 +6,5 @@ import 'waypoints/lib/noframework.waypoints.min.js';
 
 import '../partials/forHome/animationOnScrollPartial';
 import '../partials/stickyNavBar';
-import '../01_main/scriptGeneral';
+import '../01_main/scriptHome';
 

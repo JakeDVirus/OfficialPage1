@@ -83,13 +83,13 @@ import {getBgUrl} from '../../utilities/tools';
       backgroundImageOnScroll_1.src = getBgUrl(mainBannerBgImg);
       backgroundImageOnScroll_1.onload = function () {
         componentMainBannerChildren.forEach(function(elm){
-          if (elm.classList.contains("heading")) {
+          if (elm.classList.contains("js-animationOnScroll-heading")) {
             elm.classList.add("animated","slideInRight", "slow", "delay-200ms")
             elm.style.transitionDelay = "200ms";  
-          } else if (elm.classList.contains("subHeading")) {
+          } else if (elm.classList.contains("js-animationOnScroll-subHeading")) {
             elm.classList.add("animated","slideInRight", "slow", "delay-1s")
             elm.style.transitionDelay = "1s";  
-          } else if (elm.classList.contains("buttons")) {
+          } else if (elm.classList.contains("js-animationOnScroll-buttons")) {
             elm.classList.add("animated","slideInRight", "slow", "delay-1800ms")
             elm.style.transitionDelay = "1800ms";  
           }  

@@ -26,6 +26,19 @@ export function unfade(element, initialOp) {
 }
 
 
+// buttonWidthEqualizer
+export function buttonWidthEqualizerOne(referenceAddress) {
+    let buttons = document.querySelectorAll(referenceAddress);
+    let buttonMaxWidth = 0;
+    buttons.forEach(function(item){
+      if(item.offsetWidth > buttonMaxWidth) {
+        buttonMaxWidth = item.offsetWidth;
+      }
+    });
+    buttons.forEach(function(item){
+      item.style.width = buttonMaxWidth + 2 + 'px';
+    });
+}
 
 
 /*########################################################

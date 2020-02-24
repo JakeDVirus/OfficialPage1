@@ -1,0 +1,66 @@
+/**************************************
+***********   module   ****************
+***************************************/
+.buttonType1 {
+    font-size: (14em/16);
+    font-weight: $regular-openSans;
+    display: flex;
+    align-items: stretch;
+    color: #fff;
+    height: (40em/16);
+    //padding: 4px 25px;
+    background-color: rgba(247, 147, 29, 0.81);
+    border-radius: 4px;
+    @media only screen and (min-width: 48em) {
+        background-color: rgba(247, 147, 29, 1);
+    }
+    //width: 100%;
+}
+
+
+
+
+
+/**************************************
+*********   sub-module   **************
+***************************************/
+.buttonType1-dark {
+    background-color: rgb(41, 41, 41);
+}
+
+
+
+
+
+/**************************************
+****   module_subComponent   **********
+***************************************/
+.buttonType1_text, .buttonType1_icon {
+    display: flex;
+    align-items: center;
+}
+
+.buttonType1_text {
+    padding: 0 15px 0 25px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonType1_icon {
+    display: inline-block;
+    width: (40em/16);
+    text-align: center;
+    background-color: rgba(36,36,36,0.12);
+}
+
+.buttonType1_icon_iconWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonType1_icon_iconWrapper i {
+    font-size: 11px;
+}

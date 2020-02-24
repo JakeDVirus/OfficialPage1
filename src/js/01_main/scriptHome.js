@@ -1,4 +1,5 @@
   import {debouncer} from '../utilities/tools';
+  import {buttonWidthEqualizerOne} from '../utilities/tools'
   
   /*######################################################
 	###               HEADER                           #####
@@ -44,20 +45,8 @@
     Making the buttons same size
   ===============================================================*/
   
-  buttonEqualizerOne();
+  buttonWidthEqualizerOne('.component-mainBanner .js-buttonsWidthEqualizer');
 
-  export function buttonEqualizerOne() {
-    let buttonOne = document.querySelector('.component-mainBanner .button1');
-    let buttonTwo = document.querySelector('.component-mainBanner .button2');
-    let buttonOneWidth = buttonOne.offsetWidth;
-    let buttonTwoWidth = buttonTwo.offsetWidth;
-    if(buttonOneWidth > buttonTwoWidth) {
-      buttonTwo.style.width = buttonOneWidth + "px";
-    } else {
-      buttonOne.style.width = buttonTwoWidth + "px";
-    }    
-
-  }
 
   
 
