@@ -1,0 +1,109 @@
+
+/*
+hIF = heroImageFooter
+
+<div class="hIFCards">
+	<div class="hIFCards_card">
+		<div class="hiFCards_card_innerContainer">
+			<div class="hiFCards_card_wrapperContent">
+				<p class="hiFCards_card_label">Your Website</p>
+				<p class="hiFCards_card_text">Speaks for your customer 24*7</p>
+			</div>
+		</div>
+	</div>
+	<div class="hIFCards_card">
+		<div class="hiFCards_card_innerContainer">
+			<div class="hiFCards_card_wrapperContent">
+				<p class="hiFCards_card_label">Your Website</p>
+				<p class="hiFCards_card_text">Speaks for your customer 24*7</p>
+			</div>
+		</div>
+	</div>
+	<div class="hIFCards_card">
+		<div class="hiFCards_card_innerContainer">
+			<div class="hiFCards_card_wrapperContent">
+				<p class="hiFCards_card_label">Your Website</p>
+				<p class="hiFCards_card_text">Speaks for your customer 24*7</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+*/
+
+
+.hIFCards {
+    font-size: 1rem; //10px, assuming base=10px
+    display: flex;
+    @media only screen and (min-width: 100em) {
+        font-size: 1.25rem;
+    }
+}
+
+
+.hIFCards_card {
+    padding: 1.8em;
+}
+
+
+.hIFCards_card:first-child {
+    background: #2b2b2b url('../assets/icons/clock1.png') no-repeat right -3.4em top -2.3em;
+    background-size: 22.7em;
+}
+.hIFCards_card:nth-child(2) {
+    background: #dd993a url('../assets/icons/world.png') no-repeat right -2.3em top -1.2em;
+    background-size:18.4em;
+    .hIFCards_card_innerContainer {
+        background-color:rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.34);
+    }
+    .hIFCards_card_text {
+        color: #fff;
+    }
+}
+.hIFCards_card:last-child {
+    background: #2b2b2b url('../assets/icons/setting.png') no-repeat right -6.6em top -3.4em;
+    background-size: 25.0em;
+}
+
+
+.hIFCards_card_innerContainer {
+    width: 27.5em;
+    height: 100%;
+    padding-top: 2.2em;
+    padding-bottom: 2.3em;
+    background-color: rgba(178, 178, 178, 0.1);
+    border: 1px solid rgba(112, 112, 112, 0.34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hIFCards_card_wrapperContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20.6em;
+    letter-spacing: 1px;
+}
+
+.hIFCards_card_label {
+    font-size: 1.6em;
+    font-weight: $semiBold-openSans;
+    color: #fff;
+    padding-bottom: (11em/16);
+    @media only screen and (min-width: 100em) {
+        font-size: 1.4em;
+    }
+}
+
+.hIFCards_card_text {
+    font-size: 1.4em;
+    font-weight: $semiBold-openSans;
+    color: #8a8a8a;
+    text-align: center;
+    @media only screen and (min-width: 100em) {
+        font-size: 1.3em;
+    }
+}

@@ -32,16 +32,6 @@ $xsBp-max= max-width = 36.9375em;  //575px */
 
 
 
-.component.bannerFooter {
-	position: absolute;
-	width: 100%;
-	left: 0%; 
-	bottom: 0;
-	padding-bottom: 10%;
-	.componentScrollDownAnimationMouse {
-		@import "../librariesSelfMade/css/scrollDownAnimation-mouse";
-	}
-}
 
 
 

@@ -6,6 +6,16 @@
         display: none;
     }
 }
+.l-onlyForSmallDevice {
+    @media only screen and (min-width: 48em) {
+        display: none;
+    }
+}
+.l-onlyForDesktop {
+	@media only screen and (max-width: 61.9375em) {
+		display: none;
+	}
+}
 
 /*##################################################
 ##############   01.01 mainBanner    ###############
@@ -34,8 +44,29 @@
     @media only screen and (min-width: 85.375em) {
         padding-top: (27em/16);
     }
+    @media only screen and (min-width: 106.25em) {
+        padding-top: (30em/16);
+    }
     
 }
 .l-bannerMain_buttonsGroup_button:last-child {
     margin-left: (35em/16);
+}
+
+
+//----- footer  -------
+.l-bannerFooter {
+	position: absolute;
+	width: 100%;
+	left: 0%; 
+	bottom: 0;
+	padding-bottom: 10%;
+}
+
+.l-bannerFooter_cards {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translate(0%,50%);
+    justify-content: center;
 }
