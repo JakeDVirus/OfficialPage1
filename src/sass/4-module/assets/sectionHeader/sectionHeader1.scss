@@ -1,0 +1,109 @@
+/*
+
+<div class="sectionHeader1-v1">	
+	<div class="sectionHeader1_heading">
+		<p>Create your&nbsp;<span>beautiful online presence</span></p>
+	</div>
+	<div class="sectionHeader1_subheading">
+		<p>Your website has the potential to reach to your prospect in an exponential rate. We provide the high standard quality and powerful features neccesary to</p>
+	</div>
+	<div class="sectionHeader1_divider">
+		<div class="left"><div class="divLev1"></div></div>
+		<div class="icon"><i class="fas fa-rocket"></i></div>
+		<div class="right"><div class="divLev1"></div></div>
+	</div>
+</div>
+
+*/
+
+
+.sectionHeader1_heading {
+    @media only screen and (min-width: 48em) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+.sectionHeader1_heading p {
+    font-size: (25em/16);
+    font-weight: $regular-openSans;
+    line-height: 36px;
+    @media only screen and (min-width: 48em) {
+        font-size: (30em/16);
+        font-weight: $semiBold-openSans;
+        line-height: 46px;
+    }
+}
+.sectionHeader1_heading span {
+    display: block;
+    &:first-letter {text-transform: uppercase;}
+    
+    @media only screen and (min-width: 48em) {
+        display: inline;
+        &:first-letter {
+            text-transform: lowercase;
+        }
+    }
+}
+
+.sectionHeader1_subheading {
+    @media only screen and (min-width: 48em) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+.sectionHeader1_subheading p {
+    font-size: 1em;
+    line-height: 24px;
+    font-weight: $regular-openSans;
+    color: #696969;
+    color: #292929;
+    padding-top: (18em/16);
+    @media only screen and (min-width: 48em) {
+        padding-top: 0;
+        display: flex;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+.sectionHeader1_divider {
+    display: none;
+    @media only screen and (min-width: 48em) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .left, .right {
+            display: flex;
+            align-items: center;
+            height: 10px;
+        }
+        .left {
+            border-right: 1px solid #d5d5d5;
+        }
+        .right {
+            border-left: 1px solid #d5d5d5;
+        }
+        .divLev1 {
+            height: 1px;
+            background-color: #d5d5d5;
+            width: 150px;
+        }
+        .icon {
+            padding: 0 9px;
+        }
+        .icon i{
+            color: #fff;
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            background: #292929;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+}

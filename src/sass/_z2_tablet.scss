@@ -22,73 +22,8 @@
 	/*#######################################################
 	#######          02. Online Presense          ###########
 	#########################################################*/
-	.component-onlinePresence {
-		.heading span {
-			display: inline;
-			&:first-letter {
-				text-transform: lowercase;
-			}
-		}
-		.heading, .content {
-			display: flex;
-			justify-content: center;
-		}
-		.heading {
-			margin-bottom: 15px;
-		}
-		.heading p {
-			font-size: (30em/16);
-			font-weight: $semiBold-openSans;
-			line-height: 46px;
-		}
-		.content {
-			margin-bottom: 20px;
-			p {
-				padding-top: 0;
-			}
-		}
-		.content p {
-			display: flex;
-			flex: 0 0 66.666667%;
-			max-width: 66.666667%;
-			text-align: center;
-			justify-content: center;
-		}
-		.divider {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			.left, .right {
-				display: flex;
-				align-items: center;
-				height: 10px;
-			}
-			.left {
-				border-right: 1px solid #d5d5d5;
-			}
-			.right {
-				border-left: 1px solid #d5d5d5;
-			}
-			.divLev1 {
-				height: 1px;
-				background-color: #d5d5d5;
-				width: 150px;
-			}
-			.icon {
-				padding: 0 9px;
-			}
-			.icon i{
-				color: #fff;
-				left: 50%;
-				width: 25px;
-				height: 25px;
-				background: #292929;
-				border-radius: 50%;
-				font-size: 12px;
-				line-height: 25px;
-				text-align: center;
-			}
-		}
+	 .component-onlinePresence {
+	
 		.cards {
 			display: flex;
 			flex-direction: column;
