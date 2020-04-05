@@ -70,3 +70,27 @@
     transform: translate(0%,50%);
     justify-content: center;
 }
+
+/*##################################################
+#######   01.02 section: online presence    ########
+###################################################*/
+.l-containerOnlinePresence {
+	padding-top: 8.3em; //half the size of .component.bannerFooter
+	background-color: #f7f7f7;
+}
+.l-componentOnlinePresence {
+	padding: (80em/16) 0;
+}
+
+.l-cardsGroup {
+    margin-top: (65em/16);
+    @media only screen and (min-width: 48em) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media only screen and (min-width: 75em) {
+        flex-direction: row;
+        justify-content: space-evenly;	
+    }
+}

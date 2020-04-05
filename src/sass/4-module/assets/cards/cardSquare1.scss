@@ -1,0 +1,113 @@
+/*
+
+--> container element -->background-color: #f7f7f7;
+
+<div class="cardSquare1">
+	<div class="cardSquare1_firstRow">
+		<div class="cardSquare1_firstRow_headingIcon"><i class="fas fa-mobile-alt"></i></div>
+		<div class="cardSquare1_firstRow_Heading">Customer Oriented</div>
+	</div>
+	<div class="cardSquare1_secondRow">
+		<p class="cardSquare1_secondRow_cardContent">As this being the primary objective for you, we ensure professional impression to be created on ur viewers</p>
+	</div>
+	<div class="cardSquare1_thirdRow">
+		<a href="#" class="cardSquare1_thirdRow_button">Read more +</a>
+	</div>
+</div>
+
+*/
+
+
+.cardSquare1 {
+    background-color: #fff;
+    margin-top: (65em/16);
+    padding: 42px 37px;
+    padding: 42px 37px 35px 37px;
+    box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
+    transition: all 0.4s ease;
+    &:first-child {
+        margin-top: 0;
+    }
+    @media only screen and (min-width: 48em) {
+        width: 80%;
+        padding: 42px 37px 59px 37px;
+    }
+    @media only screen and (min-width: 75em) {
+        flex-basis: 350px;
+        margin: 0 15px;
+    }
+}
+.cardSquare1:hover {
+    @media only screen and (min-width: 48em) {
+        transform: translateY(-10px);
+        box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);	
+    }
+}
+.cardSquare1_firstRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+.cardSquare1_secondRow {
+    margin-top: 32px;
+}
+.cardSquare1_thirdRow {
+    padding-top: 32px;
+    padding-top: 10px;
+    text-align: right;
+    @media only screen and (min-width: 48em) {
+        position: relative;
+        padding-top: 25px;
+        text-align: left;
+    }
+}
+
+.cardSquare1_firstRow_headingIcon {
+    font-size: 22px;
+    width: 50px;
+    padding: 0 12px;
+    background-color: #f7931d;
+    line-height: 50px;	
+    text-align: center;		
+    border-radius: 4px;
+    box-shadow: 0 10px 20px 0 rgba(247, 147, 29, 0.25);
+    color: #f1f1f1;
+}
+.cardSquare1_firstRow_Heading {
+    font-size: 19px;
+    margin-left: (15em/16);
+    color: #636363;
+    @media only screen and (min-width: 48em) {
+        font-size: 20px;
+    }
+}
+.cardSquare1_secondRow_cardContent{
+    font-size: 15px;
+    font-weight: $regular-openSans;
+    line-height: 1.8;
+    color: #808080;
+    color: #464646;
+    @media only screen and (min-width: 48em) {
+        font-size: 14px;
+        color: #808080;
+    }
+}
+.cardSquare1_thirdRow_button {
+    color: #F7931D;
+    font-size: 14px;
+    font-weight: $regular-openSans;
+    line-height: 11px;
+    letter-spacing: 1px;
+    padding: 9px 18px;
+    border: 1px solid #F7931D;
+    border-radius: 25px;
+    transition: all 0.3s;
+    &:hover {
+        color: #fff;
+        background-color: #F7931D;
+    }
+    @media only screen and (min-width: 48em) {
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+}
