@@ -1,0 +1,39 @@
+/*
+
+<div class="cssm-componentHeaderStyle1">
+	<div class="componentHeading"><p>OUR SERVICES</p></div>
+	<div class="headerDivider"></div>
+	<div class="componentSubHeading"><p>We provide high quality services</p></div>
+</div>
+
+*/
+
+
+.sectionHeader2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: (115em/16);
+}
+
+
+.sectionHeader2_heading p {
+    font-size: (24em/16);
+    font-family: $montserrat;
+    font-weight: $semiBold-montserrat;
+    color: rgb(26, 26, 26);
+    font-weight: $semiBold-montserrat;
+    padding: 8px 0 10px 0;
+}	
+.sectionHeader2_divider {
+    background-color: rgb(191, 191, 191);
+    margin: 15px auto 40px auto;
+    height: 2px;
+    width: 40px;
+}
+.sectionHeader2_subHeading {
+    color: #595959;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

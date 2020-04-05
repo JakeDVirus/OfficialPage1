@@ -94,3 +94,13 @@
         justify-content: space-evenly;	
     }
 }
+
+/*##################################################
+#######     01.03 section: Our services     ########
+###################################################*/
+
+.l-sectionHeader2 {
+    @media only screen and (min-width: 48em) {
+        padding-bottom: (90em/16);
+    }
+}

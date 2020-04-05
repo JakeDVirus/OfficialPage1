@@ -71,30 +71,3 @@ body {
 /**************************************************************  
 *******     Component Style - Self Made (CSSM)       **********
 ***************************************************************/
-
-.cssm-componentHeaderStyle1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: (115em/16);	
-	.componentHeading p {
-		font-size: (24em/16);
-		font-family: $montserrat;
-		font-weight: $semiBold-montserrat;
-		color: rgb(26, 26, 26);
-		font-weight: $semiBold-montserrat;
-		padding: 8px 0 10px 0;
-	}
-	.headerDivider {
-		background-color: rgb(191, 191, 191);
-		margin: 15px auto 40px auto;
-		height: 2px;
-		width: 40px;
-	}
-	.componentSubHeading {
-		color: #595959;
-    	font-size: 15px;
-    	letter-spacing: 2px;
-    	text-transform: uppercase;
-	}
-}
