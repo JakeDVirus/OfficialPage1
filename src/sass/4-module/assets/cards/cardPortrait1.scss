@@ -1,0 +1,104 @@
+/*
+
+<div class="cardPortairt1">	
+	<div class="cardPortairt1_wrapper">
+		<div class="cardPortairt1_listIconArea"><span class="cardPortairt1_listIconArea_iconOuter"><i class="fas fa-laptop"></i></span></div>
+		<div class="cardPortairt1_listHeading"><p>Web Development</p></div>
+		<div class="cardPortairt1_listText">Dis class porro pretium dignissimos veritatis, nostrud natus curae, animi diamlorem? Netus, quia mus, proident quaerat iaculis nascetur sodales, vulputate,…</div>
+		<div class="cardPortairt1_listKnowMore"><a href="#">Know more</a></div>
+	</div>
+</div>	
+
+*/
+
+
+
+.cardPortairt1 {
+    margin-bottom: 60px;
+    border: 1px solid #eeeeee;
+    background: #fefefe;
+    padding: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.cardPortairt1:hover {
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+}
+.cardPortairt1_wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    padding: 30px 15px 90px 15px;
+    padding: 57px 25px 30px 25px;		
+    border-radius: 2px;
+    border: 1px solid #f7931d;
+    @media only screen and (min-width: 48em) {
+        width: 260px;
+    }
+}
+.cardPortairt1_listIconArea {
+    margin-bottom: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.cardPortairt1_listIconArea_iconOuter {
+    height: 110px;
+    width: 110px;
+    display: block;
+    border-radius: 100%;
+    background-color: #eaeaea;
+    box-shadow: 0 0 0 10px #f4f4f4;
+    margin: auto;
+    transition: background-color 0.3s, box-shadow 0.5s;
+}
+.cardPortairt1_listIconArea_iconOuter i {
+    font-size: 42px;
+    line-height: 110px;
+    color: #777777;
+}
+
+.cardPortairt1_listHeading p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: $montserrat;
+    color: #1a1a1a;
+    font-weight: $semiBold-montserrat;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cardPortairt1_listText {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.cardPortairt1_listKnowMore {
+    text-align: center;
+}
+.cardPortairt1_listKnowMore a:before {
+    content: "\2192";
+    display: inline-block;
+    color: #333333;
+    margin-left: 10px;
+    vertical-align: top;
+    font-size: 22px;
+    transition: margin-left 0.2s linear;
+    float: right;
+    line-height: 1;
+    color: #fff;
+    display: block;
+    margin-top: -2px;
+}
+.cardPortairt1_listKnowMore a {
+    margin-top: 35px;
+    font-size: 13px;
+    color: #999999;
+    color: #ffffff;
+    background-color: #f7931d;
+    text-align: center;
+    padding: 8px 21px;
+    border: 1px solid #f7931d;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}

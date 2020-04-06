@@ -99,8 +99,21 @@
 #######     01.03 section: Our services     ########
 ###################################################*/
 
+.l-rowOurServices {
+	@media only screen and (max-width: 36.9375em) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
 .l-sectionHeader2 {
     @media only screen and (min-width: 48em) {
         padding-bottom: (90em/16);
     }
+}
+.l-ourServicesCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 }
