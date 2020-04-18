@@ -49,6 +49,12 @@
     }
     
 }
+.l-bannerMain_buttonsGroup_button {
+    font-size: 1.4rem; // 1.4*10 = 14px
+    @media only screen and (min-width: 100em) {
+        font-size: 1.6rem; //1.6*10 = 16px
+    }
+}
 .l-bannerMain_buttonsGroup_button:last-child {
     margin-left: (35em/16);
 }
@@ -121,3 +127,15 @@
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
+
+
+
+/*##################################################
+#######     01.04 section: Our services     ########
+###################################################*/
+
+.l-halfSection1 {
+    padding: 0 5%;
+    background-color: #F9F9F9;
+}
+
