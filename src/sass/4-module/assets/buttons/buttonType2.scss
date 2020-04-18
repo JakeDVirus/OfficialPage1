@@ -1,0 +1,29 @@
+/*
+
+<a href="#" class="buttonType2">
+    Learn more
+    <i class="fa fa-plus buttonType2_faIcon1"></i>
+</a>
+
+*/
+
+.buttonType2 {
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: $semiBold-openSans;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	color: #ffffff;
+	background-color: #292929;
+	border: 1px solid #292929;
+	border-radius: 4px;
+	letter-spacing: 1px;
+}
+
+.buttonType2_faIcon1 {
+    display: inline-block;
+    margin-left: 16px;
+    padding-left: 9px;
+    padding-right: 9px;
+}

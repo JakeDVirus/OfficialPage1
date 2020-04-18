@@ -28,3 +28,23 @@
 
 */
 
+.halfSection1 {
+	padding: 60px 0; 
+}
+
+.halfSection1_heading p {
+    font-size: (24em/16);
+    font-weight: $semiBold-openSans;
+    color: #292929;
+    line-height: 36px;
+    padding-bottom: 40px;
+}
+.halfSection1_heading .optional {
+    display: none;
+}
+.halfSection1_content {
+    color: #636363;
+}
+.halfSection1_buttons {
+    padding-top: 43px;
+}
