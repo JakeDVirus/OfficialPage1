@@ -30,6 +30,16 @@
 
 .halfSection1 {
 	padding: 60px 0; 
+    background-color: #F9F9F9;
+	@media only screen and (min-width: 62em) {
+		max-width: (120rem/2); //60rem = 60*10px = 600px;
+		padding-right: 60px;
+	}
+	@media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .halfSection1_heading p {
@@ -38,6 +48,9 @@
     color: #292929;
     line-height: 36px;
     padding-bottom: 40px;
+	@media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+		padding-bottom: 25px;
+	}
 }
 .halfSection1_heading .optional {
     display: none;
@@ -45,6 +58,17 @@
 .halfSection1_content {
     color: #636363;
 }
+
+.halfSection1_content P {
+	@media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+		text-align: center;
+	}
+
+}
+
 .halfSection1_buttons {
     padding-top: 43px;
+	@media only screen and (min-width: 48em) and (max-width: 61.9375em) {
+		padding-top: 25px;
+	}
 }

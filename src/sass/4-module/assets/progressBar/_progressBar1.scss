@@ -1,0 +1,83 @@
+/*
+
+======>  BEM + SMACSS  <=====
+
+<div class="progressBars1">
+<div class="progressBars1_title">Our skill</div>
+<div class="progressBars1_barsContainer">
+    <div class="progressBars1_item">
+        <div class="progressBars1_barHeader">
+            <div class="progressBars1_barName">HTML5&nbsp;</div>
+            <div class="progressBars1_barPercentage">
+                <span class="number">5</span>%
+            </div>
+        </div>
+        <progress class="progressBars1_bar" value="95" max="100"></progress>
+    </div><div class="progressBars1_item">
+        <div class="progressBars1_barHeader">
+            <div class="progressBars1_barName">CSS3&nbsp;</div>
+            <div class="progressBars1_barPercentage">
+                <span class="number">5</span>%
+            </div>
+        </div>
+        <progress class="progressBars1_bar" value="90" max="100"></progress>
+    </div><div class="progressBars1_item">
+        <div class="progressBars1_barHeader">
+            <div class="progressBars1_barName">Javascript&nbsp;</div>
+            <div class="progressBars1_barPercentage">
+                <span class="number">5</span>%
+            </div>
+        </div>
+        <progress class="progressBars1_bar" value="85" max="100"></progress>
+    </div>
+    <div class="progressBars1_item">
+        <div class="progressBars1_barHeader">
+            <div class="progressBars1_barName">NodeJs&nbsp;</div>
+            <div class="progressBars1_barPercentage">
+                <span class="number">5</span>%
+            </div>
+        </div>
+        <progress class="progressBars1_bar" value="95" max="100"></progress>
+    </div>
+</div>
+</div>
+
+*/
+
+
+.progressBars1 {
+	padding: 60px 0; 
+    background-color: #F0F0F0;
+	@media only screen and (min-width: 62em) {
+		max-width: (120rem/2); //60rem = 60*10px = 600px;
+        flex-basis: 100%;
+		padding-left: 60px;
+    }
+}
+
+.progressBars1_title {
+    font-size: 18px;
+    font-weight: $semiBold-openSans;
+    color: #292929;
+}
+.progressBars1_item {
+    margin-top: 16px;
+}
+.progressBars1_item:first-child {
+    margin-top: 0;
+}
+.progressBars1_barHeader {
+    display: flex;
+    justify-content: flex-end;
+    color: #616161;
+    font-weight: $semiBold-openSans;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.progressBars1_bar { 
+    height: 14px;
+    background-color: rgba(70, 70, 70, 0.1);
+    width: 100%;
+    &::-webkit-progress-bar {background-color: rgba(70, 70, 70, 0.1)}
+    &::-webkit-progress-value {background-color: #46C7DF}
+}

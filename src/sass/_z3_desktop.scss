@@ -26,45 +26,6 @@
 
 
 	/*##################################################
-	#########     04. Quality and Cost     #############
-	###################################################*/
-	.col-qualityAndCost {
-		display: flex;
-		padding: 0;
-		.col-child {
-			flex-basis: 50%;
-			display: flex;
-			padding: 0;
-			&.left {
-				padding-left: 5%;
-				justify-content: flex-end;
-				.component {
-					padding-right: 60px
-				}
-			}
-			&.right {
-				padding-right: 5%;
-				justify-content: flex-start;
-				.component {
-					padding-left: 60px;
-				}
-			}
-			.component {
-				max-width: (120rem/2);
-				flex-basis: 100%;
-				
-			}
-		}
-	}
-	.component-qualityAndCost {
-		.heading .optional {
-			@media only screen and (min-width: 72.5) {
-				display: block;
-			}
-		}
-	}
-
-	/*##################################################
 	#########     03. Our Features	       #############
 	###################################################*/	
 	.component.ourFeatures {

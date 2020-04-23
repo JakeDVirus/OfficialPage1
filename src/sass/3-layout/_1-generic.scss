@@ -11,11 +11,17 @@
         display: none;
     }
 }
-.l-onlyForDesktop {
+.l-onlyForEOLTDesktop {
 	@media only screen and (max-width: 61.9375em) {
 		display: none;
 	}
 }
+.l-screenEOLTDesktopLarge {
+    @media only screen and (max-width: 74.9375em) {
+        display: none;
+    }
+}
+
 
 /*##################################################
 ##############   01.01 mainBanner    ###############
@@ -133,15 +139,21 @@
 /*##################################################
 #######     01.04 section: quality and cost   ######
 ###################################################*/
-
-.col-qualityAndCost {
-    display: flex;
+.l-rowQualityAndCost {
     padding: 0;
 }
+.l-colQualityAndCost {
+    @media only screen and (min-width: 62em) {
+        display: flex;
+        padding: 0;
+    }
+    @media only screen and (min-width: 75em) {
+        max-width: 100%; 
+    }
+}
 
-.l-componentQualityAndCost_halfSection1 {
+.l-componentQualityAndCost_halfChild {
     padding: 0 5%;
-    background-color: #F9F9F9;
     @media only screen and (min-width: 62em) {
         flex-basis: 50%;
         display: flex;
@@ -149,10 +161,20 @@
     }
 }
 
-.l-componentQualityAndCost_halfSection1--left {
+//leftChild
+.l-componentQualityAndCost_leftChild {
+    background-color: #F9F9F9;
     @media only screen and (min-width: 62em) {
         padding-left: 5%;
         justify-content: flex-end;
     }
 } 
 
+//rightChild
+.l-componentQualityAndCost_rightChild {
+    background-color: #F0F0F0;
+    @media only screen and (min-width: 62em) {
+        padding-right: 5%;
+        justify-content: flex-start;
+    }
+} 
