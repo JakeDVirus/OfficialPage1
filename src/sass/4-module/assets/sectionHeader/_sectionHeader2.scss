@@ -13,7 +13,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: (115em/16);
+    padding-bottom: (115em/16);
+    @media only screen and (min-width: 48em) {
+        padding-bottom: (90em/16);
+    }
 }
 
 

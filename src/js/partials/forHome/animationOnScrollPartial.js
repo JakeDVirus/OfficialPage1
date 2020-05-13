@@ -10,8 +10,8 @@ import {getBgUrl} from '../../utilities/tools';
   /*===(1)=======================================================
   Animating Progress bar
   ===============================================================*/
-  export var componentQualityAndCostSkills = document.querySelector('.component.qualityAndCostSkills')
-  export var progressBarsSet1 = document.querySelectorAll(".qualityAndCostSkills .progressBar");
+  export var componentQualityAndCostSkills = document.querySelector('.l-componentQualityAndCost_rightChild')
+  export var progressBarsSet1 = document.querySelectorAll(".l-componentQualityAndCost_rightChild .progressBars1_bar");
   
   //animation on scroll: progressBar
   export var waypoint2 = new Waypoint({
