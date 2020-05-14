@@ -8,12 +8,18 @@
 		flex-wrap: wrap;
 		letter-spacing: 1px;
     }
+    @media only screen and (min-width: 85.375em) {
+		flex-wrap: nowrap;
+    }
 }
 
 
 .footer_description {
     @media only screen and (min-width: 42em) {
 		flex: 1 1 50%;
+    }
+    @media only screen and (min-width: 85.375em) {
+        flex: 1 1 33.33%;
     }
 }
 .footer_description_titleLogo {
@@ -52,6 +58,9 @@
     @media only screen and (min-width: 42em) {
 		flex: 1 1 50%;
     }
+    @media only screen and (min-width: 85.375em) {
+        flex: 1 1 33.33%;
+    }
 }
 .footer_navigation_quickLinks {
     margin-right: 57px;
@@ -84,6 +93,11 @@
     @media only screen and (min-width: 48em) and (max-width: 61.9375em) {
         margin-top: 55px;
     }
+    @media only screen and (min-width: 85.375em) {
+        flex: 1 1 33.33%;
+        align-items: flex-start;
+        margin-top: 0;
+    }
 }
 .footer_newsletter_title {
     font-size: 18px;
@@ -96,6 +110,9 @@
     // letter-spacing: 1px;
     text-align: center;
     color: #bababa;
+    @media only screen and (min-width: 85.375em) {
+        text-align: left;
+    }
 }
 .footer_newsletter_inputGroup {
     position: relative;

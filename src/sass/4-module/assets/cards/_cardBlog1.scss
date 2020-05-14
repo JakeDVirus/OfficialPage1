@@ -1,0 +1,160 @@
+/*
+
+<div class="cardBlog1">
+	<div class="cardBlog1_thumbnail">
+		<div class="cardBlog1_thumbnail_date">
+			<div class="cardBlog1_thumbnail_date_day">19</div>
+			<div class="cardBlog1_thumbnail_date_monthyear">
+				<p>Dec</p>
+				<p>2019</p>
+			</div>
+		</div>
+	</div>
+	<div class="cardBlog1_content">
+		<p class="cardBlog1_content_title">How online presence impact your business</p>
+		<p class="cardBlog1_content_text">Vivamus condimentum purus in lorem molestie fermentum. Nulla suscipit nibh eu ultricies pellentesque. Fusce consectetur velit eu tristique dapibus. Donec et lobortis massa, vitae lacinia elit. Proin dolor dui, tempus eu leo vitae, congue venenatis augue. Morbi pharetra</p>
+	</div>
+	<div class="cardBlog1_footer">
+		<a href="#" class="cardBlog1_footer_button"><span>Read more</span><i class="fas fa-long-arrow-alt-right"></i></a>
+		<div class="cardBlog1_footer_comment"><i class="far fa-comment-alt"></i>&nbsp;0</div>
+	</div>
+</div>
+
+*/
+
+.cardBlog1 {
+    margin-bottom: 60px;
+    //width: 370px;
+    flex: 0 1 370px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.2);
+    //box-shadow: 0px 10px 11px 0px rgba(0,0,0,.05);
+    transition: all 0.3s;
+    background-color: #fff;
+    @media only screen and (min-width: 62em) {
+        margin-right: 30px;
+    }
+}
+.cardBlog1:last-child {
+    @media only screen and (min-width: 62em) {
+        margin-right: 0;
+    }
+}
+.cardBlog1:hover {
+    @media only screen and (min-width: 48em) {
+        box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+        transform: translateY(-10px);
+    }
+}
+.cardBlog1:hover .cardBlog1_footer_button{
+    padding: 4px 17px;
+    color: #0fd4bb;
+    border-color: #0fd4bb;
+}
+.cardBlog1_thumbnail {
+    height: 275px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    //background image
+    background-image: cover;
+    background-image: url("../assets/images/blog/392-320.jpg");
+    background-image: -webkit-image-set(
+        url("../assets/images/blog/392-320.jpg") 1x,
+        url("../assets/images/blog/392-320@2x.jpg") 2x
+    );
+    background-image: image-set(
+        url("../assets/images/blog/392-320.jpg") 1x,
+        url("../assets/images/blog/392-320@2x.jpg") 2x
+    )
+    //end of background image
+}
+.cardBlog1_thumbnail_date {
+    margin: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #0fd4bb;
+    text-align: center;
+    color: #fff;
+}
+.cardBlog1_thumbnail_date_day {
+    padding: 0 5px 10px 5px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+.cardBlog1_thumbnail_date_monthyear {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: $semiBold-openSans;
+    letter-spacing: 1px;
+}
+.cardBlog1_thumbnail_date_monthyear p {
+    margin: 5px;
+    letter-spacing: 1px;
+}
+.cardBlog1_content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 15px 30px;
+}
+.cardBlog1_content_title {
+    font-family: $montserrat;
+    font-weight: $semiBold-montserrat;
+    font-size: 20px;
+    color: #1a1a1a;
+    line-height: 1.4;
+    //letter-spacing: 2px;
+    //text-transform: uppercase;
+    margin: 30px 0 15px 0;
+}
+.cardBlog1_footer {
+    border-top: 1px solid #e9e9e9;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardBlog1_footer_comment {
+    font-size: 14px;
+    font-weight: $regular-openSans;
+    color: #8d8d8d;
+}
+.cardBlog1_content_text {
+    font-size: 15px;
+    font-weight: $regular-montserrat;
+    color: #999999;
+    line-height: 1.8;
+}
+.cardBlog1_footer_button {
+    padding: 4px 0;
+    align-self: flex-start;
+    font-family: $montserrat;
+    font-size: 13px;
+    font-weight: $regular-montserrat;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    border: 1px solid #fff;
+    color: #505050;
+}
+.cardBlog1_footer_button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+    //padding: 0 10px;
+}
+.cardBlog1_footer_button:hover i {
+    margin-left: 25px;
+}
+.cardBlog1_footer_button i {
+    margin-left: 10px;
+    transition: margin-left 0.2s linear;
+}

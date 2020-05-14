@@ -186,3 +186,38 @@
 		padding-left: 15px;
 	}
 }
+.l-componentOurFeatures {
+	padding-top: 100px;
+	padding-bottom: 110px;
+}
+.l-componentOurFeatures_listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    >* {flex: 0 1 auto}
+}
+
+
+/*##################################################
+#######       01.05 section: Our Features     ######
+###################################################*/
+
+.l-rowOurBlog {
+	padding-top: 110px;
+	padding-bottom: 180px;
+    background-color: #f7f7f7;
+}
+.l-componentOurBlog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.l-componentOurBlog_listContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: 62em) {
+        flex-direction: row;
+    }
+}
