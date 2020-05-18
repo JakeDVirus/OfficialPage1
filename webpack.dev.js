@@ -16,6 +16,11 @@ module.exports = merge(common, {
             filename: "blogs_all.html",
             template: "./src/htmlPages/blogs_all.html",
             chunks: ['allBlogs']
+        }),
+        new htmlWebPackPlugin({
+            filename: "blog1.html",
+            template: "./src/htmlPages/blogs/blog1.html",
+            chunks: ['blog1']
         })
     ],
     devtool: "source-map"

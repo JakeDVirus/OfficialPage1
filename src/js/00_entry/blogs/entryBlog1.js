@@ -19,5 +19,5 @@ import '../../sass/pageAllBlogs.scss';
 /******** main  **********/
 //import * as myAnimationOnScroll from '../organisedPartials/animationOnScrollPartial';
 import { myOnScroll1 } from '../partials/stickyNavBar';
-import '../01_main/scriptBlogsAll';
+import '../../01_main/blogs/scriptBlog1.js';
 
