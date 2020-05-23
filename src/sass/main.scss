@@ -5,7 +5,26 @@
 @import '4-module/0-root';
 
 
-//modules
+
+/*###########################################################
+#############################################################
+                        MODULE
+#############################################################
+#############################################################*/
+
+//--------- header ------------ 
+@import './4-module/preHeaderRow';
+@import "./4-module/animation/atomAnimation1";
+//mobileMenu
+@import "./4-module/mobileMenu/hamburgerAnimation1";
+@import './4-module/mobileMenu/sidemenu1/0-sideMenuBase1';
+
+//--------- footer ------------ 
+@import './4-module/footerPage';
+
+
+
+
 @import '4-module/homePage/banner/heroImageBackground';
 @import '4-module/homePage/banner/heroImageMainContent';
 @import '4-module/homePage/banner/scrollDownAnimation';

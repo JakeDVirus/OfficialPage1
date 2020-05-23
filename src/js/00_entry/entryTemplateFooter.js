@@ -1,1 +1,0 @@
-import '../../sass/templateFooter.scss';

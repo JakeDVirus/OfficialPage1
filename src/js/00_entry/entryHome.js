@@ -1,7 +1,7 @@
 import 'animate.css/source/_base.css';
 
 import 'animate.css/source/sliding_entrances/slideInRight.css';
-import '../../sass/pageHome.scss';
+import '../../sass/main.scss';
 
 import 'waypoints/lib/noframework.waypoints.min.js';
 

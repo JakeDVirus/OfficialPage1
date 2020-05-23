@@ -3,7 +3,7 @@
 *********************************************/
 
 
-import '../../sass/pageAllBlogs.scss';
+import '../../sass/main.scss';
 
  
 
