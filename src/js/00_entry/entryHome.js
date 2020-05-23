@@ -1,4 +1,5 @@
 import 'animate.css/source/_base.css';
+
 import 'animate.css/source/sliding_entrances/slideInRight.css';
 import '../../sass/pageHome.scss';
 

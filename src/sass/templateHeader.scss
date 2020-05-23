@@ -2,21 +2,11 @@
 @import '1-helper/sassHelper/variables.scss';
 //modules 
 @import './4-module/preHeaderRow';
+@import "./4-module/animation/atomAnimation1";
 
-
-
-
-//from plugins modules
-.l-atomAnimation {
-    @import "./0-plugins/icebox/atomAnimation1";
-}
-.l-hamburger {
-    @import "./0-plugins/icebox/mobileMenu/hamburgerAnimation1";
-    
-}
-.l-pageNav {
-    @import './0-plugins/icebox/mobileMenu/mobileMenuBase';
-}
+//mobile menu
+@import "./4-module/mobileMenu/hamburgerAnimation1";
+@import './4-module/mobileMenu/sidemenu1/0-sideMenuBase1';
 
 
 

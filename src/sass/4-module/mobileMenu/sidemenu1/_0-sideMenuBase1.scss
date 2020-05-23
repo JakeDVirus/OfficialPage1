@@ -1,10 +1,10 @@
 
-@import "sideMenu";
+@import "sideMenu1";
 	
-ul {overflow: auto;}
+ul {overflow: auto;}	
 
 @media only screen and (max-width: 61.9375em) {
-	//class for disable body scrolling when the menu is open
+	//class in body tag for disable body scrolling when the menu is open
 	.disableScroll {
 		overflow: hidden;            
 	}
