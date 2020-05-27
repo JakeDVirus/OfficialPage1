@@ -1,11 +1,24 @@
-import 'animate.css/source/_base.css';
 
+/*############################################
+                CSS
+#############################################*/
+
+//vendor
+import 'animate.css/source/_base.css';
 import 'animate.css/source/sliding_entrances/slideInRight.css';
+//main
 import '../../sass/main.scss';
 
-import 'waypoints/lib/noframework.waypoints.min.js';
 
+/*############################################
+                Javascript
+#############################################*/
+
+//vendor
+import 'waypoints/lib/noframework.waypoints.min.js';
+//main
 import '../partials/forHome/animationOnScrollPartial';
-import '../partials/stickyNavBar';
-import '../01_main/scriptHome';
+
+import '../01_main/scriptCommon';
+import '../01_main/pageSpecific/scriptHome';
 
