@@ -9,17 +9,17 @@ module.exports = merge(common, {
     mode: 'development',
     plugins: [
         new htmlWebPackPlugin({
-            template: "./src/htmlPages/index.html",
+            template: "./src/html/htmlPages/index.html",
             chunks: ['home']
         }),
         new htmlWebPackPlugin({
             filename: "blogs_all.html",
-            template: "./src/htmlPages/blogs_all.html",
+            template: "./src/html/htmlPages/blogs_all.html",
             chunks: ['allBlogs']
         }),
         new htmlWebPackPlugin({
             filename: "blog1.html",
-            template: "./src/htmlPages/blogs/blog1.html",
+            template: "./src/html/htmlPages/blogs/blog1.html",
             chunks: ['blog1']
         })
     ],

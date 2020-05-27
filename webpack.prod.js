@@ -20,13 +20,13 @@ module.exports = merge(common, {
             new OptimizeCssAssetsPlugin(), 
             new TerserPlugin,
             new htmlWebPackPlugin({
-                template: "./src/htmlPages/index.html",
+                template: "./src/html/htmlPages/index.html",
                 chunks: ['home'],
                 minify: configurationObject1 //its a variable
             }),
             new htmlWebPackPlugin({
                 filename: "blogs_all.html",
-                template: "./src/htmlPages/blogs_all.html",
+                template: "./src/html/htmlPages/blogs_all.html",
                 chunks: ['allBlogs'],
                 minify: configurationObject1 //its a variable
             })
