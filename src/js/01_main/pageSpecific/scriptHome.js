@@ -1,5 +1,11 @@
-
+//tools
 import {buttonWidthEqualizerOne} from '../../utilities/tools';
+//modules
+import '../../partials/forHome/animationOnScrollPartial';
+
+
+
+
 
 /*######################################################	
 ###               mainBanner                       #####

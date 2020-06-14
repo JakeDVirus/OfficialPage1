@@ -16,9 +16,8 @@ import '../../sass/main.scss';
 
 //vendor
 import 'waypoints/lib/noframework.waypoints.min.js';
-//main
-import '../partials/forHome/animationOnScrollPartial';
 
+//main
 import '../01_main/scriptCommon';
 import '../01_main/pageSpecific/scriptHome';
 

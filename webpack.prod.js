@@ -29,6 +29,12 @@ module.exports = merge(common, {
                 template: "./src/html/htmlPages/blogs_all.html",
                 chunks: ['allBlogs'],
                 minify: configurationObject1 //its a variable
+            }),
+            new htmlWebPackPlugin({
+                filename: "blog1.html",
+                template: "./src/html/htmlPages/blogs/blog1.html",
+                chunks: ['blog1'],
+                minify: configurationObject1 //its a variable
             })
         ]
     }
